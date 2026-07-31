@@ -18,7 +18,7 @@
 | `sources/` | Quellen-Snapshots, 1:1-Kopien. Herkunft je Datei in `sources/sources.md` |
 | `assets/` | Bilder. Metadaten werden über den Lightroom-Katalog in `lightroom/` gepflegt |
 | `notes/` | `decisions.md` (getroffene Entscheidungen), `issues.md` und `<NN>_issues.md` (offene Punkte), `kandidaten.md` (Stoff, der noch nicht drin ist) |
-| `memory/` | `fakten.md` (bestätigte Fakten), `ton.md` (Formulierungsfallen), `quellen.md` (Bewertung der Quellen), `redaktions-workflow.md`, `oli.md` |
+| `memory/` | `fakten.md` (bestätigte Fakten), `ton.md` (Formulierungsfallen), `bilder.md` (Metadaten und Rechte), `quellen.md` (Bewertung der Quellen), `redaktions-workflow.md`, `oli.md` |
 | `longform-scripts/` | Eigene Longform-Compile-Steps, die das Plugin selbst lädt |
 | `scripts/` | Repo-Werkzeuge: Prüftexte bauen, Bilder mit Lightroom-Metadaten einziehen |
 
@@ -73,6 +73,11 @@ scripts/kapitel-kompilieren.py --abriss        # Überschriftenbaum, je zwei Sä
 Ohne Argument kommt das ganze Buch. Longform selbst kann nur den kompletten Draft kompilieren,
 deshalb dieses Skript.
 
+**Bilder besorgen:** der Agent `bildsuche` sucht Bilder zu einer Textstelle, klärt Urheber und
+Lizenz an der Quelle und zieht sie mit `scripts/bild-einziehen.py` samt Metadaten ein. Er ist der
+einzige Agent hier, der nicht prüft, sondern etwas herstellt. Regeln und Fallen:
+[memory/bilder.md](memory/bilder.md).
+
 ## Prüfen
 
 Fünf Agenten in `.claude/agents/`, jeder mit genau einer Linse, weil zusammengelegte Prüfungen sich
@@ -110,6 +115,8 @@ Schreiboperation unter `chapters/` und `drafts/` mechanisch auf lange Gedankenst
   `decisions.md`. Dort steht, was entschieden ist, nicht was offen ist.
 - **Bestätigte Fakten** → `memory/fakten.md`, sobald Oli einen Sachverhalt bestätigt. Gilt gegen
   anderslautendes Modellwissen.
-- **Bildrechte:** ohne ausdrückliche Lizenzzusage gilt ein Bild als Bildzitat mit Quellenangabe.
+- **Bildrechte:** keine Lizenz erfinden, Herkunft nie weglassen. Findet sich keine
+  Lizenzangabe, entscheidet Oli pro Bild, ob es als Bildzitat läuft; bis dahin trägt die
+  Datei den Marker „Rechte ungeklärt". Details in [memory/bilder.md](memory/bilder.md).
 - **Texte nicht committen.** Oli committet redaktionelle Änderungen selbst. Werkzeuge, Skripte und
   Konfiguration dagegen schon.
