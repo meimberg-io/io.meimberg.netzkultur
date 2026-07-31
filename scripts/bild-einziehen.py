@@ -28,8 +28,10 @@ Was sich pro Quelle unterscheidet, ist allein die Recherche:
             maschinenlesbar aus der API.
   demozoo   Demozoo (Demoszene-Datenbank). Liefert Gruppe, Titel und
             Erscheinungsdatum, aber KEINE Lizenz -- die Screenshots sind
-            Einzelbilder geschützter Werke. Die Rechtelage bleibt offen und
-            wird als solche in die Datei geschrieben, nicht geraten.
+            Einzelbilder geschützter Werke. "Bed. f. Rechtenutzung" bleibt
+            dann leer; wer das Werk gemacht hat und wo es herkommt, steht in
+            Copyright, Quelle und Copyright-Info-URL. Mit --zitat wird die
+            Nutzung stattdessen als Bildzitat ausgewiesen.
   manual    Beliebige URL. Es wird nichts recherchiert, alle Rechtefelder
             kommen per Flag.
 
@@ -74,9 +76,13 @@ IPTC_CAPABLE = {".jpg", ".jpeg", ".tif", ".tiff"}
 # Copyright-Zeile nichts zu suchen haben ("Coderman (talk) (Uploads)").
 ARTIST_NOISE = {"uploads", "contribs", "beiträge", "gallery", "galerie"}
 
-# Marker für Quellen ohne Lizenzzusage. Steht sichtbar in Lightroom und ist
-# grepbar, damit vor Veröffentlichung nichts Ungeklärtes durchrutscht.
-RECHTE_OFFEN = "Rechte ungeklärt - vor Veröffentlichung klären"
+# Räumt die Quelle keine Lizenz ein, bleibt das Feld LEER. Es trägt die
+# Bedingungen der Rechtenutzung, also eine Zusage des Rechteinhabers -- eine
+# Notiz an uns selbst gehört dort nicht hinein und liest sich beim Empfänger
+# wie ein Eingeständnis. Was in dem Fall trägt, steht in den anderen Feldern:
+# Copyright nennt den Urheber, Quelle und Copyright-Info-URL verweisen dorthin,
+# wo er zu finden ist. Der Hinweis auf die fehlende Zusage erscheint beim Lauf
+# auf der Konsole, nicht in der Datei.
 
 # Wortlaut für --zitat: Nutzung als Bildzitat, wenn die Quelle keine Lizenz
 # einräumt. Bewusst kein Default, sondern eine bewusste Entscheidung pro Lauf,
@@ -289,10 +295,12 @@ def from_demozoo(source, opts):
     # Demozoo räumt an den Screenshots keine Rechte ein und nennt keinen
     # Uploader -- es sind Einzelbilder eines geschützten Werks. Ohne explizite
     # --lizenz bleibt das offen und wird auch so in die Datei geschrieben.
-    lizenz = opts.get("lizenz") or (BILDZITAT if opts.get("zitat") else RECHTE_OFFEN)
+    lizenz = opts.get("lizenz") or (BILDZITAT if opts.get("zitat") else "")
     warnung = None if (opts.get("lizenz") or opts.get("zitat")) else (
         f"Demozoo nennt keine Lizenz. Rechte am Werk liegen bei {gruppe}. "
-        f"Feld wird als {RECHTE_OFFEN!r} markiert")
+        f"Feld 'Bed. f. Rechtenutzung' bleibt leer, Herkunft steht in "
+        f"Copyright, Quelle und Copyright-Info-URL. Für die Nutzung als "
+        f"Bildzitat: --zitat")
 
     kandidaten = []
     for nr in picks:
@@ -330,7 +338,7 @@ def from_manual(source, opts):
         "download_url": source,
         "copyright": opts.get("copyright") or "",
         "lizenz": opts.get("lizenz") or (BILDZITAT if opts.get("zitat")
-                                         else RECHTE_OFFEN),
+                                         else ""),
         "infourl": opts.get("infourl") or "",
         "quellseite": source,
         "quelle": opts.get("quelle") or source,
@@ -338,7 +346,8 @@ def from_manual(source, opts):
         "fremdbeschreibung": "",
         "vorschlagsname": urllib.parse.unquote(name).lower(),
         "warnungen": [] if (opts.get("lizenz") or opts.get("zitat")) else
-                     [f"keine Recherche möglich, Feld bleibt {RECHTE_OFFEN!r}"],
+                     ["keine Recherche möglich, Feld 'Bed. f. Rechtenutzung' "
+                      "bleibt leer"],
     }]
 
 
