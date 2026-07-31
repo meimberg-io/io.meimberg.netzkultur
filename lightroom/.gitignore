@@ -1,6 +1,12 @@
-/contenthub.lrcat-data/
-/contenthub.lrcat.lock
-/contenthub Helper.lrdata/
-/contenthub Previews.lrdata/
-/contenthub.lrcat-shm
-/contenthub.lrcat-wal
+# Nur der Katalog selbst gehoert ins Repo. Vorschauen, Helper-DBs und die
+# Journaldateien entstehen im Betrieb neu und sind gross.
+# Muster bewusst ohne Katalognamen: ein Umbenennen des Katalogs darf sie nicht
+# aushebeln (genau das ist beim Umbenennen von contenthub -> netzkultur passiert).
+*.lrcat-data/
+*.lrcat.lock
+*.lrcat-shm
+*.lrcat-wal
+*.lrcat-journal
+* Helper.lrdata/
+* Previews.lrdata/
+* Smart Previews.lrdata/
