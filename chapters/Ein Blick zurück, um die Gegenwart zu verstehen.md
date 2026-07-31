@@ -1,0 +1,12 @@
+---
+status: draft
+comment:
+---
+
+Netzkultur muss nicht romantisiert werden. Sie war in ihren Anfängen oft sperrig, exklusiv und im Ton ungeschliffen. Aber sie war der Nährboden für die Welt, in der wir heute leben.
+
+Um zu begreifen, wie aus improvisierten Bastelbuden die Infrastruktur unserer modernen Gesellschaft wurde und warum die Kultur, die damals entstand, unzerstörbar bleibt – selbst wenn Algorithmen und KI-Agenten das Web übernehmen –, müssen wir zurück an den Anfang.
+
+Zurück in den Winter 1978: Zu einem Schneesturm über Chicago, einem Rechner an einer dauerhaft belegten Telefonleitung und der Frage, was passiert, wenn Menschen anfangen, sich nicht mehr nur vor dem Bildschirm zu treffen, sondern _durch_ ihn.
+
+_Zum Autor: Jahrgang 1972, seit den späten Achtzigern online, von den Mailboxen und Akustikkopplern bis zu den Feeds und KI-Agenten von heute. Jahreszahlen und Namen sind nachgesehen._

@@ -1,0 +1,102 @@
+{
+  "version": 3,
+  "projects": {},
+  "selectedDraftVaultPath": "chapters/Index.md",
+  "userScriptFolder": "longform-scripts",
+  "sessionStorage": "data",
+  "sessions": [
+    {
+      "start": "2026-07-31T22:01:12.379Z",
+      "total": 0,
+      "drafts": {
+        "chapters/Index.md": {
+          "total": 0,
+          "scenes": {
+            "Netzkultur – Eine Retrospektive": 0,
+            "Warum diese Reihe existiert": 0,
+            "Was dieses Buch erzählt": 0,
+            "Ein Blick zurück, um die Gegenwart zu verstehen": 0,
+            "Kapitel 1 - Bevor das Internet ein öffentlicher Ort war": 0,
+            "Das Netz in den eigenen vier Wänden": 0,
+            "Die Netze der Universitäten": 0,
+            "Das Usenet": 0,
+            "Die Anfänge der Netzkunst": 0,
+            "Die Hackerkultur": 0,
+            "Wie man miteinander umging": 0,
+            "Die Cyberpunk-Utopie": 0,
+            "Der große Wendepunkt": 0,
+            "Das Erbe wandert ins Web": 0
+          }
+        }
+      }
+    },
+    {
+      "start": "2026-07-31T10:57:18.695Z",
+      "total": 1015,
+      "drafts": {
+        "chapters/Index.md": {
+          "total": 1015,
+          "scenes": {
+            "1": 0,
+            "Netzkultur – Eine Retrospektive": 108,
+            "Warum diese Reihe existiert": 308,
+            "Was dieses Buch erzählt": 469,
+            "Ein Blick zurück, um die Gegenwart zu verstehen": 130
+          }
+        }
+      }
+    }
+  ],
+  "showWordCountInStatusBar": true,
+  "startNewSessionEachDay": true,
+  "sessionGoal": 500,
+  "applyGoalTo": "all",
+  "notifyOnGoal": true,
+  "countDeletionsForGoal": false,
+  "keepSessionCount": 30,
+  "sessionFile": "longform-sessions.json",
+  "numberScenes": true,
+  "sceneTemplate": null,
+  "waitForSync": false,
+  "fallbackWaitEnabled": true,
+  "fallbackWaitTime": 5,
+  "workflows": {
+    "Default Workflow": {
+      "name": "Default Workflow",
+      "description": "A starter workflow. Feel free to edit, rename, or delete it and create your own.",
+      "steps": [
+        {
+          "id": "strip-frontmatter",
+          "optionValues": {}
+        },
+        {
+          "id": "remove-links",
+          "optionValues": {
+            "remove-wikilinks": true,
+            "remove-external-links": true
+          }
+        },
+        {
+          "id": "prepend-title",
+          "optionValues": {
+            "format": "$3{#} $1",
+            "separator": "\n\n"
+          }
+        },
+        {
+          "id": "concatenate-text",
+          "optionValues": {
+            "separator": "\\n\\n---\\n\\n"
+          }
+        },
+        {
+          "id": "write-to-note",
+          "optionValues": {
+            "target": "manuscript.md",
+            "open-after": true
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+---
+status: draft
+comment:
+---
+
+Ein System dieser Jahre gehörte in beide Welten. Es entstand an Universitäten, lief aber über gewöhnliche Telefonleitungen, und es wuchs zum größten Diskussionsraum, den das Netz vor dem Web hatte.
+
+### Das ARPANET des armen Mannes
+
+Tom Truscott und Jim Ellis entwarfen 1979 an der Duke University das **Usenet**; in Betrieb ging es 1980 mit einer Verbindung zur benachbarten University of North Carolina, wo Steve Bellovin die erste Fassung der Software schrieb. Die Gründer selbst nannten es das _„ARPANET des armen Mannes“_, denn es kam ohne Beziehungen und ohne Standleitung aus und gab Nachrichten über gewöhnliche Telefonverbindungen weiter.
+
+Das Usenet hatte keinen zentralen Server, und es stand keine Firma dahinter. Jeder Knotenrechner hielt die Gruppen bereit, die sein Betreiber haben wollte, und schob sie zu den benachbarten Rechnern weiter. An einer einzelnen Stelle abschalten ließ sich das nicht. Zensurfrei war es dennoch nicht: Welche Hierarchien ein Server überhaupt bezog, entschied dessen Betreiber, und seit 1983 konnte ein Autor oder der Verwalter seines Rechners einen Beitrag mit einer Cancel-Nachricht nachträglich aus dem Umlauf ziehen.
+
+### Die Kartografie der Subkulturen
+
+Diese Hierarchien waren nicht nur eine Ordnerstruktur, sondern die Landkarte, auf der die digitale Welt sich selbst eintrug. Wo man sich bewegte, das war man auch:
+
+- **`comp.*` (Computer):** Die Werkstatt. Dort saß die technische Aristokratie des Netzes, der Ton war sachlich und trocken, und wer eine Frage stellte, bekam eine Antwort oder eine Rüge.
+
+- **`sci.*` (Wissenschaft):** Der Campus. Mathematiker, Physiker und Linguisten debattierten mit der Gründlichkeit einer Fakultätssitzung.
+
+- **`rec.*` (Freizeit):** Der Zufluchtsort. Nischenhobbys, Bastelprojekte und Spiele fanden ein Publikum, das im richtigen Leben fehlte.
+
+- **`soc.*` (Gesellschaft):** Die Nachbarschaft. Über Herkunft, Religion und die Verhältnisse in anderen Ländern redeten Leute, die auf verschiedenen Kontinenten saßen.
+
+- **`talk.*` (Debatte):** Die Arena. Politische und philosophische Grundsatzschlachten zogen sich dort über Monate.
+
+- **`alt.*` (Alternative):** Das Niemandsland. Narrenfreiheit, von `alt.drugs` bis zu Fankulten wie `alt.fan.pratchett`.
+
+
+Das Niemandsland kam als letztes hinzu, 1987, kurz nach einer großen Umbenennung, aus der die übrigen Hierarchien hervorgegangen waren. Über neue Gruppen entschieden damals faktisch die Betreiber der wichtigsten Verteilrechner, und als diese mehrere Anträge ablehnten, richteten Brian Reid, John Gilmore und Gordon Moffett eine Hierarchie daneben ein; die Ferngespräche, über die sie verteilt wurde, bezahlte Gilmore aus eigener Tasche. Reid hat es später so begründet: „We designed ‚alt‘ as an escape hatch from the restraints imposed on the other newsgroups.“
+
+Man war Bürger von `alt.folklore.urban`, Stammgast in `rec.arts.sf-lovers` oder Debattant in `talk.origins`. Für Neulinge galt überall derselbe Rat, der in einem Leitfaden für neue Nutzer stand und den jemand Monat für Monat neu ins Netz stellte: ein paar Wochen mitlesen, verstehen, wie der Raum funktioniert, und erst dann den ersten eigenen Beitrag abschicken.
+
+### Programme, Quelltexte und eine Filmdatenbank
+
+Über diese Gruppen liefen nicht nur Gespräche, sondern auch Programme. Weil das Usenet reinen Text übertrug, verpackte man Binärdateien in Buchstaben und Zahlen und setzte sie beim Empfänger wieder zusammen. Quelltexte verschickte man als `.shar`-Datei, ein Textdokument, das gleichzeitig ein ausführbares Kommandoskript war: herunterladen, starten, und es legte sich selbst als fertiges Verzeichnis mit allen enthaltenen Dateien an. Ein mehrtausendzeiliges Skript von einem Fremden auszuführen, war in einer Gemeinschaft von einigen Zehntausend eine vertretbare Wette.
+
+Aus einer dieser Gruppen wurde eine der größten Datenbanken des Webs. In `rec.arts.movies` pflegten Filmbegeisterte seit Ende der Achtziger Listen von Schauspielern, Regisseuren und Filmen und posteten sie regelmäßig neu. Col Needham, Ingenieur bei Hewlett-Packard in Bristol, hatte privat schon jahrelang eine eigene Filmdatenbank geführt. Am 17. Oktober 1990 veröffentlichte er eine Sammlung von Skripten, mit denen man die Listen der Gruppe durchsuchen konnte, zu diesem Zeitpunkt fast zehntausend Filme und Serien. Die Sache hieß erst schlicht die Filmdatenbank von `rec.arts.movies` und zog 1993 aus dem Usenet auf eine eigene Website um. Aus ihr wurde die **Internet Movie Database**, kurz IMDb.
+
+### Wie eine Newsgroup entstand
+
+Die Kultur eines Raumes hing nicht zuletzt davon ab, wer das Sagen hatte. Während in den meisten Gruppen jeder Beitrag sofort global verteilt wurde, richteten die Betreiber für anspruchsvolle Themen **moderierte Newsgroups** ein.
+
+Wer hier einen Beitrag verfasste, schickte ihn nicht direkt ins Netz; die Software leitete ihn unbemerkt als Mail an den Moderator der Gruppe um. Der prüfte den Text an der strikten Charta der Newsgroup, und erst wenn er einen `Approved`-Vermerk setzte, ging der Beitrag für alle sichtbar ins Netz. Den einen war das die Rettung vor Werbung und eskalierendem Streit und die Bedingung dafür, das Fachniveau in `comp.*` oder `sci.*` zu halten. Den anderen, den libertären Netzpionieren, war es Zensur.
+
+Die Zuständigkeit für neue Gruppen wanderte im Laufe der Jahre. Bis 1987 lag sie bei einem kleinen Kreis von Administratoren, danach bekam die Gründung ein förmliches Verfahren: einen Antrag, eine öffentliche Abstimmung (_Call for Votes_) und, bei moderierten Gruppen, eine Verhandlung darüber, wer moderiert. Seine ausgereifte Form mit mehrwöchiger Abstimmungsfrist hatte es erst 1993.
+
+Abgestimmt hat, wer eine E-Mail-Adresse hatte. Weil ein Antrag eine Mindestquote erreichen musste, wog eine Gegenstimme mehr als eine Zustimmung, und daraus wurde eine eigene Fraktion: Leute, die fanden, es gebe schon zu viele Gruppen, und deshalb gegen jeden neuen Antrag stimmten, unabhängig vom Thema. Man führte Wahlkampf für eine Newsgroup, mit Werbebeiträgen in verwandten Gruppen, und stritt wochenlang über die Frage, ob die Welt eine Gruppe über eine bestimmte Boyband brauchte.
+
+### Die deutsche Ecke des Usenets
+
+Das deutschsprachige Usenet wuchs langsamer und unabhängig von den amerikanischen Hierarchien. Es lief zunächst in `sub.*` und `dnet.*`, die erst im Januar 1992 zu `de.*` zusammengelegt wurden. Dort kam die deutsche Netzszene rasch in den Ruf, besonders gründliche, kultivierte und endlos lange Grundsatzdebatten zu führen. Ging es um technische Standards, um den richtigen Konjunktiv oder um die Frage, wie man korrekt zitiert, wurde im `de.*`-Netz um jedes Wort gerungen.
