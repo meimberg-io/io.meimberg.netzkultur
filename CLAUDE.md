@@ -51,7 +51,11 @@ Longform-Oberfläche nicht sehen kann:
 1. `strip-frontmatter` — deshalb landet `status`/`comment` nie im Manuskript
 2. `remove-links` — entfernt Wiki- **und** externe Links, also **auch alle Bilder**
 3. `prepend-title` mit Format `$3{#} $1` — Überschrift aus Dateiname und Einrückungstiefe
-4. „Ordnungspräfix entfernen" (eigener Step) — muss **nach** `prepend-title` stehen
+4. „Ordnungspräfix entfernen" (eigener Step) — muss **nach** `prepend-title` stehen, sonst
+   greift er ins Leere: vorher existiert die Überschrift noch gar nicht. Bei Hauptkapiteln
+   setzt er an die Stelle des Präfixes die Longform-Nummer der Szene (Option „Nummer bei
+   Hauptkapiteln", `$2`). Das kann `prepend-title` nicht selbst, weil `$2` dort alle Ebenen
+   träfe. Achtung: Longform zählt den Vorspann als erste Szene mit.
 5. `concatenate-text`, Trenner `\n\n---\n\n`
 6. `write-to-note` nach `manuscript.md`
 

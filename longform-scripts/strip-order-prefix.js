@@ -9,6 +9,11 @@
  *
  * Reihenfolge im Workflow: MUSS nach "Prepend Title" laufen.
  *
+ * Bei Hauptkapiteln (oberste Ebene) setzt der Step an die Stelle des entfernten
+ * Praefixes die Nummer, die Longform der Szene selbst gegeben hat. Das ist
+ * dieselbe Nummer, die "Prepend Title" ueber $2 einsetzen wuerde -- nur laesst
+ * sich $2 dort nicht auf eine Ebene beschraenken, es traefe auch die Abschnitte.
+ *
  * Zusätzlich prüft der Step, ob die Präfixe in der Reihenfolge des Projekts
  * aufsteigend sind, und meldet Abweichungen. Das ist der Preis der Redundanz:
  * die Nummern im Dateinamen sind eine Behauptung, die Szenenreihenfolge in
@@ -16,6 +21,7 @@
  */
 
 const DEFAULT_PATTERN = "^(#{1,6}\\s+)\\d+(?:\\.\\d+)*\\s*[-–—]\\s*";
+const DEFAULT_CHAPTER_FORMAT = "$2 ";
 
 /** Liest das fuehrende Nummernpraefix eines Namens als Tupel, z. B. "1.3 - X" -> [1, 3]. */
 function orderTuple(name) {
@@ -87,6 +93,14 @@ module.exports = {
         default: DEFAULT_PATTERN,
       },
       {
+        id: "chapter-format",
+        name: "Nummer bei Hauptkapiteln",
+        description:
+          "Ersetzt bei Szenen der obersten Ebene das entfernte Präfix. $2 wird zur Nummer, die Longform der Szene gegeben hat. Leer lassen, um auch dort nur zu entfernen.",
+        type: "Text",
+        default: DEFAULT_CHAPTER_FORMAT,
+      },
+      {
         id: "check-order",
         name: "Reihenfolge prüfen",
         description:
@@ -107,17 +121,41 @@ module.exports = {
       throw new Error(`Ungültiger regulärer Ausdruck "${pattern}": ${e.message}`);
     }
 
-    const strip = (contents) =>
-      contents.replace(expression, (...groups) => groups[1] || "");
+    /*
+     * "insert" landet nur an der ersten Fundstelle: das ist die Ueberschrift,
+     * die "Prepend Title" der Szene vorangestellt hat. Weitere nummerierte
+     * Ueberschriften im Text bleiben unnummeriert, die gehoeren dem Autor.
+     */
+    const strip = (contents, insert) => {
+      let first = true;
+      return contents.replace(expression, (...groups) => {
+        const prefix = groups[1] || "";
+        if (first) {
+          first = false;
+          return prefix + insert;
+        }
+        return prefix;
+      });
+    };
 
     if (context.kind === "Manuscript") {
-      return Object.assign({}, input, { contents: strip(input.contents) });
+      return Object.assign({}, input, { contents: strip(input.contents, "") });
     }
 
     if (context.optionValues["check-order"] === true) {
       checkOrder(input);
     }
 
-    return input.map((scene) => Object.assign({}, scene, { contents: strip(scene.contents) }));
+    const chapterFormat =
+      context.optionValues["chapter-format"] === undefined
+        ? DEFAULT_CHAPTER_FORMAT
+        : String(context.optionValues["chapter-format"]);
+
+    return input.map((scene) => {
+      const isChapter = (scene.indentationLevel || 0) === 0;
+      const numbering = Array.isArray(scene.numbering) ? scene.numbering.join(".") : "";
+      const insert = isChapter && chapterFormat ? chapterFormat.replace("$2", numbering) : "";
+      return Object.assign({}, scene, { contents: strip(scene.contents, insert) });
+    });
   },
 };
