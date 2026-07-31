@@ -10,9 +10,12 @@
  * Reihenfolge im Workflow: MUSS nach "Prepend Title" laufen.
  *
  * Bei Hauptkapiteln (oberste Ebene) setzt der Step an die Stelle des entfernten
- * Praefixes die Nummer, die Longform der Szene selbst gegeben hat. Das ist
- * dieselbe Nummer, die "Prepend Title" ueber $2 einsetzen wuerde -- nur laesst
- * sich $2 dort nicht auf eine Ebene beschraenken, es traefe auch die Abschnitte.
+ * Praefixes eine laufende Kapitelnummer. "Prepend Title" kann das nicht selbst:
+ * sein $2 traefe alle Ebenen, auch die Abschnitte.
+ *
+ * Die erste Szene der obersten Ebene ist der Vorspann und bekommt keine Nummer;
+ * gezaehlt wird ab dem Kapitel danach, beginnend bei 1. Longforms eigene
+ * Numerierung taugt dafuer nicht, weil sie den Vorspann als 1 mitzaehlt.
  *
  * Zusätzlich prüft der Step, ob die Präfixe in der Reihenfolge des Projekts
  * aufsteigend sind, und meldet Abweichungen. Das ist der Preis der Redundanz:
@@ -96,7 +99,7 @@ module.exports = {
         id: "chapter-format",
         name: "Nummer bei Hauptkapiteln",
         description:
-          "Ersetzt bei Szenen der obersten Ebene das entfernte Präfix. $2 wird zur Nummer, die Longform der Szene gegeben hat. Leer lassen, um auch dort nur zu entfernen.",
+          "Ersetzt bei Szenen der obersten Ebene das entfernte Präfix. $2 wird zur laufenden Kapitelnummer; die erste Szene ist der Vorspann und bleibt ohne Nummer. Leer lassen, um auch dort nur zu entfernen.",
         type: "Text",
         default: DEFAULT_CHAPTER_FORMAT,
       },
@@ -151,10 +154,18 @@ module.exports = {
         ? DEFAULT_CHAPTER_FORMAT
         : String(context.optionValues["chapter-format"]);
 
+    let chapter = 0;
+
     return input.map((scene) => {
       const isChapter = (scene.indentationLevel || 0) === 0;
-      const numbering = Array.isArray(scene.numbering) ? scene.numbering.join(".") : "";
-      const insert = isChapter && chapterFormat ? chapterFormat.replace("$2", numbering) : "";
+      let insert = "";
+      if (isChapter) {
+        chapter += 1;
+        // Kapitel 1 ist der Vorspann und bleibt unnummeriert.
+        if (chapter > 1 && chapterFormat) {
+          insert = chapterFormat.replace("$2", String(chapter - 1));
+        }
+      }
       return Object.assign({}, scene, { contents: strip(scene.contents, insert) });
     });
   },

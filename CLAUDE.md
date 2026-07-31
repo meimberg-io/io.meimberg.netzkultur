@@ -53,9 +53,11 @@ Longform-Oberfläche nicht sehen kann:
 3. `prepend-title` mit Format `$3{#} $1` — Überschrift aus Dateiname und Einrückungstiefe
 4. „Ordnungspräfix entfernen" (eigener Step) — muss **nach** `prepend-title` stehen, sonst
    greift er ins Leere: vorher existiert die Überschrift noch gar nicht. Bei Hauptkapiteln
-   setzt er an die Stelle des Präfixes die Longform-Nummer der Szene (Option „Nummer bei
-   Hauptkapiteln", `$2`). Das kann `prepend-title` nicht selbst, weil `$2` dort alle Ebenen
-   träfe. Achtung: Longform zählt den Vorspann als erste Szene mit.
+   setzt er an die Stelle des Präfixes eine laufende Kapitelnummer (Option „Nummer bei
+   Hauptkapiteln", `$2`); der Vorspann als erste Szene bleibt ohne. Das kann `prepend-title`
+   nicht selbst, weil sein `$2` alle Ebenen träfe und den Vorspann als 1 zählt. Die Nummer
+   wird gezählt, nicht aus dem Dateinamen gelesen — fehlt ein Kapitel im Index, läuft sie
+   gegen das Ordnungspräfix.
 5. `concatenate-text`, Trenner `\n\n---\n\n`
 6. `write-to-note` nach `manuscript.md`
 
