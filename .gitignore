@@ -13,3 +13,7 @@
 # Obsidian: Arbeitsplatz-Zustand, pro Maschine verschieden
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+
+# Python
+__pycache__/
+*.pyc
