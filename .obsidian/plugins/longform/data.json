@@ -7,25 +7,25 @@
   "sessions": [
     {
       "start": "2026-07-31T22:01:12.379Z",
-      "total": 7894,
+      "total": 8239,
       "drafts": {
         "chapters/Index.md": {
-          "total": 7894,
+          "total": 8239,
           "scenes": {
             "00 - Netzkultur – Eine Retrospektive": 108,
             "00.01 - Warum diese Reihe existiert": 291,
             "00.02 - Was dieses Buch erzählt": 331,
-            "00.03- Ein Blick zurück, um die Gegenwart zu verstehen": 130,
+            "00.03 - Ein Blick zurück, um die Gegenwart zu verstehen": 130,
             "01 - Kapitel 1 - Bevor das Internet ein öffentlicher Ort war": 319,
             "01.01 - Das Netz in den eigenen vier Wänden": 1079,
             "01.02 - Die Netze der Universitäten": 758,
             "01.03 - Das Usenet": 956,
-            "01.04 - Die Anfänge der Netzkunst": 1174,
+            "01.04 - Die Anfänge der Netzkunst": 1519,
             "01.05 - Die Hackerkultur": 1325,
             "01.06 - Wie man miteinander umging": 669,
-            "01.06 - Die Cyberpunk-Utopie": 161,
-            "01.07 - Der große Wendepunkt": 482,
-            "01.08 - Das Erbe wandert ins Web": 111,
+            "01.07 - Die Cyberpunk-Utopie": 161,
+            "01.08 - Der große Wendepunkt": 482,
+            "01.09 - Das Erbe wandert ins Web": 111,
             "02 - Kapitel 2 - Die ersten Jahre des öffentlichen Internets": 0,
             "02.01 - Ich bin drin": 0,
             "02.02 - Die anarchischen Gründerjahre": 0,
@@ -146,6 +146,13 @@
           "optionValues": {
             "format": "$3{#} $1",
             "separator": "\n\n"
+          }
+        },
+        {
+          "id": "longform-scripts/strip-order-prefix.js",
+          "optionValues": {
+            "pattern": "^(#{1,6}\\s+)\\d+(?:\\.\\d+)*\\s*[-–—]\\s*",
+            "check-order": true
           }
         },
         {
