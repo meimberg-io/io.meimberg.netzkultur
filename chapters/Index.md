@@ -5,20 +5,85 @@ longform:
   workflow: Default Workflow
   sceneFolder: /
   scenes:
-    - Netzkultur – Eine Retrospektive
-    - - Warum diese Reihe existiert
-      - Was dieses Buch erzählt
-      - Ein Blick zurück, um die Gegenwart zu verstehen
-    - Kapitel 1 - Bevor das Internet ein öffentlicher Ort war
-    - - Das Netz in den eigenen vier Wänden
-      - Die Netze der Universitäten
-      - Das Usenet
-      - Die Anfänge der Netzkunst
-      - Die Hackerkultur
-      - Wie man miteinander umging
-      - Die Cyberpunk-Utopie
-      - Der große Wendepunkt
-      - Das Erbe wandert ins Web
+    - 00 - Netzkultur – Eine Retrospektive
+    - - 00.01 - Warum diese Reihe existiert
+      - 00.02 - Was dieses Buch erzählt
+      - 00.03- Ein Blick zurück, um die Gegenwart zu verstehen
+    - 01 - Kapitel 1 - Bevor das Internet ein öffentlicher Ort war
+    - - 01.01 - Das Netz in den eigenen vier Wänden
+      - 01.02 - Die Netze der Universitäten
+      - 01.03 - Das Usenet
+      - 01.04 - Die Anfänge der Netzkunst
+      - 01.05 - Die Hackerkultur
+      - 01.06 - Wie man miteinander umging
+      - 01.06 - Die Cyberpunk-Utopie
+      - 01.07 - Der große Wendepunkt
+      - 01.08 - Das Erbe wandert ins Web
+    - 02 - Kapitel 2 - Die ersten Jahre des öffentlichen Internets
+    - - 02.01 - Ich bin drin
+      - 02.02 - Die anarchischen Gründerjahre
+      - 02.03 - Das Netz wird politisch
+      - 02.04 - Die ersten Inhalte - Do It Yourself
+      - 02.05 - Miteinander reden - Der Ton des Netzes
+      - 02.06 - E-Mail für alle
+      - 02.07 - Die Musik wird digital
+      - 02.08 - Vernetztes Spielen und LAN-Partys
+      - 02.09 - Die ersten Geschäfte
+      - 02.10 - Das Jahr-2000-Problem
+      - 02.11 - Der Dotcom-Boom
+      - 02.12 - Noch war das Netz ein Ort, den man besuchte
+    - 03 - Kapitel 3 - Das Internet wird zum Lebensraum
+    - - 03.01 - Der Goldrausch der Garagen-Ritter
+      - 03.02 - Die Piraten-Kultur und die Buffer Underruns
+      - 03.03 - Schock-Seiten, BonziBuddy und die Ästhetik des Absurden
+      - 03.04 - Die Wohnzimmer des Netzes
+      - 03.05 - Zweite Leben, Clans und die ersten Profile
+      - 03.06 - Das Netz vor dem Mobilzeitalter
+    - 04 - Kapitel 4 - Die Sprache des Netzes
+    - - 04.01 - Der Tonfall bekommt ein Gesicht
+      - 04.02 - Schreiben mit Körper - Die Regieanweisung im Text
+      - 04.03 - TL;DR - Die Kultur der drei Buchstaben
+      - 04.04 - Codes, Ciphers und die Ästhetik des Dazugehörens
+      - 04.05 - Reaction GIFs - Das visuelle Satzzeichen
+      - 04.06 - Die Mechanik des Missverständnisses
+      - 04.07 - I bims - Die deutsche Sprachparodie
+      - 04.08 - Der Slang von heute
+      - 04.09 - Aus Zeichen wird Kultur
+    - 05 - Kapitel 5 - Memes und andere Phänomene
+    - - 05.01 - Die Ära der reinen Weitergabe - Der Nutzer als Bote
+      - 05.02 - Die Orte, an denen es gemacht wurde - Die digitalen Werkstätten
+      - 05.03 - Die Schulhof-Anarchie - Fandubs, Raab, Hitler und Ausraster
+      - 05.04 - Der Zufallsstar und das rechtliche Erwachen
+      - 05.05 - Ein Klick, und alle sahen dasselbe - Das Zeitalter von Flash & YouTube
+      - 05.06 - Reingelegt - Von Duckroll zu Rickroll
+      - 05.07 - Digitale Schauerwelten - Der Mythos der Creepypasta
+      - 05.08 - Die goldenen 2010er - YouTube-Wellen, Vine und der kollektive Wahnsinn
+      - 05.09 - Die Werkzeug-Revolution - Generatoren, GIFs und die Impact-Schriftart
+      - 05.10 - Die Ära der Gegenkultur & Postironie
+      - 05.11 - Die Brainrot-Revolution - Das Meme verliert seinen Inhalt
+      - 05.12 - Der Feed kennt keine Ahnenforschung
+    - 06 - Kapitel 6 - Die große Plattformisierung
+    - - 06.01 - Der große Traum vom Parallel-Universum - Second Life
+      - 06.02 - Facebook - Die Diktatur des aufgeräumten Blaus
+      - 06.03 - Der Newsfeed & der Like-Button - Die Erfindung der digitalen Währung
+      - 06.04 - Die Pinnwand, das markierte Foto und FarmVille
+      - 06.05 - Das Geschäft mit den Daten - Wenn du nicht zahlst, bist du das Produkt
+      - 06.06 - StudiVZ und die deutschen Klone
+      - 06.07 - Die Spezialisierung - Für jedes Bedürfnis ein eigenes Dorf
+      - 06.08 - Der Titanen-Krieg - Das gigantische Scheitern von Google+
+      - 06.09 - Twitter - Das Hauptquartier der Weltöffentlichkeit
+      - 06.10 - Das Netz wandert in die Hosentasche
+      - 06.11 - Die Verwandlung aller Medien - Von Spotify zu Reddit, Twitch und dem Plattform-Kapitalismus
+      - 06.12 - Meta - Vom blauen Facebook zum Alles-Umspannenden Imperium
+      - 06.13 - Die Gegenbewegung - Blockchain, das Fediverse und der Reflex zur Freiheit
+      - 06.14 - Ausblick - Was ist eine „Plattform“ heute eigentlich?
+      - 06.15 - Der Blick nach vorn - Das X-Imperium und der Traum von der „Everything App“
+      - 06.16 - Fazit - Vom dezentralen Abenteuer zur zentralistischen Infrastruktur
+    - 07 - Kapitel 7 - Was vom alten Netz geblieben ist
+    - - 07.01 - Die Rettung der Erinnerung
+      - 07.02 - Der Rückzug in die selbstverwalteten Räume
+      - 07.03 - Die Maschine spricht mit der Maschine - AI Slop und das „Tote Internet“
+      - 07.04 - Die Entkopplung - Was bleibt, wenn die Agenten das Web übernehmen?
   ignoredFiles:
     - manuscript
     - "1"
