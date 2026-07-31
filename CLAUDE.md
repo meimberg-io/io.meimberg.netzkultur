@@ -13,13 +13,14 @@
 | Verzeichnis | Inhalt |
 |---|---|
 | `chapters/` | Das Longform-Projekt. `Index.md` plus eine Datei je Abschnitt, `manuscript.md` ist das Kompilat |
-| `drafts/kapitel/` | Die noch nicht in Szenen geschnittenen Kapitel `01.md` bis `07.md` |
+| `drafts/kapitel/` | Die Ursprungsfassungen `01.md` bis `07.md`, aus denen die Szenen geschnitten wurden. Vollständig überführt, können weg, sobald das Ergebnis geprüft ist. **Nicht** weiterschreiben, die Wahrheit liegt in `chapters/` |
 | `drafts/` | Kürzere Texte und Snippets rund um das Buch |
 | `sources/` | Quellen-Snapshots, 1:1-Kopien. Herkunft je Datei in `sources/sources.md` |
 | `assets/` | Bilder. Metadaten werden über den Lightroom-Katalog in `lightroom/` gepflegt |
 | `notes/` | `decisions.md` (getroffene Entscheidungen), `issues.md` und `<NN>_issues.md` (offene Punkte), `kandidaten.md` (Stoff, der noch nicht drin ist) |
 | `memory/` | `fakten.md` (bestätigte Fakten), `ton.md` (Formulierungsfallen), `quellen.md` (Bewertung der Quellen), `redaktions-workflow.md`, `oli.md` |
-| `longform-scripts/` | Eigene Longform-Compile-Steps |
+| `longform-scripts/` | Eigene Longform-Compile-Steps, die das Plugin selbst lädt |
+| `scripts/` | Repo-Werkzeuge: Prüftexte bauen, Bilder mit Lightroom-Metadaten einziehen |
 
 ## Wie Longform hier funktioniert
 
@@ -41,7 +42,36 @@ nie im Manuskript.
 sortiert und auch ausserhalb von Obsidian navigierbar sind. Der Step
 `longform-scripts/strip-order-prefix.js` schneidet sie beim Kompilieren aus der Überschrift und
 meldet, wenn die Nummern nicht zur Projektreihenfolge passen. Zweistellig nummerieren, sonst
-sortiert das Dateisystem `1.10` vor `1.2`.
+sortiert das Dateisystem `1.10` vor `1.2`. Gültiges Schema: Kapitel `NN - Titel`, Abschnitt
+`NN.MM - Titel`.
+
+**Der Compile-Workflow** („Default Workflow") in dieser Reihenfolge, weil ein Agent die
+Longform-Oberfläche nicht sehen kann:
+
+1. `strip-frontmatter` — deshalb landet `status`/`comment` nie im Manuskript
+2. `remove-links` — entfernt Wiki- **und** externe Links, also **auch alle Bilder**
+3. `prepend-title` mit Format `$3{#} $1` — Überschrift aus Dateiname und Einrückungstiefe
+4. „Ordnungspräfix entfernen" (eigener Step) — muss **nach** `prepend-title` stehen
+5. `concatenate-text`, Trenner `\n\n---\n\n`
+6. `write-to-note` nach `manuscript.md`
+
+Schritt 2 ist eine Falle: das Kompilat enthält keine Bilder. Solange das Manuskript nur zum
+Gegenlesen dient, ist das in Ordnung; für eine Ausgabe mit Bildern müsste `remove-wikilinks`
+aus.
+
+## Werkzeuge
+
+**Prüftext bauen:** `scripts/kapitel-kompilieren.py` setzt Szenen anhand von `Index.md` zusammen
+und liefert genau die drei Zuschnitte der Prüfebenen:
+
+```
+scripts/kapitel-kompilieren.py --kapitel 3     # ein Kapitel, für kohaerenz und plausibilitaet
+scripts/kapitel-kompilieren.py --naht 1        # Ende Kapitel 1 + Anfang Kapitel 2
+scripts/kapitel-kompilieren.py --abriss        # Überschriftenbaum, je zwei Sätze
+```
+
+Ohne Argument kommt das ganze Buch. Longform selbst kann nur den kompletten Draft kompilieren,
+deshalb dieses Skript.
 
 ## Prüfen
 
