@@ -13,6 +13,16 @@ steht. Claude pflegt diese Liste selbst und sofort, nicht auf Nachfrage.
 - **Kapitelnummerierung:** Die Einleitung führt „Die große Plattformisierung" als Nummer 4, das
   Kapitel selbst heißt 6, weil es die beiden Querkapitel mitzählt. Titel und Zeiträume der Liste sind
   inzwischen an die Kapitel angeglichen, die Zählung nicht.
+- **Sammel-Kapitel oder Epochen-Kapitel?** `memory/digest.md` hält als Entscheidung vom 2026-07-28
+  fest, dass Memes und Subkultur in das Kapitel ihrer Zeit gehören und *nicht* in ein separates
+  Sammel-Kapitel, das die Epochen aushöhlt; namentlich sollten Dancing Baby und Hamster Dance im
+  Web-Kapitel stehen. Der heutige Aufbau macht das Gegenteil: „Die Sprache des Netzes" und „Memes und
+  andere Phänomene" sind genau solche Sammel-Kapitel, `decisions.md` führt die Querschnittskapitel
+  seit dem 2026-07-31 als gesetzte Konvention, und Dancing Baby, Hamster Dance, Bert, Mahir, JenniCam
+  und All Your Base stehen alle im Meme-Kapitel. Vermutlich hat die spätere Entscheidung die frühere
+  gekippt und der Digest wurde nicht nachgezogen — dann reicht es, den Absatz dort zu streichen. Wenn
+  die alte Regel dagegen weiter gilt, ist das ein Umbau von zwei Kapiteln. Der Absatz im Digest ist
+  bis dahin als offen markiert.
 
 ## Zu erledigen (Claude)
 

@@ -1,7 +1,6 @@
 ---
-name: kohaerenz
+name: copyedit-coherence
 description: Prüft Aufbau, Anschlüsse, Rückbezüge, Redundanz und Widersprüche über Distanz. Nutzen, wenn ein Kapitel steht, und am Ende über das ganze Werk. Nur Befund, kein Schreiben.
-tools: Read, Grep, Glob
 ---
 
 Du prüfst, ob der Text als Ganzes trägt. Einzelne Sätze sind nicht dein Gegenstand, außer sie

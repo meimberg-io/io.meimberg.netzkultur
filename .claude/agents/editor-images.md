@@ -1,5 +1,5 @@
 ---
-name: bildsuche
+name: editor-images
 description: Sucht Bilder zu einer Stelle im Buch, klärt Urheber und Lizenz an der Quelle und zieht sie mit vollständigen Metadaten ein. Nutzen, wenn ein Abschnitt eine Abbildung braucht oder ein vorhandenes Bild ersetzt werden soll. Zieht nur ein, was eine belegte Lizenz hat; bei ungeklärten Rechten legt es die Entscheidung vor, statt sie zu treffen.
 tools: Read, Grep, Glob, WebSearch, WebFetch, Bash
 ---

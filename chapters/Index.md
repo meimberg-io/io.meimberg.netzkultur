@@ -8,18 +8,18 @@ longform:
     - 00 - Netzkultur – Eine Retrospektive
     - - 00.01 - Warum diese Reihe existiert
       - 00.02 - Was dieses Buch erzählt
-      - 00.03- Ein Blick zurück, um die Gegenwart zu verstehen
-    - 01 - Kapitel 1 - Bevor das Internet ein öffentlicher Ort war
-    - - 01.01 - Das Netz in den eigenen vier Wänden
+      - 00.03 - Ein Blick zurück, um die Gegenwart zu verstehen
+    - 01 - Bevor das Internet ein öffentlicher Ort war
+    - - 01.01 - Über Mailboxen und telefonierende Computer
       - 01.02 - Die Netze der Universitäten
       - 01.03 - Das Usenet
       - 01.04 - Die Anfänge der Netzkunst
       - 01.05 - Die Hackerkultur
       - 01.06 - Wie man miteinander umging
-      - 01.06 - Die Cyberpunk-Utopie
-      - 01.07 - Der große Wendepunkt
-      - 01.08 - Das Erbe wandert ins Web
-    - 02 - Kapitel 2 - Die ersten Jahre des öffentlichen Internets
+      - 01.07 - Die Cyberpunk-Utopie
+      - 01.08 - Der große Wendepunkt
+      - 01.09 - Das Erbe wandert ins Web
+    - 02 - Die ersten Jahre des öffentlichen Internets
     - - 02.01 - Ich bin drin
       - 02.02 - Die anarchischen Gründerjahre
       - 02.03 - Das Netz wird politisch
@@ -32,14 +32,14 @@ longform:
       - 02.10 - Das Jahr-2000-Problem
       - 02.11 - Der Dotcom-Boom
       - 02.12 - Noch war das Netz ein Ort, den man besuchte
-    - 03 - Kapitel 3 - Das Internet wird zum Lebensraum
+    - 03 - Das Internet wird zum Lebensraum
     - - 03.01 - Der Goldrausch der Garagen-Ritter
       - 03.02 - Die Piraten-Kultur und die Buffer Underruns
       - 03.03 - Schock-Seiten, BonziBuddy und die Ästhetik des Absurden
       - 03.04 - Die Wohnzimmer des Netzes
       - 03.05 - Zweite Leben, Clans und die ersten Profile
       - 03.06 - Das Netz vor dem Mobilzeitalter
-    - 04 - Kapitel 4 - Die Sprache des Netzes
+    - 04 - Die Sprache des Netzes
     - - 04.01 - Der Tonfall bekommt ein Gesicht
       - 04.02 - Schreiben mit Körper - Die Regieanweisung im Text
       - 04.03 - TL;DR - Die Kultur der drei Buchstaben
@@ -49,7 +49,7 @@ longform:
       - 04.07 - I bims - Die deutsche Sprachparodie
       - 04.08 - Der Slang von heute
       - 04.09 - Aus Zeichen wird Kultur
-    - 05 - Kapitel 5 - Memes und andere Phänomene
+    - 05 - Memes und andere Phänomene
     - - 05.01 - Die Ära der reinen Weitergabe - Der Nutzer als Bote
       - 05.02 - Die Orte, an denen es gemacht wurde - Die digitalen Werkstätten
       - 05.03 - Die Schulhof-Anarchie - Fandubs, Raab, Hitler und Ausraster
@@ -62,7 +62,7 @@ longform:
       - 05.10 - Die Ära der Gegenkultur & Postironie
       - 05.11 - Die Brainrot-Revolution - Das Meme verliert seinen Inhalt
       - 05.12 - Der Feed kennt keine Ahnenforschung
-    - 06 - Kapitel 6 - Die große Plattformisierung
+    - 06 - Die große Plattformisierung
     - - 06.01 - Der große Traum vom Parallel-Universum - Second Life
       - 06.02 - Facebook - Die Diktatur des aufgeräumten Blaus
       - 06.03 - Der Newsfeed & der Like-Button - Die Erfindung der digitalen Währung
@@ -79,7 +79,7 @@ longform:
       - 06.14 - Ausblick - Was ist eine „Plattform“ heute eigentlich?
       - 06.15 - Der Blick nach vorn - Das X-Imperium und der Traum von der „Everything App“
       - 06.16 - Fazit - Vom dezentralen Abenteuer zur zentralistischen Infrastruktur
-    - 07 - Kapitel 7 - Was vom alten Netz geblieben ist
+    - 07 - Was vom alten Netz geblieben ist
     - - 07.01 - Die Rettung der Erinnerung
       - 07.02 - Der Rückzug in die selbstverwalteten Räume
       - 07.03 - Die Maschine spricht mit der Maschine - AI Slop und das „Tote Internet“

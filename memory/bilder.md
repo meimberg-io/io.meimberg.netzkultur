@@ -47,4 +47,4 @@ Urheber, Lizenz und Lizenz-URL sind **immer recherchiert**, nie geschätzt. Wiki
 liefert beides maschinenlesbar über die API, Demozoo liefert Gruppe, Titel und Datum, aber keine
 Lizenz.
 
-Für die Suche nach Bildern samt Lizenzstatus gibt es den Agenten `bildsuche`.
+Für die Suche nach Bildern samt Lizenzstatus gibt es den Agenten `editor-images`.

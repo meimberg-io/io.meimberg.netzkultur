@@ -6,6 +6,11 @@
 > Hier stehen **nachgesehene** Jahreszahlen, Namen und Ereignisse, damit sie beim Schreiben der
 > Kapitel nicht jedes Mal neu recherchiert werden müssen.
 
+**Kapitel werden hier beim Titel genannt, nicht bei der Nummer.** Die Nummern haben sich beim Umbau
+auf den heutigen Schnitt verschoben, und eine Nummer im Digest ist eine Kopie, die beim nächsten
+Umbau wieder falsch ist, ohne dass es jemand merkt. Der Titel ist eindeutig und ein Irrtum sofort
+sichtbar. Die Zugehörigkeit selbst steht ohnehin nur in `chapters/Index.md`.
+
 ## Erzählhaltung der Reihe: Erzählbericht, Collage der Elemente
 
 Die Kapitel sind ein **Erzählbericht darüber, was es alles gab**, eine Collage der tatsächlichen
@@ -16,22 +21,22 @@ Leitfragen-Rahmen im Einstieg; Abschnitts-Schlüsse vom Typ „auch das war eine
 gab es schon vor den Plattformen", „genau darin liegt der Kern"; analytische Glossen („bekam damit
 denselben Rang wie …"). Stattdessen: Element hinstellen, benennen, mit einer konkreten Anekdote, Zahl
 oder einem Namen würzen, weiter zur nächsten Perle. Ein Kapitelschluss darf schlicht zum nächsten Teil
-überleiten. (User-Ansage am 2026-07-27 zu Kapitel 2. Der Schluss von Kapitel 1 wurde am
-2026-07-28 entsprechend nachgezogen: Merkmals-Recap raus, Überschrift jetzt „Die Netzkultur war
-geboren".)
+überleiten. (User-Ansage am 2026-07-27; der Kapitelschluss von „Bevor das Internet ein öffentlicher
+Ort war" wurde am 2026-07-28 entsprechend nachgezogen, Merkmals-Recap raus.)
 
 **Publikum ist tech-affin.** Keine Erklärungen von Grundbegriffen (etwa der Unterschied
 Internet/Web), keine Kinderbuch-Bilder für Selbstverständliches („ein Klick auf einen Rechner in
 einem anderen Kontinent"). Wer Internetkultur liest, weiß, was das Web ist. Fachbegriffe stehen ohne
 Gloss; nur wirklich obskure Artefakte (Webring, Cracktro) dürfen einen Halbsatz Erklärung bekommen.
-(User-Ansage am 2026-07-28 zu Kapitel 3.)
+(User-Ansage am 2026-07-28.)
 
 **Netzkultur heißt die Kultur des Netzes, nicht Mainstream-Politik.** Im Fokus stehen Subkulturen,
 Humor, Ästhetik, Communities, Sprache und die Eigen-Ethik des Netzes. Gesetzgebung, Parlamente,
 Gerichte und institutionelle Politik gehören nur hinein, soweit sie die Netzkultur selbst betreffen,
 und dann aus deren Perspektive, nicht als politische Chronik. **Die netz-eigene Politik ist dagegen
-sehr wohl Netzkultur** und bekommt in Kapitel 3 ein eigenes Hauptkapitel „Das Netz ist von Anfang an
-politisch": die Aktionen, die das Netz aus sich selbst hervorbrachte, aus seiner Perspektive erzählt,
+sehr wohl Netzkultur** und bekommt in „Die ersten Jahre des öffentlichen Internets" ein eigenes
+Hauptkapitel („Das Netz wird politisch"): die Aktionen, die das Netz aus sich selbst hervorbrachte,
+aus seiner Perspektive erzählt,
 nicht als Gesetzestext. Belegte Perlen dafür: Blue Ribbon Campaign (1996, gegen den CDA), Barlows
 **Unabhängigkeitserklärung des Cyberspace** (8.2.1996, Davos), die **Crypto Wars** (PGP/Zimmermann ab
 1991, US-Ermittlung 1993, Clipper Chip 1993, Cypherpunks), **elektronischer Ungehorsam** (Electronic
@@ -50,6 +55,12 @@ frühes Web liefen gleichzeitig). Ein reines Querschnitt-Thema (etwa Netzsprache
 ein eigenes Kapitel ohne Zeitangabe bekommen. (User-Entscheidung am 2026-07-28; kippt die frühere
 Hybrid-Idee mit eigenem Meme-Kapitel.)
 
+> **Dieser Absatz widerspricht dem heutigen Aufbau und ist noch nicht aufgelöst.** Die Reihe hat mit
+> „Die Sprache des Netzes" und „Memes und andere Phänomene" zwei Sammel-Kapitel, und `decisions.md`
+> führt die Querschnittskapitel seit dem 2026-07-31 als gesetzte Konvention. Dancing Baby und Hamster
+> Dance stehen nicht im Web-Kapitel, sondern im Meme-Kapitel. Bis das entschieden ist, gilt der Text,
+> nicht dieser Absatz. → [notes/issues.md](../notes/issues.md)
+
 **Die Reihe ist ein Fotoalbum der Internetkultur.** Jeder Abschnitt ist eine wiedererkennbare
 Kulturkomponente, wie ein Foto mit Bildunterschrift. Die **Überschrift ist der Name, unter dem man
 die Sache wiedererkennt** (Leetspeak, Webringe, GeoCities, das Gästebuch), keine umschreibende Zeile
@@ -60,12 +71,12 @@ subversiv) an den Sachen selbst spürbar machen, nie behaupten („die waren coo
 Wird eine Seite genannt (Suck.com), muss man zeigen, was daran war, sonst sagt es Jüngeren nichts, dann
 lieber weglassen. Illustrierbar halten, Screenshots kommen später dazu. Spaß beim Durchblättern, keine
 wissenschaftliche Abhandlung. Gutes Muster: „Wer eine Seite wollte, musste HTML lernen" zeigt das
-Avantgardistische, ohne es zu benennen. (User-Ansage am 2026-07-28 zu Kapitel 3.)
+Avantgardistische, ohne es zu benennen. (User-Ansage am 2026-07-28.)
 
 **Dramaturgie und große Kulturklammern, keine Featureliste.** Die Perlen werden zu großen
 Kultursträngen gruppiert und erzählerisch verbunden, nicht als lose Einzelabschnitte gereiht. Ein
 Strang darf ein Hauptkapitel mit Unterkapiteln (H2 mit H3) sein, wenn er Stufen hat. Beispiel aus
-Kapitel 3: „Die Homepage" erzählt in drei Wellen (erst die Unis mit ihren Servern, dann Private, die
+„Die ersten Jahre des öffentlichen Internets": „Die Homepage" erzählt in drei Wellen (erst die Unis mit ihren Servern, dann Private, die
 sich das abschauten und mit HTML/GIFs spielten, dann Firmen, die den Privaten alles nachmachten,
 Gästebuch inklusive). Kleine Komponenten (Gästebuch, Besucherzähler, animierte GIFs) gehören in ihren
 Strang, nicht als eigener Abschnitt, sonst liest es sich wie eine Software-Featureliste. Und die
@@ -78,7 +89,7 @@ gab's auch noch"-Anhängsel, sondern nah am Herzen der Netzkultur: aus diesem Im
 Absurden, kommen Memes, Insider-Witze und die kleinen Bewegungen. Nie das kulturell Zentrale klein
 einführen („Zwischen all dem standen auch ein paar Seiten …"). Umgekehrt: analytische Raster (der
 Gartner Hype Cycle) sind kein Netz-Ding und gehören als beiläufige Analogie in den Fließtext, nicht
-als eigene Ikonen-Überschrift neben Amazon/eBay. (User-Ansage am 2026-07-29, Kapitel 3.)
+als eigene Ikonen-Überschrift neben Amazon/eBay. (User-Ansage am 2026-07-29.)
 
 **Überschrift ist Etikett, der Text steht allein.** Jeder Abschnitt benennt sein Thema selbst und
 liest sich als vollständige Prosa, auch wenn man die Überschrift wegdenkt. Der erste Satz darf die
@@ -86,8 +97,7 @@ liest sich als vollständige Prosa, auch wenn man die Überschrift wegdenkt. Der
 Schreine") und nicht mit vagem Rückbezug einsteigen, der eine Dramaturgie voraussetzt, die im Text
 nicht steht („dieser Seiten", „das", „dafür", „daneben"). Erzählerische Übergänge zwischen
 Abschnitten bleiben erlaubt, aber nur, wenn der Einstieg trotzdem auf eigenen Beinen steht. Test: den
-Text ohne Überschriften lesen, jeder Absatz muss für sich Sinn ergeben. (User-Ansage am 2026-07-29,
-Kapitel 3.)
+Text ohne Überschriften lesen, jeder Absatz muss für sich Sinn ergeben. (User-Ansage am 2026-07-29.)
 
 **Erst der Inhalt und die Kultur, dann die Sprache.** Wiederkehrender Fehler (mehrfach am
 2026-07-29): sprachlich glätten und dabei die inhaltliche Ebene verfehlen, wie ein „Sprachautomat",
@@ -106,7 +116,8 @@ benennen kann. (User-Ansagen am 2026-07-29.)
 ## Belege für die Anarchie des frühen Netzes
 
 Beim Verdichten der Einleitung (2026-07-27) rausgeflogen, weil zu detailliert für einen Einstieg.
-Gehört inhaltlich in **Kapitel 1–3** und in den Exkurs zur Kommerzialisierung.
+Gehört inhaltlich in **„Bevor das Internet ein öffentlicher Ort war"** und **„Die ersten Jahre des
+öffentlichen Internets"** und in den Exkurs zur Kommerzialisierung.
 
 - **Werbeverbot per Nutzungsrichtlinie.** Kommerzieller Verkehr war auf dem amerikanischen
   Wissenschaftsnetz NSFNET durch dessen Acceptable Use Policy ausgeschlossen; die Beschränkungen
@@ -135,7 +146,10 @@ Gehört inhaltlich in **Kapitel 1–3** und in den Exkurs zur Kommerzialisierung
   markieren. Sieben Jahre vor Berners-Lees Web-Vorschlag am CERN (1989).
 - **Richard Dawkins** prägt den Begriff *Meme* 1976 in „The Selfish Gene".
 
-## Belege Kapitel 2 (Die ersten digitalen Gesellschaften)
+## Belege „Bevor das Internet ein öffentlicher Ort war"
+
+> Recherchiert unter dem alten Schnitt als „Die ersten digitalen Gesellschaften"; dieses Kapitel ging
+> beim Umbau in „Bevor das Internet ein öffentlicher Ort war" auf.
 
 - **ARPANET → TCP/IP** am 1. Januar 1983 (Flag Day), gilt als Übergang zum heutigen Internet.
 - **Usenet**: 1979 von den Duke-Doktoranden **Tom Truscott** und **Jim Ellis** entworfen, 1980 erste
@@ -157,25 +171,28 @@ Gehört inhaltlich in **Kapitel 1–3** und in den Exkurs zur Kommerzialisierung
 - **Deutschland**: Am **3. August 1984** empfing die **Universität Karlsruhe** die erste deutsche
   E-Mail über **CSNET**; Anbindung durch **Werner Zorn**, Adressat **Michael Rotert**. Deutschsprachiges
   Usenet unter der **de.\***-Hierarchie.
-- **Tim Berners-Lee** schlug das **World Wide Web** 1989 am **CERN** vor (Bridge zu Kapitel 3).
+- **Tim Berners-Lee** schlug das **World Wide Web** 1989 am **CERN** vor (Bridge zu „Die ersten Jahre
+  des öffentlichen Internets").
 
 ## Weitere geprüfte Anker (noch unverwendet)
 
 - **Chaos Computer Club** gegründet 1981; BTX-Hack gegen die Hamburger Sparkasse im November 1984
-  (in Kapitel 1 verwendet).
+  (in „Bevor das Internet ein öffentlicher Ort war" verwendet).
 
-## Belege Kapitel 4 (Das Internet wird zum Lebensraum)
+## Belege „Das Internet wird zum Lebensraum"
 
 Zeitrahmen etwa **1997–2005** (bewusst so gesetzt, dass es die Verstetigung erzählt und nicht mit
-Kapitel 3 kollidiert). **Abgrenzung zu Kapitel 3:** Kapitel 3 hat die *Werkzeuge* eingeführt (ICQ 1996,
-Chaträume, DOOM/Quake/LAN, erste Clans bei Quake). Kapitel 4 erzählt die soziale *Verstetigung*: aus
+„Die ersten Jahre des öffentlichen Internets" kollidiert). **Abgrenzung dorthin:** dort stehen die
+*Werkzeuge* (ICQ 1996, Chaträume, DOOM/Quake/LAN, erste Clans bei Quake). Dieses Kapitel erzählt die
+soziale *Verstetigung*: aus
 Besuchern werden Bewohner. Also nicht die Tool-Einführung wiederholen, sondern das dauerhafte Wohnen,
 die feste Community, die feste Identität. Herzschlag des Kapitels: man kannte Leute jahrelang nur unter
 ihrem Nick und kannte sie trotzdem gut. Grenze nach hinten: Klarnamen, Feed und permanente
 Smartphone-Erreichbarkeit gehören ins Plattform-Kapitel, nicht hierher.
 
 - **Instant Messaging.** MSN Messenger ab **22. Juli 1999** (der Standard der dt. Schülergeneration),
-  AOL Instant Messenger (AIM) ab **1997** (Peak 2001 mit 36 Mio. Nutzern), ICQ war schon in Kapitel 3.
+  AOL Instant Messenger (AIM) ab **1997** (Peak 2001 mit 36 Mio. Nutzern), ICQ stand schon in „Die
+  ersten Jahre des öffentlichen Internets".
   Away-/Statuszeile als Selbstausdruck (Songzeilen, kryptische Botschaften); ein Twitter-Gründer (Biz
   Stone) nannte die AIM-Away-Messages als Inspiration. **Trillian** 2000 als Multi-Messenger.
 - **Foren-Software.** phpBB und vBulletin ab **2000**, Invision Power Board (IPB) ab **2002** (2004
@@ -195,17 +212,24 @@ Smartphone-Erreichbarkeit gehören ins Plattform-Kapitel, nicht hierher.
   2000 dicht), **Friendster 2002**, **MySpace 2003** (anpassbare Profile) → Überleitung ins nächste
   Kapitel: aus dem selbstgebauten Ort wird ein bereitgestelltes Profil.
 
-## Belege Kapitel 7 (Das goldene Zeitalter der Internetphänomene)
+## Belege „Memes und andere Phänomene"
+
+> Recherchiert unter dem alten Schnitt als „Das goldene Zeitalter der Internetphänomene".
 
 Zeitrahmen etwa **1998–2012**. Leitfrage: *Wann entstand ein gemeinsames, internationales Gedächtnis
 der Netzkultur?* Roter Faden: groß genug für gemeinsame Phänomene, noch zersplittert genug für eigene
 Ecken — Massenkultur, aber noch kein universeller Feed. Alle Fakten am **2026-07-29** web-verifiziert
 (Quellen v. a. Wikipedia gegen Know Your Meme / Fach-/Nachrufmedien gegengeprüft).
 
-**Überlappungs-Sperre (schon in früheren Kapiteln erzählt, in Kap. 7 nur referenzieren, NICHT neu
-erzählen):** Dancing Baby, Hamster Dance, Mahir „I Kiss You", Bert is Evil, JenniCam (alle **Kap. 3**);
-All Your Base Are Belong to Us + Something-Awful-Montage (**Kap. 6**). Rickroll war in Kap. 3 nur
-angedeutet (rotten.com-Klickfalle „lebt heute im Rickroll weiter") → in Kap. 7 voll erzählt.
+**Die Überlappungs-Sperre von 2026-07-29 gilt nicht mehr.** Sie verlangte, Dancing Baby, Hamster
+Dance, Mahir „I Kiss You", Bert is Evil, JenniCam, All Your Base Are Belong to Us und die
+Something-Awful-Montage hier nur zu *referenzieren*, weil sie in den Epochen-Kapiteln stünden. Beim
+Umbau sind sie alle in dieses Kapitel gewandert und werden hier voll erzählt (Dancing Baby, Hamster
+und Bert etwa unter „Die Pioniere der Sinnlosigkeit"). Wer die Regel heute befolgt, streicht die
+einzige Stelle, an der die Sache steht. Stand am 2026-08-01 gegen den Text geprüft.
+
+**Was tatsächlich anderswo steht:** rotten.com samt Klickfallen-Vorgriff („lebt heute im Rickroll
+weiter") in „Das Internet wird zum Lebensraum". Der Rickroll selbst wird hier voll erzählt.
 
 **Plattformen/Werkstätten:** **Newgrounds** (Tom Fulp, 1995; Flash-Portal ~1999/2000; „Everything, By
 Everyone"; Community-Voting saved/„blammed"). **Albino Blacksheep** (Steven Lerner, späte 90er/Relaunch
@@ -260,7 +284,8 @@ gelassen 2008, eigenes Faktenbuch 2009), **„O RLY?"** (Schnee-Eule, Foto John 
 Makro Frühjahr 2005 4chan; „ya rly/no wai"). **LOLcats** (4chan „Caturday"; „I Can Has Cheezburger?" /
 Happy Cat aus SA; „lolspeak", Ceiling Cat; **icanhascheezburger.com 11.1.2007** Nakagawa/Unebasami;
 **~1,5 Mio. Zugriffe/Tag Mai 2007**; Verkauf Sept. 2007 an Ben Huh ~**2 Mio. $** → Cheezburger Network:
-FAIL Blog, Memebase, **Know Your Meme**; „erstes Mal gehört ein Meme einer Firma" = Brücke zu Kap. 8).
+FAIL Blog, Memebase, **Know Your Meme**; „erstes Mal gehört ein Meme einer Firma" =
+Brücke zu „Die große Plattformisierung").
 **Advice Animals** (Advice Dog Urahn, Evan Herrington ~7.9.2006; Farbrad+Impact): **Success Kid** (Sammy
 Griner, Strandfoto 26.8.2007, Meme 2011; Vater brauchte Niere → **>100.000 $ per GoFundMe 2015**,
 Transplantation gelang; White House 19.6.2013), **Scumbag Steve** (Blake Boston, Foto 2006, Meme Jan
@@ -281,7 +306,7 @@ behaupten). **Maschendrahtzaun** (Regina Zindler bei „Richterin Barbara Salesc
 **Ehrensenf** (Katrin Bauerfeind, tägliches Web-Video ab 1.11.2005; Anagramm von „Fernsehen"; Grimme
 Online Award 2006). **Knuddels** bewusst weggelassen (kein belegbares Fun-Phänomen der Ära).
 
-## Belege Kapitel 10 (Was vom alten Netz geblieben ist)
+## Belege „Was vom alten Netz geblieben ist"
 
 Schlusskapitel, Rückblick + Gegenwart. Leitfrage: *Ist die alte Netzkultur verschwunden oder lebt sie
 in veränderter Form weiter?* Kern-Quelle ist Olis eigenes Denken in den zwei ChatGPT-Dialogen

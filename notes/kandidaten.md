@@ -3,7 +3,7 @@
 Alles, was noch nicht in den Kapiteln steht und hineinpassen könnte. Eine Zeile pro Element, mit
 Inhalt und Herkunft, sortiert nach Zielkapitel. Wer etwas einarbeitet, löscht die Zeile.
 
-Nichts hier ist belegt. Vor der Verwendung im Text durch `faktencheck`.
+Nichts hier ist belegt. Vor der Verwendung im Text durch `copyedit-facts`.
 
 Herkunft: `konzept` = [Gesamtkonzept](sources/Geschichte%20der%20Netzkultur/gesamtkonzept.md) ·
 `nealfun` = [neal.fun](sources/internet-artifacts/artefakte.md) ·
@@ -31,6 +31,17 @@ Herkunft: `konzept` = [Gesamtkonzept](sources/Geschichte%20der%20Netzkultur/gesa
 | Prodigy und Bill von Meister | Die dritte Kraft neben CompuServe und AOL, und der Gründer, der die Onlinedienste zweimal erfand und beide Male verlor | `hopkins` |
 | Newsreader-Alltag | `trn` und `tin` auf SunOS oder Linux, Killfiles im Alltag, und der Moment, in dem eine Universität 9-Gigabyte-Platten kaufte, weil das Usenet wuchs | `lowendbox` |
 | FAQs wurden Bücher | Etablierte Gruppen pflegten FAQs, posteten sie monatlich automatisch, und einige erschienen später gedruckt, etwa die aus `comp.lang.c` | `lowendbox` |
+
+### Netzkunst (H2 „Die Anfänge der Netzkunst", wirkt bisher wie drei unverbundene Themen)
+
+| Element | Was es ist | Herkunft |
+|---|---|---|
+| Diskmags | Das Szene-Magazin als lauffähiges Programm auf Diskette, mit eigener Musik und Scroller: Charts, Partyberichte, Interviews, Streit. Der H2 erwähnt sie in einem Nebensatz („Ranglisten in den Magazinen der Szene"), führt sie aber nie als Form ein. Echo zu „Die Magazine der Szene" im Hacker-H2 | `notiz` |
+| Größenbegrenzte Intros (4k, 64k) | Die reinste Form der Kunst aus Beschränkung, und der Faden, der bis in die Gegenwart trägt: `fr-08: .the .product` (Farbrausch, 2000, 64 KB), `.kkrieger` (2004, ein 3D-Spiel in 96 KB). Beides deutsche Gruppen | `notiz` |
+| Deutsche Partylinie | Mekka & Symposium (Fallingbostel, ab 1997) → Breakpoint (Bingen) → Revision (Saarbrücken). Erklärt, warum die größte reine Demoparty der Welt in Deutschland liegt; steht bisher unbegründet da | `notiz` |
+| Herkunft des Demos vor der Szene | Hersteller-Demos als Verkaufshilfe im Laden, die Amiga-Boing-Ball von 1984. Die Form war da, bevor die Szene sie übernahm | `notiz` |
+| Sample-Kultur im Tracker | Die Instrumente waren Schnipsel aus fremden Aufnahmen. Remix-Kultur, bevor es das Wort gab, und Vorlauf zu K2 (MP3) und K5 (Remix) | `notiz` |
+| Das Stück als offene Datei | Eine MOD-Datei enthält Noten **und** Instrumente: Wer sie bekam, konnte hineinsehen, lernen und Bausteine mitnehmen. Offener Quelltext als Normalfall einer Kunstform, nicht als Ideologie. Steht schon halb im Text, trägt aber keinen Gedanken | `notiz` |
 
 ### Hackerkultur (offener H2, siehe issues.md)
 
@@ -102,6 +113,7 @@ Herkunft: `konzept` = [Gesamtkonzept](sources/Geschichte%20der%20Netzkultur/gesa
 | Der Netflix Prize | Eine Million Dollar für einen besseren Empfehlungsalgorithmus, offen ausgeschrieben. Der Moment, in dem Empfehlung zur Disziplin wird | `hopkins` |
 | Netzneutralität | Tim Wus Begriff von 2003 und der jahrzehntelange Streit darüber. Die Infrastrukturfrage hinter der Plattformmacht, in der Reihe bisher gar nicht | `hopkins` |
 | Black Twitter und der Bias der Suche | André Brock über Black Twitter als eigene Technokultur, Safiya Noble über rassistische Suchergebnisse. Die Plattformkapitel erzählen bisher keine dieser beiden Seiten | `hopkins` |
+| IRC als Protest-Infrastruktur der 2010er | Anonymous und Project Chanology (2008), Occupy Wall Street, Arabischer Frühling: koordiniert wurde in Kanälen, während die Öffentlichkeit auf Twitter schaute. Unbelegt, die Quelle behauptet es ohne Zahlen | `notiz` |
 
 ## K7 — Was vom alten Netz geblieben ist
 

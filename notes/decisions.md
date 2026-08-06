@@ -1,77 +1,28 @@
-# Entscheidungen zur Netzkultur-Reihe
+# Abgelehnte Befunde
 
-Was hier steht, ist entschieden und wird nicht neu aufgemacht.
+Stellen, an denen eine Prüfung etwas gemeldet hat und Oli entschieden hat, dass es so bleibt.
 
-**Die Prüf-Agenten sehen diese Datei nicht.** Sie würden sonst zur Abhakliste statt zum frischen
-Blick. Claude gleicht jeden Befund vor der Übergabe an Oli hier ab und legt nur vor, was noch
-offen ist.
+**Diese Datei wird nur nach einem Prüflauf gelesen, nie beim Schreiben.** Sie ist ein Filter: Claude
+gleicht jeden Befund hier ab und legt Oli nur vor, was noch offen ist. Wer sie beim Formulieren im
+Kopf hat, schreibt um vierzehn alte Einwände herum, statt zur Sache hin. Die Prüf-Agenten sehen sie
+ohnehin nicht, sonst wird aus dem frischen Blick eine Abhakliste.
 
-**Aufgaben gehören nicht in diese Datei.** Was noch zu tun oder zu entscheiden ist, trägt Claude
-sofort in die Issue-Liste des Kapitels ein (`01_issues.md`, `02_issues.md`, …) oder für Werkweites in
-`issues.md`, und zwar **bevor** er es im Chat vorlegt und ohne dass Oli darum bittet. Sonst existiert
-der Punkt nur in einer Nachricht und muss erfragt werden. Hier landet nur, was **entschieden** ist. Abgeglichen wird über die Stelle, nicht über die Formulierung des Befunds: Derselbe
-Fall kommt beim nächsten Lauf oft anders benannt.
+Abgeglichen wird über die **Stelle**, nicht über die Formulierung des Befunds: Derselbe Fall kommt
+beim nächsten Lauf oft anders benannt.
 
-Wiederholt sich eine Ablehnung über mehrere Werke hinweg, ist sie keine Einzelentscheidung mehr,
-sondern eine Stilregel. Dann gehört sie in die Format-Spec unter `memory/` und hier wieder raus. Die
-Formulierungsfallen aus Olis Korrekturen liegen deshalb in [memory/ton.md](../memory/ton.md).
+**Kein Logbuch.** Hier steht nur, was ein Lektorat am **aktuellen** Text wieder bemängeln würde. Was
+nicht mehr im Text ist, wird gelöscht.
 
-**Diese Datei ist kein Logbuch.** Hier steht nur, was ein Lektorat an einer Stelle des **aktuellen**
-Textes wieder bemängeln würde. Was nicht mehr im Text ist, wird gelöscht.
+Was hier **nicht** hingehört:
 
-Bestätigte **Sachverhalte** gehören nicht hierher, sondern nach
-[memory/fakten.md](../memory/fakten.md). Dort liegen auch die beiden Quellenkonflikte, die für
-diese Reihe entschieden sind: die Btx-Endsumme (134.694,70 DM nach Wikipedia, gegen heise) und das
-AOL-Gateway-Datum (28. Februar 1994 nach der Forschung, gegen das Jargon-File-Narrativ).
+- **Konventionen der Reihe** → [konventionen.md](konventionen.md), die werden beim Schreiben gelesen.
+- **Aufgaben und offene Punkte** → [`<NN>_issues.md`](01_issues.md) pro Kapitel, [issues.md](issues.md)
+  für Werkweites.
+- **Bestätigte Sachverhalte** → [memory/fakten.md](../memory/fakten.md). Dort liegen auch die beiden
+  entschiedenen Quellenkonflikte, die Btx-Endsumme und das AOL-Gateway-Datum.
+- **Tonalität** → [memory/ton.md](../memory/ton.md).
 
 ---
-
-## Gesetzte Konventionen
-
-Gelten für alle Kapitel der Reihe.
-
-**Kapitelkopf.** Titel, dann ein Satz über die Ära, dann der Zeitraum. In dieser Reihenfolge, damit
-der Leser zuerst die Stimmung und dann die Einordnung bekommt.
-
-```
-# <Titel der Ära>
-
-_<ein Satz, der die Ära beschreibt>_
-
-_Etwa <von> bis <bis>_
-```
-
-Die Querschnittskapitel tragen im unteren Slot „_Ein Querschnitt durch alle Jahrzehnte_" statt
-einer Jahresangabe. Durchgezogen in 01 bis 07 und in der Kapitelliste des Vorworts.
-
-**Keine harten Zeitgrenzen.** Die Zeiträume überlappen, weil die Ären real überlappen. Kein Fehler,
-keine Bereinigung nötig. Das gilt auch **innerhalb** eines Kapitels: Ein Beispiel, das ein paar Jahre
-über den Kopf-Zeitraum hinausreicht, ist kein Befund. Die Kapitel beschreiben eine Ära, nicht ein
-Intervall. Im Zweifel wird der Zeitraum im Kopf gedehnt, nicht das Beispiel gestrichen.
-*(2026-07-31, am Fall `Captured Dreams` von 1997 in Kapitel 01 entschieden.)*
-
-**Der Ausblick in die Gegenwart gehört zur Ära-Beschreibung.** Wenn eine Erscheinung dieser Jahre
-bis heute weiterläuft, darf das am Ende ihres Abschnitts stehen, auch als ganzer Absatz. Das ist kein
-vorweggenommener Kapitelschluss, sondern Teil dessen, was die Ära ausgemacht hat. *(2026-07-31, am
-Gegenwarts-Absatz der Demoszene entschieden.)*
-
-**Kein Reden über Kapitel.** Kein „Am Ende des vorherigen Kapitels", kein „die bisherigen Kapitel",
-kein „davon erzählt das nächste Kapitel". Das liest sich wie ein „Was bisher geschah" vor einer
-Serienfolge und ergibt keinen Sinn, wenn jemand das Werk in einem Zug liest. Stattdessen wird der
-Gegenstand am Anfang des Folgekapitels inhaltlich neu aufgegriffen, so wie 02 es mit HTML, HTTP und
-dem Browser tut.
-
-**Keine Gliederungsebene „Teil 1", „Teil 2"** und keine durchnummerierten Abschnitte. Überschriften
-tragen Inhalt, keine Zählung.
-
-**Überschriften brauchen kein einheitliches Tempus.** Präsens, Präteritum und Nominalphrasen dürfen
-nebeneinander stehen. Gleichförmige Überschriften wirken generisch.
-
----
-
-## Abgelehnte Befunde
-
-Die Stelle bleibt, wie sie ist.
 
 | Stelle | Befund | Warum abgelehnt | Datum |
 |---|---|---|---|
@@ -89,10 +40,3 @@ Die Stelle bleibt, wie sie ist.
 | K1, Reihenfolge der H2: Netzkunst und Hackerkultur stehen hinter den Netz-Abschnitten | Unterbricht die Chronologie, die Kunst wächst aus dem Wohnzimmer und müsste dort stehen | Der Kapitelbau nimmt erst die Infrastruktur (Wohnzimmer, Universitäten, Usenet), dann die Szenen (Kunst, Hacker), dann das Gemeinsame (Umgang, Utopie). Innerhalb dieser Folge gilt kein Zeitstrahl | 2026-07-31 |
 | K1, Morris-Wurm unter „Die Hackerkultur" | Morris war kein Mitglied der Szene, der Wurm war ein Messversuch | Der H2 handelt vom Vertrauensverlust, der in die Kriminalisierung führt; der Wurm ist dort die Zäsur, nicht eine Szene-Tat | 2026-07-31 |
 | K1, § 202a und Operation Sundevil in einem H3 | Springt zwischen Deutschland 1986 und den USA 1990 | Der Abschnitt zeigt dieselbe Bewegung auf beiden Seiten, deshalb steht sie zusammen | 2026-07-31 |
-
-## Offene Punkte
-
-Aufgaben stehen nicht hier, sondern in den Issue-Listen. Diese Datei hält nur Beschlüsse.
-
-- Kapitel 01 → [01_issues.md](01_issues.md)
-- Die ganze Reihe → [issues.md](issues.md)

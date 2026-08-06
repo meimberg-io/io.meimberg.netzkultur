@@ -17,8 +17,8 @@
 | `drafts/` | Kürzere Texte und Snippets rund um das Buch |
 | `sources/` | Quellen-Snapshots, 1:1-Kopien. Herkunft je Datei in `sources/sources.md` |
 | `assets/` | Bilder. Metadaten werden über den Lightroom-Katalog in `lightroom/` gepflegt |
-| `notes/` | `decisions.md` (getroffene Entscheidungen), `issues.md` und `<NN>_issues.md` (offene Punkte), `kandidaten.md` (Stoff, der noch nicht drin ist) |
-| `memory/` | `fakten.md` (bestätigte Fakten), `ton.md` (Formulierungsfallen), `bilder.md` (Metadaten und Rechte), `quellen.md` (Bewertung der Quellen), `redaktions-workflow.md`, `oli.md` |
+| `notes/` | `konventionen.md` (Regeln der Reihe, beim Schreiben gelesen), `decisions.md` (abgelehnte Befunde, nur nach einem Prüflauf gelesen), `issues.md` und `<NN>_issues.md` (offene Punkte), `kandidaten.md` (Stoff, der noch nicht drin ist) |
+| `memory/` | `fakten.md` (bestätigte Fakten), `ton.md` (Tonalitätsbriefing), `bilder.md` (Metadaten und Rechte), `quellen.md` (Bewertung der Quellen), `redaktions-workflow.md`, `oli.md` |
 | `longform-scripts/` | Eigene Longform-Compile-Steps, die das Plugin selbst lädt |
 | `scripts/` | Repo-Werkzeuge: Prüftexte bauen, Bilder mit Lightroom-Metadaten einziehen |
 
@@ -79,23 +79,50 @@ scripts/kapitel-kompilieren.py --abriss        # Überschriftenbaum, je zwei Sä
 Ohne Argument kommt das ganze Buch. Longform selbst kann nur den kompletten Draft kompilieren,
 deshalb dieses Skript.
 
-**Bilder besorgen:** der Agent `bildsuche` sucht Bilder zu einer Textstelle, klärt Urheber und
+**Bilder besorgen:** der Agent `editor-images` sucht Bilder zu einer Textstelle, klärt Urheber und
 Lizenz an der Quelle und zieht sie mit `scripts/bild-einziehen.py` samt Metadaten ein. Er ist der
 einzige Agent hier, der nicht prüft, sondern etwas herstellt. Regeln und Fallen:
 [memory/bilder.md](memory/bilder.md).
 
+## Wie Skills, Agenten und Commands hier zusammenhängen
+
+Das Verfahren steht im **Skill**, die Kontextlosigkeit im **Agenten**, der Aufruf im **Command**. Ein
+Agent ist nichts anderes als ein Skill ohne Projektwissen: Er lädt denselben Skill und weiß sonst
+nichts. Deshalb gilt für die Aufteilung nur eine Frage: Muss die Arbeit blind sein oder nicht?
+
+- **`editor-outline`** und **`editor-write`** laufen im Kontext, weil sie das Projekt kennen müssen.
+  Nur Skill, kein Agent.
+- Die fünf Lektorat-Linsen laufen alle über **einen** Agenten, `copyedit`. Der Auftrag nennt den
+  Skill. Die Isolation entsteht durch den einzelnen Aufruf und nicht durch eine eigene Datei je
+  Linse: Fünfmal `copyedit` aufrufen sind fünf frische Kontexte. Blindheit ist hier die Funktion, ein
+  Prüfer, der weiß, was gemeint war, prüft nichts.
+- Ein Agent ist eine **Rolle**, kein Berechtigungsprofil. Dass `copyedit-plausibility` nicht
+  recherchieren darf, steht im Skill und nicht in einem eigenen Agenten mit anderem Werkzeugset.
+- **`editor-free`** behält seine Methode im Agenten. Ein Skill wäre in meinem Kontext, und damit wäre
+  der Agent nicht mehr frei.
+- Zu jedem Skill gibt es einen gleichnamigen Command in `.claude/commands/`.
+
+## Schreiben
+
+**`/editor-outline`** baut erst das Inhalts-Skelett aus Fakten, das Oli prüft, bevor Prosa entsteht.
+**`/editor-write`** formuliert daraus in einem Zug gegen [memory/ton.md](memory/ton.md) und
+[notes/konventionen.md](notes/konventionen.md) und legt den Text dann vor. Die Outline ist Planung,
+nicht Gliederung: Wer sie Punkt für Punkt in Sätze übersetzt, bekommt Staccato. Die Linsen startet Oli
+selbst, sie laufen nicht automatisch hinterher.
+
 ## Prüfen
 
-Fünf Agenten in `.claude/agents/`, jeder mit genau einer Linse, weil zusammengelegte Prüfungen sich
-gegenseitig verdrängen: **`klarheit`** (versteht der Leser den Satz beim ersten Lesen),
-**`sprache`** (Betonung, Wortwahl, Bilder), **`kohaerenz`** (Aufbau, Anschlüsse, Widersprüche),
-**`plausibilitaet`** (Anachronismen, Größenordnungen, Belegliste), **`faktencheck`** (Recherche).
-Welcher wann läuft: [memory/redaktions-workflow.md](memory/redaktions-workflow.md).
+Fünf Linsen, jede allein, weil zusammengelegte Prüfungen sich gegenseitig verdrängen:
+**`/copyedit-clarity`** (versteht der Leser den Satz beim ersten Lesen),
+**`/copyedit-language`** (Betonung, Wortwahl, Bilder), **`/copyedit-coherence`** (Aufbau, Anschlüsse,
+Widersprüche), **`/copyedit-plausibility`** (Anachronismen, Größenordnungen, Belegliste),
+**`/copyedit-facts`** (Recherche). Welche wann läuft:
+[memory/redaktions-workflow.md](memory/redaktions-workflow.md).
 
 Geprüft wird auf drei Ebenen, weil ein Abschnitt allein die Anschlüsse nicht zeigt:
 
-1. **Abschnitt** — `klarheit` und `sprache` auf die einzelne Szenendatei.
-2. **Kapitel** — `kohaerenz` und `plausibilitaet` auf die Szenen eines Kapitels in der Reihenfolge
+1. **Abschnitt** — `copyedit-clarity` und `copyedit-language` auf die einzelne Szenendatei.
+2. **Kapitel** — `copyedit-coherence` und `copyedit-plausibility` auf die Szenen eines Kapitels in der Reihenfolge
    aus `Index.md`, zusammengefügt. Ein Abschnitt für sich kann schlüssig sein und trotzdem nicht an
    den vorigen anschließen.
 3. **Reihe** — die Nähte zwischen den Kapiteln (letzte Szene von N mit erster von N+1) und ein

@@ -1,5 +1,5 @@
 ---
-name: frei formulieren 
+name: editor-free
 description: Schreibt eine Textpassage kreativ neu ohne Einschränkung und Verwirrung durch bestehende Kontexte oder andere Regeln.
 tools: 
 ---
