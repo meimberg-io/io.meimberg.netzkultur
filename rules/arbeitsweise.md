@@ -21,11 +21,13 @@ Bei Kritik zuerst klären, ob Inhalt oder Formulierung gemeint ist. Inhaltliche 
 
 ## Formuliert wird über den Agenten `writer`
 
-Nie in der Hauptsession, auch nicht bei einem einzelnen Absatz. Er bekommt Auftrag, Material, Klangprobe, Vorwissen des Lesers.
+Nie in der Hauptsession, auch nicht bei einem einzelnen Absatz. Er bekommt Auftrag, Intake, Klangprobe und das Vorwissen des Lesers. Projektregeln bekommt er nicht.
 
-Keine Regelwerke, keine Konventionen, keine Verbotslisten ins Briefing. Belegt am 2026-07-31: Ein Prompt mit Intake und sieben Verboten lieferte drei unbrauchbare Fassungen, ein Ein-Satz-Auftrag drei brauchbare. Symptomlisten laufen nach dem Schreiben, siehe [pruefen.md](pruefen.md).
+**Belegt am 2026-08-08**, vier Läufe über denselben Intake: Sein Briefing ist Olis Blog-Prompt, angepasst aufs Sachbuch (dritte Person, keine Überschriften, kein Fazit, Länge aus dem Auftrag). Sprachlich das beste Ergebnis, das das Projekt bisher hatte. Die verbliebenen Schwächen lagen sämtlich im Intake, keine in der zweiten Stufe. Der Hebel für die Qualität ist deshalb der Intake.
 
-Das gilt für das Schreiben aus Material. Beim **Umschreiben** eines fertigen Textes ist es anders: Dort steht der Inhalt schon, es gibt nichts, worum man herumschreiben könnte, und eine mechanische Liste (Gedankenstrich, Dreiklang, Floskel) ist dann ein brauchbares Werkzeug. Der Unterschied ist nicht die Liste, sondern ob der Text noch entsteht.
+Damit ist die zweite Stufe ein **Umschreiben**, und darauf beruht, dass eine lange Symptomliste im Briefing hier nützt statt zu schaden: Der Inhalt steht schon, es gibt nichts, worum man herumschreiben könnte. Beim Erzeugen aus dem Nichts wäre dieselbe Liste schädlich.
+
+Was am fertigen Text stört und aus einem einzelnen Fall stammt, wird **nicht** ins Briefing nachgetragen. Ein Regelwerk, das jeden Einzelfall aufnimmt, ist in einem halben Jahr wieder die Verbotsliste, gegen die es gebaut wurde. Soll eine Einzelheit tragen, etwa ein wörtliches Zitat, wird sie im Intake betont.
 
 ## Material vor Prosa
 
