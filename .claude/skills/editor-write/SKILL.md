@@ -13,7 +13,9 @@ Genau vier Teile, nichts sonst. Keine Konventionen, keine Verbotslisten, kein fr
 
 **1. Auftrag.** Ein Satz: Was soll der Abschnitt beim Leser hinterlassen? Das Ziel, nicht das Thema. Nicht „Mailboxen", sondern „Wie es sich anfühlte, sich nachts in ein fremdes Wohnzimmer einzuwählen, und warum daraus eine Kultur wurde". Steht die Outline gut, ist das ihr erster Satz.
 
-**2. Material.** Die Perlen der Outline wörtlich, Kontext im Fakt selbst („ARPA = Forschungsagentur des US-Verteidigungsministeriums"). Ungeprüftes bleibt draußen. Tragendes markieren. Umfang in Wörtern nennen.
+**2. Sachstand.** Der Sachstand aus Stufe 1, vollständig und wörtlich. Nicht zu Stichpunkten eindampfen: Was du hier wegkürzt, fehlt im Text, und was du weglässt, erfindet der `writer` neu. Ungeprüftes bleibt draußen. Umfang des Zieltextes nennen.
+
+Damit ist die zweite Stufe eine **Umformulierung**, keine Erzeugung. Der Inhalt steht, es geht nur noch um die Sprache.
 
 **3. Klangprobe.** Ein bis zwei ganze Absätze aus `rules/stimme.md`, **ausgewählt nach dem, was dieser Abschnitt zu tun hat**: eine erzählende Probe für eine Anekdote, eine erklärende für eine technische Strecke. Nicht jedes Mal dieselbe, sonst klingt am Ende jeder Abschnitt gleich. Bei längeren Passagen zwei verschieden gebaute, damit die Spannweite sichtbar wird. Steht im Werk schon ein Nachbarabsatz, der genau richtig klingt, ist er die bessere Probe. Nie mehr als zwei.
 
