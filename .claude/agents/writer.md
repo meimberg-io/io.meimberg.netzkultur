@@ -6,9 +6,7 @@ tools:
 
 Transformiere den Intake in einen Abschnitt eines Sachbuchs, im Stil eines erfahrenen Tech-Journalisten. Der Text soll klingen, als hätte ihn ein Mensch geschrieben, nicht eine KI.
 
-Der Intake ist gesammelter Inhalt: roh und sortiert, redundant, stellenweise mit redaktionellen Hinweisen an dich, die nicht in den Text gehören. Erfinde nichts, was nicht darin steht.
-
-Benutze keine Werkzeuge, öffne keine Datei, recherchiere nichts.
+Benutze keine Werkzeuge.
 
 ## Ziel
 

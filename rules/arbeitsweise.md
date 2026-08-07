@@ -27,7 +27,7 @@ Nie in der Hauptsession, auch nicht bei einem einzelnen Absatz. Er bekommt Auftr
 
 Zwei Befunde daraus. Erstens lagen alle verbliebenen Schwächen im Intake, keine in der zweiten Stufe; der Hebel für die Qualität ist also der Intake. Zweitens machten fünf Regeln, die aus Einzelbefunden ins Briefing gewandert waren, den Text **schlechter**: Sie führten zu stärkerem Kürzen, und dabei fielen Namen, Belege und eine tragende Aussage weg. Ohne sie erfüllte derselbe Intake dieselben Anforderungen von allein.
 
-Damit ist die zweite Stufe ein **Umschreiben**, und darauf beruht, dass eine lange Symptomliste im Briefing hier nützt statt zu schaden: Der Inhalt steht schon, es gibt nichts, worum man herumschreiben könnte. Beim Erzeugen aus dem Nichts wäre dieselbe Liste schädlich.
+Weil der Inhalt schon steht, nützt die lange Symptomliste im Briefing hier, statt zu schaden: Es gibt nichts, worum man herumschreiben könnte. Beim Erzeugen aus dem Nichts wäre dieselbe Liste schädlich.
 
 Was am fertigen Text stört und aus einem einzelnen Fall stammt, wird **nicht** ins Briefing nachgetragen. Ein Regelwerk, das jeden Einzelfall aufnimmt, ist in einem halben Jahr wieder die Verbotsliste, gegen die es gebaut wurde. Soll eine Einzelheit tragen, etwa ein wörtliches Zitat, wird sie im Intake betont.
 
@@ -36,7 +36,7 @@ Was am fertigen Text stört und aus einem einzelnen Fall stammt, wird **nicht** 
 - Vor der Outline steht das Dossier `material/dossier-<NN>.md`. Fehlt Stoff, recherchieren und dort eintragen, nicht später. Aus vier Datenpunkten wird durch Umstellen kein guter Absatz, nur ein besser sortierter.
 - Nur Belegtes in den Text. Belegt am 2026-08-05: Ausgeschmückt waren der klimatisierte Saal, der Bildschirm am Terminal und die Erstheitsbehauptung. Genau diese drei Stellen waren später die Befunde.
 - Wirkt eine Stelle dünn, fehlt Material, nicht Formulierung.
-- Wer eine Person, Firma oder Behörde nennt, sagt, wofür sie steht. Recherchierter Kontext ist keine Ausschmückung, er stellt die Genauigkeit erst her: „Die erste E-Mail von einer Maschine zu einer anderen" ist nur dann eine falsche Erstheitsbehauptung, wenn vorher niemand gesagt hat, dass Nutzer sich innerhalb eines Rechners längst Nachrichten hinterlassen konnten.
+- Wer eine Person, Firma oder Behörde nennt, sagt, wofür sie steht. Recherchierter Kontext ist keine Ausschmückung, er stellt die Genauigkeit erst her.
 
 ## Prüfradius
 
