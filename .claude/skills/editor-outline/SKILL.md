@@ -32,13 +32,19 @@ Das Vorbild ist eine gesprochene Notiz, die jemand macht, der das Thema kennt un
 ## Sachstand
 <Fließtext, lang, vollständig, in der Reihenfolge, in der es erzählt werden soll.
  Nicht die Fakten allein, sondern was sie bedeuten und wie sie zusammenhängen.
- Ausdrücklich mit dabei:
-   - Kontraste: was war vorher, was war anderswo, was hatte man erwartet
-   - Konflikte: wer wollte was, woran hat es sich gerieben
-   - offene Fragen und Widersprüche zwischen den Quellen
-   - das Unfertige: „vielleicht gehört das eher nach vorn", „unklar, ob das stimmt"
- Belege in Klammern hinter der Aussage. Formulierung ist egal, Vollständigkeit nicht.
- Redundanz ist erlaubt und meist ein gutes Zeichen.>
+ Ausdrücklich mit dabei: Kontraste (was war vorher, was war anderswo), Konflikte
+ (wer wollte was, woran hat es sich gerieben), offene Fragen.
+
+ GESCHRIEBEN FÜR DEN LESER, NICHT FÜR DEN REDAKTEUR. Alles, was hier steht, kann so
+ in den Text. Was du beim Recherchieren gedacht hast, steht weiter unten.
+
+ Zwei Regeln, die den Unterschied ausmachen:
+   - Nichts verneinen, was nicht vorher behauptet wurde. „Es lag nicht am Geld"
+     setzt voraus, dass jemand Geld ins Spiel gebracht hat. Hat niemand. Steht die
+     Fehlannahme nur in der Fachliteratur, ist sie eine Notiz und kein Satz.
+   - Jeder Name bekommt bei der ersten Nennung seine Rolle. „Bellovin sagt" ist
+     wertlos, solange nicht dasteht, wer das ist und warum er es wissen muss.
+ Belege in Klammern. Formulierung ist egal, Vollständigkeit nicht.>
 
 ## Worauf es ankommt
 <zwei bis vier Zeilen: was der Leser mitnehmen soll, wenn er den Rest vergisst.
@@ -46,6 +52,12 @@ Das Vorbild ist eine gesprochene Notiz, die jemand macht, der das Thema kennt un
 
 ## Weggelassen
 <was zum Thema existiert und draußen bleibt, je mit einem Halbsatz warum>
+
+## Redaktionelle Notizen
+<Alles, was Oli wissen soll und der Leser nicht: verbreitete Fehlannahmen, gegen die
+ du beim Recherchieren angeschrieben hast, Zweifel an einer Quelle, Vorschläge zur
+ Anordnung, Hinweise an den Schreiber. Dieser Abschnitt geht NICHT ins Briefing.
+ Er ist der Grund, warum der Sachstand sauber bleibt.>
 
 ## Umfang
 <Wortzahl des späteren Textes. Der Sachstand darf und soll länger sein.>
@@ -56,6 +68,8 @@ Das Vorbild ist eine gesprochene Notiz, die jemand macht, der das Thema kennt un
 Herkunft der Software gehört fast nie hinein: wer welche Fassung schrieb, welche Sprache, welches Upgrade, welche Konferenz. Ein Halbsatz reicht, meist gar nichts.
 
 Der Abschnitt **Sachstand** ist die eigentliche Arbeit. Ist er dünn, wird der Text dünn, und keine Formulierung rettet das. Ein Sachstand, der nur aus belegten Einzelfakten besteht, ist noch nicht fertig: Dann fehlt die Frage, warum diese Fakten nebeneinander stehen.
+
+**Gegenprobe vor der Übergabe:** Lies den Sachstand als jemand, der nur das Vorwissen hat. Jede Stelle, an der du stutzt, weil ein Name, ein Begriff oder ein Gegensatz vorausgesetzt wird, den es im Text nicht gibt, ist ein Fehler im Sachstand und nicht einer, den der Schreiber reparieren kann.
 
 Ungeprüftes steht im Sachstand mit Markierung, geht aber nicht in die zweite Stufe und kommt nach `state/issues-<NN>.md`.
 

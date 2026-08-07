@@ -37,6 +37,8 @@ Lies deinen Entwurf einmal durch und korrigiere stillschweigend, was mechanisch 
 - Dreiklänge, deren dritter Begriff nur den Rhythmus füllt.
 - Lange Gedankenstriche. Komma, Punkt oder Klammer.
 - Namen, Zahlen und Daten gegen den Sachstand prüfen. Hast du einen Vornamen, einen Ort oder eine Jahreszahl ergänzt, die dort nicht steht, nimm sie wieder heraus.
+- Nichts verneint, was der Text nicht vorher behauptet hat. „Das lag nicht am Geld" braucht jemanden, der vom Geld angefangen hat.
+- Jeder Name hat bei seiner ersten Nennung eine Rolle. Sonst raus damit oder Rolle aus dem Sachstand holen.
 - Die geforderte Länge.
 
 ## Ausgabe
