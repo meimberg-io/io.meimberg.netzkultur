@@ -25,6 +25,8 @@ Nie in der Hauptsession, auch nicht bei einem einzelnen Absatz. Er bekommt Auftr
 
 Keine Regelwerke, keine Konventionen, keine Verbotslisten ins Briefing. Belegt am 2026-07-31: Ein Prompt mit Sachstand und sieben Verboten lieferte drei unbrauchbare Fassungen, ein Ein-Satz-Auftrag drei brauchbare. Symptomlisten laufen nach dem Schreiben, siehe [pruefen.md](pruefen.md).
 
+Das gilt für das Schreiben aus Material. Beim **Umschreiben** eines fertigen Textes ist es anders: Dort steht der Inhalt schon, es gibt nichts, worum man herumschreiben könnte, und eine mechanische Liste (Gedankenstrich, Dreiklang, Floskel) ist dann ein brauchbares Werkzeug. Der Unterschied ist nicht die Liste, sondern ob der Text noch entsteht.
+
 ## Material vor Prosa
 
 - Vor der Outline steht das Dossier `material/dossier-<NN>.md`. Fehlt Stoff, recherchieren und dort eintragen, nicht später. Aus vier Datenpunkten wird durch Umstellen kein guter Absatz, nur ein besser sortierter.

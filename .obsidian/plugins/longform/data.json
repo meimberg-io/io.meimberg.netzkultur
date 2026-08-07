@@ -7,7 +7,7 @@
   "sessions": [
     {
       "start": "2026-08-07T11:22:12.758Z",
-      "total": 31332,
+      "total": 31700,
       "drafts": {
         "chapters/Index.md": {
           "total": 0,
@@ -22,7 +22,7 @@
           }
         },
         "manuscript/Index.md": {
-          "total": 30794,
+          "total": 31162,
           "scenes": {
             "00 - Netzkultur – Eine Retrospektive": 108,
             "00.01 - Warum diese Reihe existiert": 291,
@@ -31,7 +31,7 @@
             "01 - Bevor das Internet ein öffentlicher Ort war": 319,
             "01.01 - Über Mailboxen und telefonierende Computer": 1053,
             "01.02 - Die Netze der Universitäten": 1692,
-            "01.03 - Das Usenet": 956,
+            "01.03 - Das Usenet": 1324,
             "01.04 - Die Anfänge der Netzkunst": 1588,
             "01.05 - Die Hackerkultur": 1325,
             "01.06 - Wie man miteinander umging": 669,

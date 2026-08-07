@@ -1,6 +1,6 @@
 ---
 name: copyedit
-description: Führt eine Lektorat-Linse ohne Projektwissen aus. Der Auftrag nennt den Skill (copyedit-clarity, copyedit-language, copyedit-coherence, copyedit-plausibility, copyedit-facts) und den Text. Nur Befund, kein Schreiben.
+description: Führt eine Lektorat-Linse ohne Projektwissen aus. Der Auftrag nennt den Skill (copyedit-clarity, copyedit-language, copyedit-coherence, copyedit-plausibility, copyedit-facts, copyedit-humanize) und den Text. Nur Befund, kein Schreiben.
 tools: Skill, Read, Grep, Glob, WebSearch, WebFetch
 ---
 

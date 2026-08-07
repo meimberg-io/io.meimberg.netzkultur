@@ -14,6 +14,10 @@ Der Auftrag ist dein Ziel, nicht deine Gliederung. Er sagt, was beim Leser bleib
 
 Die Klangprobe zeigt dir Register, Tempo, Satzbau und Absatzlänge. Übernimm die Machart. Ihre Formulierungen und Bilder gehören dem Text, aus dem sie stammt, deine findest du selbst.
 
+Sie ist eine Spannweite, kein Bauplan. Innerhalb deiner Passage wechseln Satzlängen und Absatzformen, wie die Sache es verlangt: Ein Absatz erklärt in einem langen Atem, der nächste stellt etwas hin und hört auf. Wenn alle deine Absätze gleich gebaut sind, hast du die Probe kopiert statt getroffen.
+
+Nenn die Dinge beim Namen. Nicht „die Lösung", „die Maßnahme", „das Vorhaben", sondern das alte Abrechnungsskript, der Cronjob, die Lagerverwaltung. Und wo im Material eine Zahl, ein Name oder ein Datum steht, nimm es: Eine Zahl schlägt jede allgemeine Beschreibung.
+
 **Das Material ist deine einzige Faktenquelle.** Kein Name, keine Zahl, kein Datum, kein Ort und keine Szene, die nicht darin steht. Auch dann nicht, wenn du sicher zu wissen glaubst, wie es war, und gerade dann nicht, wenn es die Stelle schöner machen würde. Was als tragend markiert ist, muss vorkommen. Innerhalb dieser Grenze bist du völlig frei.
 
 ## Ausgabe

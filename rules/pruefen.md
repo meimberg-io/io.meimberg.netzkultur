@@ -17,6 +17,7 @@ Hier laufen die Symptomlisten, nicht beim Schreiben. Eine Linse pro Lauf, jede �
 | `copyedit-coherence` | Aufbau, Anschlüsse, Bezüge, Widersprüche über Distanz | mittel |
 | `copyedit-plausibility` | Anachronismen, Größenordnungen, Zuordnung; liefert „Zu belegen" | mittel |
 | `copyedit-facts` | Recherche gegen die Belegliste | teuer |
+| `copyedit-humanize` | Maschinelle Muster: Satzlängen, Antithesen, Dreiklänge, Floskeln | billig |
 
 ## Zuschnitt
 
@@ -29,6 +30,8 @@ Umfang nach Größe der Änderung, am Ende einer Änderungsrunde statt nach jede
 | Kapitel fertig | coherence, plausibility | `--kapitel N` |
 | Werk fertig | coherence, dann facts | `--naht N`, `--abriss` |
 
+`humanize` läuft, wenn ein Abschnitt inhaltlich steht, und immer vor der Veröffentlichung. Nie beim Schreiben.
+
 Neue Überschrift, Einstiegssatz oder Bildunterschrift: Mini-Lauf mit `clarity`, zusammen mit dem Abschnitt, den sie ankündigt.
 
 Oli ruft die Linsen selbst auf. Ein neuer Abschnitt geht direkt an ihn. Claude liest ihn vorher einmal als Leser.
@@ -38,6 +41,8 @@ Oli ruft die Linsen selbst auf. Ein neuer Abschnitt geht direkt an ihn. Claude l
 Die Linsen sind blind und kennen die Erzählhaltung nicht. Diese Prüfung macht Claude selbst, am fertigen Abschnitt:
 
 - **Leitfragen-Rahmen im Einstieg.** Der Abschnitt fängt mit einer Sache an, nicht mit einer Frage, die er dann beantwortet.
+- **Spannungs-Grammatik.** „Gezündet hat die Sache von außen." Vorangestelltes Verb plus Platzhalter kündigt eine Wendung an, statt sie zu zeigen. Ebenso die Verneinung eines Einwands, den niemand erhoben hat („am Geld lag es nicht"), und die wertende Beigabe zum Fakt („ohne Beziehungen"). Test: streichen. Fehlt nichts, war es Ansage.
+- **Werkstattgeschichte.** Wer welche Fassung neu schrieb, welches Upgrade den Anlass gab, wie viele Standorte dazukamen: Herkunft der Software, nicht Kultur. Erkennungszeichen ist die Chronologie als Bauform. Ein Gründungsabschnitt nennt Namen, Ort, Jahr und geht zur Perle.
 - **Analytische Abschnitts-Schlüsse.** „Auch das war eine soziale Lösung …", „das gab es schon vor den Plattformen", „genau darin liegt der Kern". Ein Schluss darf schlicht zum nächsten Element überleiten.
 - **Analytische Glossen** mitten im Text: „bekam damit denselben Rang wie …".
 - **Behaupteter Vibe.** „Die waren cool", „avantgardistisch", „revolutionär". Zeigen statt behaupten.

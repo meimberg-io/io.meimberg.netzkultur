@@ -21,6 +21,14 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 
 ## Zu entscheiden (Oli)
 
+- **Wie heißt Horton im Text?** Für den neu gefassten H3 „Entstehung des Usenets" (01.03) ist das
+  Berkeley-Gateway recherchiert, das die ARPANET-Verteiler `SF-LOVERS` und `HUMAN-NETS` in die
+  `fa.*`-Gruppen einspeiste. Eingerichtet hat es **Mary Ann Horton**, die damals als *Mark Horton*
+  veröffentlichte. Bellovin (2019) und en.Wikipedia schreiben durchgehend Mary Ann Horton und „she";
+  die zeitgenössischen Usenet-Quellen kennen nur Mark Horton. Vorschlag und aktueller Stand im
+  Entwurf: **Mary Ann Horton**, ohne den Namenswechsel im Text zum Thema zu machen. Betrifft die
+  ganze Reihe, sobald sie später noch einmal vorkommt (B-News, `vi`, Berkeley-Unix).
+
 - **Zeitraum des Kapitels.** Der Kopf sagt „etwa 1978 bis 1994". Die Demoszene-Bilder reichen bis
   1997, der Ausblick bis in die Gegenwart. Entweder den Zeitraum auf 1996/97 dehnen oder ihn als
   ungefähre Ära lesen und so lassen. (Bilder und Ausblick bleiben, das ist entschieden.)
@@ -61,6 +69,28 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   bewusst weglassen.
 
 ## Zu erledigen (Claude)
+
+- **„Hierarchien" fällt im Schlussabsatz von „Entstehung des Usenets" (01.03) ohne Einführung** und
+  wird vom Folge-H3 („Diese Hierarchien …") als bekannt vorausgesetzt. Bestand in der alten Fassung
+  genauso, ist also kein Schaden des Umbaus, aber weiterhin die schwächste Naht im H2. Löst sich von
+  selbst, wenn `fa.*` in „Die Kartografie der Subkulturen" einzieht, weil dort die erste Hierarchie
+  benannt und gezeigt wird (siehe [kandidaten.md](../material/kandidaten.md)).
+
+- **Prüflauf über den neu gefassten H3 „Entstehung des Usenets"** (01.03, Fassung vom 2026-08-07,
+  201 Wörter): `copyedit-clarity`, `copyedit-language`, danach `copyedit-coherence` über den ganzen
+  H2. Belege stehen vollständig in [dossier-01.md](../material/dossier-01.md) § „Die Gründung des
+  Usenets" (recherchiert 2026-08-07, Snapshots nach `material/quellen/` fehlen noch). Im Text steht
+  davon nur noch ein Bruchteil; alles Weggelassene ist eine Entscheidung und **kein Rechercheloch**,
+  siehe [decisions.md](decisions.md). Zu prüfen bleibt für den Text, wie er jetzt dasteht:
+  - **Bellovins Ein-bis-zwei-Beiträge-Prognose** und die Folgen für die Ablage. Aus seiner eigenen
+    Darstellung von 2019, also Zeitzeuge über sich selbst, vierzig Jahre danach.
+  - **Die Ankündigung von 1980** wird zitiert, ohne Ort und Anlass zu nennen (Usenix, Boulder,
+    fünfseitiges Handout). Bewusst so; falls die Stelle einen Anker braucht, liegt er im Dossier.
+  - **Die Cancel-Nachricht seit 1983** stammt noch aus der alten Fassung und ist nie belegt worden.
+  - **Warum die Duke keinen ARPANET-Anschluss hatte, steht bewusst nicht im Text**, nur „und an
+    einen zu kommen war nicht leicht". Die Bedingung ist belegt (Bellovin: „To be on it, you had to
+    be a defense contractor or a university with a research contract from DARPA"), 01.02 hat sie dem
+    Leser schon gesagt, und ausformuliert lud sie den Absatz politisch auf. Nicht nachtragen.
 
 - **`copyedit-facts` über den neuen H3 „Die ungeplante Erfindung der E-Mail"** (01.02, vor der Spam-Mail
   eingefügt, weil E-Mail und Mailinglisten im ganzen Werk dreimal vorausgesetzt und nie eingeführt

@@ -15,7 +15,7 @@ Genau vier Teile, nichts sonst. Keine Konventionen, keine Verbotslisten, kein fr
 
 **2. Material.** Die Perlen der Outline wörtlich, Kontext im Fakt selbst („ARPA = Forschungsagentur des US-Verteidigungsministeriums"). Ungeprüftes bleibt draußen. Tragendes markieren. Umfang in Wörtern nennen.
 
-**3. Klangprobe.** Ein bis zwei ganze Absätze aus `rules/stimme.md`, oder besser ein Absatz aus einem Nachbarabschnitt, der schon so klingt, wie es weitergehen soll. Nie mehr als zwei, sonst kopiert der `writer` statt zu treffen.
+**3. Klangprobe.** Ein bis zwei ganze Absätze aus `rules/stimme.md`, **ausgewählt nach dem, was dieser Abschnitt zu tun hat**: eine erzählende Probe für eine Anekdote, eine erklärende für eine technische Strecke. Nicht jedes Mal dieselbe, sonst klingt am Ende jeder Abschnitt gleich. Bei längeren Passagen zwei verschieden gebaute, damit die Spannweite sichtbar wird. Steht im Werk schon ein Nachbarabsatz, der genau richtig klingt, ist er die bessere Probe. Nie mehr als zwei.
 
 **4. Vorwissen.** Zwei, drei Sätze: was der Leser gerade gelesen hat, welche Begriffe eingeführt sind, welche Wörter nebenan besetzt und hier verbrannt sind.
 
@@ -28,7 +28,7 @@ Ein vollständiges Briefing mit der Outline daneben: `beispiel/3-briefing.md`.
 3. Briefing bauen, `writer` starten.
 4. `Fehlt:`-Zeile im Rücklauf: recherchieren, ins Dossier eintragen, Briefing ergänzen, neu laufen lassen. Nicht selbst überschreiben.
 5. Text einsetzen, dabei `rules/form.md` anwenden: Dateiname, Kapitelkopf, Überschriften.
-6. Neuen Abschnitt in Longform an der richtigen Stelle und Ebene einsortieren, damit er in `manuscript/Index.md` steht. Eine Szene, die dort fehlt, kommt in keinem Prüfzuschnitt vor.
+6. Neuen Abschnitt in `manuscript/index.md` eintragen, an der richtigen Stelle und Ebene. Wer das vergisst, hat eine Datei, die in keinem Prüfzuschnitt vorkommt. Pflegt Longform den Index, entfällt der Schritt.
 7. Einmal als Leser lesen.
 
 Der Abschnitt geht direkt an Oli. Keine `copyedit-`Linse von hier aus starten, auch nicht als Angebot.

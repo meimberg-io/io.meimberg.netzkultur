@@ -59,7 +59,7 @@ NUMBERED = [
 PLACEHOLDER_DIRS = {"rules"}
 
 PATH_IN_TEXT = re.compile(
-    r"(?<![\w/-])(?:\.\./)?(?:rules|knowledge|material|state|text|assets|scripts|beispiel)/[\w./<>-]+"
+    r"(?<![\w/-])(?:\.\./)?(?:rules|knowledge|material|state|manuscript|assets|scripts|beispiel)/[\w./<>-]+"
     r"\.(?:md|py|js|json)"
 )
 
@@ -131,11 +131,17 @@ def check_contract(path, rel, fm, errors):
     if fm["role"] == "rule":
         if fm["mode"] != "full":
             errors.append(f"{rel}: role=rule verlangt mode=full")
-        groesse = len(path.read_text(encoding="utf-8"))
-        if groesse > MAX_RULE:
+        # Zitierte Klangproben zaehlen nicht mit. Die Grenze schuetzt vor Anweisungs-
+        # Wucher; eine Probe ist keine Anweisung, und zu wenige Proben erzeugen
+        # gleichfoermige Texte. Wer sie mitzaehlt, optimiert in die falsche Richtung.
+        anweisung = "\n".join(
+            l for l in path.read_text(encoding="utf-8").splitlines()
+            if not l.lstrip().startswith(">")
+        )
+        if len(anweisung) > MAX_RULE:
             errors.append(
-                f"{rel}: {groesse} Zeichen, erlaubt sind {MAX_RULE}. "
-                "Was nicht hineinpasst, ist keine Regel, sondern Wissen."
+                f"{rel}: {len(anweisung)} Zeichen Anweisung, erlaubt sind {MAX_RULE} "
+                "(Zitate zaehlen nicht). Was nicht hineinpasst, ist keine Regel, sondern Wissen."
             )
     elif fm["mode"] != "lookup":
         errors.append(
