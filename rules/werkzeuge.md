@@ -14,7 +14,7 @@ Was ein Agent an diesem Repo nicht sehen kann, weil es in der Obsidian-Oberfläc
 
 **Der Dateiname ist die Überschrift.** Der Compile-Step „Prepend Title" erzeugt sie aus dem Szenennamen, das Format `$3{#}  $1` macht aus der Einrückungstiefe die Überschriftenebene. Deshalb steht in den Szenendateien selbst keine Überschrift. Wer eine ändern will, benennt die Datei um.
 
-**`text/Index.md` ist die einzige Wahrheit für Zugehörigkeit und Reihenfolge.** Auf der Platte liegen alle Szenen flach in `text/`, die Verschachtelung existiert nur im Index. Longform pflegt ihn beim Umsortieren selbst. Diese Information gehört an keinen zweiten Ort, insbesondere nicht ins Frontmatter der Szenen.
+**`manuscript/Index.md` ist die einzige Wahrheit für Zugehörigkeit und Reihenfolge.** Auf der Platte liegen alle Szenen flach in `manuscript/`, die Verschachtelung existiert nur im Index. Longform pflegt ihn beim Umsortieren selbst. Diese Information gehört an keinen zweiten Ort, insbesondere nicht ins Frontmatter der Szenen.
 
 **Ordnungspräfixe** im Dateinamen (`01.03 - Titel`) sind erlaubt, damit die Dateien auch außerhalb von Obsidian sortiert sind. `longform-scripts/strip-order-prefix.js` schneidet sie beim Kompilieren aus der Überschrift und meldet, wenn die Nummern nicht zur Projektreihenfolge passen.
 
@@ -33,6 +33,6 @@ Schritt 2 ist die Falle: Das Kompilat enthält keine Bilder. Solange `manuscript
 
 ## Skripte
 
-`scripts/kompilieren.py` baut die drei Prüfzuschnitte (`--kapitel`, `--naht`, `--abriss`) aus `text/Index.md`. Longform selbst kann nur den kompletten Draft kompilieren, deshalb dieses Skript.
+`scripts/kompilieren.py` baut die drei Prüfzuschnitte (`--kapitel`, `--naht`, `--abriss`) aus `manuscript/Index.md`. Longform selbst kann nur den kompletten Draft kompilieren, deshalb dieses Skript.
 
 `scripts/kontext-lint.py` prüft die Verträge dieses Repos; seine eigenen Tests liegen im Template-Repo `io.meimberg.writer`. Bilder zieht `scripts/bild-einziehen.py` ein, Regeln in [bilder.md](bilder.md).

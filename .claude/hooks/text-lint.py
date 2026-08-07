@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Mechanischer Stil-Check fuer redaktionelle Texte.
 
-Prueft Markdown unter text/ auf das eine Zeichen, das sich mechanisch zuverlaessig
+Prueft Markdown unter manuscript/ auf das eine Zeichen, das sich mechanisch zuverlaessig
 ahnden laesst: den langen Gedankenstrich (Em-Dash). Er ist das deutlichste Merkmal
 maschinengeschriebener Prosa und laesst sich immer aufloesen, in Komma, Punkt,
 Doppelpunkt oder Klammer.
@@ -22,7 +22,7 @@ import json
 import sys
 
 # Verzeichnisse mit redaktionellem Text. Wer die Textablage umbenennt, aendert das hier.
-TEXT_DIRS = {"text", "drafts"}
+TEXT_DIRS = {"manuscript"}
 
 
 def findings(text):

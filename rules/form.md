@@ -14,7 +14,7 @@ Mechanisches, das die Hauptsession anwendet, nachdem der Text vom `writer` zurü
 
 Kapitel `NN - Titel`, Abschnitt `NN.MM - Titel`, darunter H3 und H4 im Fließtext. Zweistellig nummerieren. Der Dateiname ist die Überschrift, in der Szenendatei selbst steht keine. Ihr Frontmatter trägt nur `status` (`draft`, `review`, `final`) und `comment`.
 
-Zugehörigkeit und Reihenfolge stehen ausschließlich in `text/Index.md`, das Longform selbst pflegt.
+Zugehörigkeit und Reihenfolge stehen ausschließlich in `manuscript/Index.md`, das Longform selbst pflegt.
 
 ## Kapitelkopf
 

@@ -1,13 +1,13 @@
 {
   "version": 3,
   "projects": {},
-  "selectedDraftVaultPath": "text/Index.md",
+  "selectedDraftVaultPath": "manuscript/Index.md",
   "userScriptFolder": "longform-scripts",
   "sessionStorage": "data",
   "sessions": [
     {
       "start": "2026-08-07T11:22:12.758Z",
-      "total": 30794,
+      "total": 31332,
       "drafts": {
         "chapters/Index.md": {
           "total": 0,
@@ -16,6 +16,12 @@
           }
         },
         "text/Index.md": {
+          "total": 538,
+          "scenes": {
+            "07.04 - Die Entkopplung - Was bleibt, wenn die Agenten das Web übernehmen?": 538
+          }
+        },
+        "manuscript/Index.md": {
           "total": 30794,
           "scenes": {
             "00 - Netzkultur – Eine Retrospektive": 108,

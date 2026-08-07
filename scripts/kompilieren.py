@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Szenen aus text/Index.md zu Prueftexten zusammensetzen.
+"""Szenen aus manuscript/Index.md zu Prueftexten zusammensetzen.
 
 Longform kompiliert immer den ganzen Draft. Die Kohaerenzpruefung braucht aber
 kleinere und andere Zuschnitte, deshalb dieses Skript. Es liest die Reihenfolge
@@ -117,7 +117,7 @@ def first_sentences(text, count=2):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--projekt", type=pathlib.Path, default=pathlib.Path("text"))
+    ap.add_argument("--projekt", type=pathlib.Path, default=pathlib.Path("manuscript"))
     ap.add_argument("--kapitel", metavar="N|TEIL", help="ein Kapitel vollstaendig")
     ap.add_argument("--naht", type=int, metavar="N",
                     help="letzte Szene von Kapitel N plus erste von N+1")

@@ -13,10 +13,10 @@
 | `knowledge/` | `knowledge` | Abfrage | `fakten.md`, von Oli bestätigt, schlägt Modellwissen |
 | `material/` | `material` | Abfrage | `dossier-<NN>.md` je Kapitel · `quellen.md` Bewertung · `quellen/` Snapshots · `kandidaten.md` |
 | `state/` | `state` | Abfrage | `decisions.md` abgelehnte Befunde · `issues.md`, `issues-<NN>.md` · `publikation.md` |
-| `text/` |  |  | Das Longform-Projekt. `Index.md` plus eine Datei je Szene, `manuscript.md` ist das Kompilat |
-| `assets/` · `scripts/` |  |  | Bilder mit Metadaten · `kompilieren.py`, `kontext-lint.py`, `selbsttest.py`, `bild-einziehen.py` |
+| `manuscript/` |  |  | Das Buch. `Index.md` plus eine Datei je Szene, `kompilat.md` ist das zusammengesetzte Ganze |
+| `assets/` · `scripts/` |  |  | Bilder mit Metadaten · `kompilieren.py`, `kontext-lint.py`, `bild-einziehen.py` |
 | `beispiel/` |  |  | Eine Passage durch alle vier Stationen, als Muster für Outline und Briefing |
-| `drafts/` |  |  | Ursprungsfassungen, vollständig nach `text/` überführt. **Nicht** weiterschreiben |
+| `drafts/` |  |  | Olis unsortierter Notizzettel. **Wird ignoriert**, siehe unten |
 
 ## Der Vertrag
 
@@ -43,6 +43,7 @@ python3 scripts/kontext-lint.py
 ## Was nur hier steht
 
 - **Formuliert wird über den Agenten `writer`, nicht in der Hauptsession**, auch bei einem einzelnen Absatz. Warum: `rules/arbeitsweise.md`.
+- **`drafts/` wird nicht gelesen und nicht angefasst.** Unsortierte Notizen, Halbfertiges, Kopiertes. Weder durchsuchen noch beim Recherchieren heranziehen, außer Oli nennt ausdrücklich eine Datei daraus. Was dort brauchbar ist, wandert erst nach `material/`, wenn Oli es sagt.
 - **Texte nicht committen.** Oli committet redaktionelle Änderungen selbst. Werkzeuge, Skripte und Konfiguration dagegen schon.
-- **`text/Index.md` ist die einzige Wahrheit für Zugehörigkeit und Reihenfolge.** Longform pflegt die Datei, nicht von Hand ändern.
-- Der Hook `.claude/hooks/text-lint.py` prüft jede Schreiboperation unter `text/` mechanisch auf lange Gedankenstriche.
+- **`manuscript/Index.md` ist die einzige Wahrheit für Zugehörigkeit und Reihenfolge.** Longform pflegt die Datei, nicht von Hand ändern.
+- Der Hook `.claude/hooks/text-lint.py` prüft jede Schreiboperation unter `manuscript/` mechanisch auf lange Gedankenstriche.

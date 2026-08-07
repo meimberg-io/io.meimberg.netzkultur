@@ -24,11 +24,11 @@ Ein vollständiges Briefing mit der Outline daneben: `beispiel/3-briefing.md`.
 ## Ablauf
 
 1. Outline lesen, `material/dossier-<NN>.md` für die Belege daneben.
-2. Nachbarabschnitte in `text/` lesen, daraus Teil 3 und 4.
+2. Nachbarabschnitte in `manuscript/` lesen, daraus Teil 3 und 4.
 3. Briefing bauen, `writer` starten.
 4. `Fehlt:`-Zeile im Rücklauf: recherchieren, ins Dossier eintragen, Briefing ergänzen, neu laufen lassen. Nicht selbst überschreiben.
 5. Text einsetzen, dabei `rules/form.md` anwenden: Dateiname, Kapitelkopf, Überschriften.
-6. Neuen Abschnitt in `text/index.md` eintragen, an der richtigen Stelle und Ebene. Wer das vergisst, hat eine Datei, die in keinem Prüfzuschnitt vorkommt. Pflegt Longform den Index, entfällt der Schritt.
+6. Neuen Abschnitt in Longform an der richtigen Stelle und Ebene einsortieren, damit er in `manuscript/Index.md` steht. Eine Szene, die dort fehlt, kommt in keinem Prüfzuschnitt vor.
 7. Einmal als Leser lesen.
 
 Der Abschnitt geht direkt an Oli. Keine `copyedit-`Linse von hier aus starten, auch nicht als Angebot.

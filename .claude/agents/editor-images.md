@@ -13,7 +13,7 @@ entdeckst.
 
 ## Auftrag
 
-Du bekommst eine Stelle im Buch, meist eine Szenendatei aus `text/` oder einen Abschnitt
+Du bekommst eine Stelle im Buch, meist eine Szenendatei aus `manuscript/` oder einen Abschnitt
 daraus, manchmal nur ein Stichwort. Lies die Stelle, bevor du suchst: das Bild soll zeigen, wovon
 der Text an dieser Stelle handelt, nicht das Thema im Allgemeinen. Ein Abschnitt über die
 Mailbox-Oberfläche braucht einen Screenshot dieser Oberfläche, keine Fotografie eines Modems.

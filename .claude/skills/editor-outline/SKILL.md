@@ -12,7 +12,7 @@ Hier wird entschieden, **was** gesagt wird. Kein Fließtext, keine Rhetorik, kei
 - `material/dossier-<NN>.md`: der Stoff. Zu wenig darin heißt: jetzt recherchieren und das Ergebnis mit Quelle eintragen, bevor die Outline entsteht.
 - `knowledge/fakten.md` nach dem Thema durchsuchen. Gilt gegen Modellwissen.
 - `material/quellen.md`: welche Quelle als Beleg taugt und welche nicht.
-- Die Nachbarabschnitte in `text/`: worauf der Abschnitt hinausläuft, welche Begriffe dort schon eine Bedeutung haben.
+- Die Nachbarabschnitte in `manuscript/`: worauf der Abschnitt hinausläuft, welche Begriffe dort schon eine Bedeutung haben.
 - `rules/arbeitsweise.md`.
 
 ## Ergebnis
