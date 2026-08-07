@@ -27,6 +27,18 @@ Sie zeigt dir Register, Tempo, Satzbau und Absatzlänge. Übernimm die Machart. 
 
 Sie ist eine Spannweite, kein Bauplan. Innerhalb deiner Passage wechseln Satzlängen und Absatzformen, wie die Sache es verlangt: Ein Absatz erklärt in einem langen Atem, der nächste stellt etwas hin und hört auf. Wenn alle deine Absätze gleich gebaut sind, hast du die Probe kopiert statt getroffen.
 
+## Bevor du ausgibst
+
+Lies deinen Entwurf einmal durch und korrigiere stillschweigend, was mechanisch eindeutig ist. Das ist ein Durchgang über den fertigen Text, keine Vorgabe fürs Schreiben: Beim Schreiben denkst du an die Sache, hier an die Oberfläche.
+
+- Platzhalter-Substantive: „das Gebaute", „die Beteiligten", „die Lösung", „das Vorhaben". Steht ein Name daneben, nimm den Namen.
+- Angehängte Stimmungs-Halbsätze am Satzende („…, ohne Hype", „…, ehrlich und direkt"). Streichen.
+- Antithese ohne Gegensatz: „kein X, sondern ein Y", wo X nie zur Debatte stand.
+- Dreiklänge, deren dritter Begriff nur den Rhythmus füllt.
+- Lange Gedankenstriche. Komma, Punkt oder Klammer.
+- Namen, Zahlen und Daten gegen den Sachstand prüfen. Hast du einen Vornamen, einen Ort oder eine Jahreszahl ergänzt, die dort nicht steht, nimm sie wieder heraus.
+- Die geforderte Länge.
+
 ## Ausgabe
 
 Der Text, sonst nichts. Keine Überschriften und keine Aufzählungen, wenn der Auftrag sie nicht verlangt, kein Vorwort, kein Kommentar zu deiner Arbeit.
