@@ -9,7 +9,7 @@
 
 | Verzeichnis | Rolle | Ladeverhalten | Inhalt |
 |---|---|---|---|
-| `rules/` | `rule` | **ganz**, vor dem Handeln | `stimme.md` Klang · `form.md` Format · `arbeitsweise.md` Verfahren · `pruefen.md` Prüfung · `bilder.md` · `werkzeuge.md` Longform |
+| `rules/` | `rule` | **ganz**, vor dem Handeln | `stimme.md` Klang · `form.md` Format · `arbeitsweise.md` Verfahren · `pruefen.md` Prüfung · `erzaehlhaltung.md` inhaltliche Fallen · `bilder.md` · `werkzeuge.md` |
 | `knowledge/` | `knowledge` | Abfrage | `fakten.md`, von Oli bestätigt, schlägt Modellwissen |
 | `material/` | `material` | Abfrage | `dossier-<NN>.md` je Kapitel · `quellen.md` Bewertung · `quellen/` Snapshots · `kandidaten.md` |
 | `state/` | `state` | Abfrage | `decisions.md` abgelehnte Befunde · `issues.md`, `issues-<NN>.md` · `publikation.md` |
@@ -34,6 +34,7 @@ python3 scripts/kontext-lint.py
 | Klang, Publikum, Zielbild | `rules/stimme.md` |
 | Kapitelkopf, Überschrift, Vokabular | `rules/form.md` |
 | Änderungsrunde fertig | `rules/pruefen.md`, welche Linse, welcher Zuschnitt |
+| Abschnitt fertig, vor der Übergabe | `rules/erzaehlhaltung.md` selbst durchgehen |
 | Behauptung schreiben oder anzweifeln | `knowledge/fakten.md` durchsuchen |
 | Befund vor der Übergabe an Oli | `state/decisions.md` als Filter |
 | Offener Punkt, jetzt nicht behoben | sofort nach `state/issues*.md`, vor der Chat-Antwort |

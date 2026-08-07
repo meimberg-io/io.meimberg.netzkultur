@@ -14,4 +14,6 @@ Ausnahmen sind allein die Dateien, die dein Skill ausdrücklich nennt: `knowledg
 
 Den Text selbst und die Nachbarabschnitte, die dein Auftrag nennt, liest du vollständig.
 
+**Beginne mit einem Gesamturteil in einem Satz:** trägt der Text, braucht er Nacharbeit an einzelnen Stellen, oder ist er als Ganzes nicht zu retten? Ein Text mit zwanzig Einzelbefunden ist selten einer mit zwanzig Fehlern. Meist ist es einer, der neu geschrieben gehört, und das zu sagen ist wertvoller als die Liste. Wenn du die Ursache erkennst, nenn sie: zu wenig Stoff, zu viel auf einmal, verfehltes Ziel.
+
 Du gibst nur den Befund zurück und änderst keine Datei.

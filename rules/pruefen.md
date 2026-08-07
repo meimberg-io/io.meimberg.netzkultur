@@ -8,55 +8,47 @@ agent-visible: no
 
 # Prüfen
 
-Hier laufen die Symptomlisten, nicht beim Schreiben. Eine Linse pro Lauf, jede über den Agenten `copyedit`. Zwei Prüfungen in einem Lauf verdrängen einander: Fakten schlagen Sprache, Sprache schlägt Verständlichkeit.
+Eine Linse pro Lauf, jede über den Agenten `copyedit`. Zwei Prüfungen in einem Lauf verdrängen einander: Fakten schlagen Sprache, Sprache schlägt Verständlichkeit.
 
 | Linse | Prüft | Kosten |
 |---|---|---|
 | `copyedit-clarity` | Erster Eindruck, Doppeldeutigkeit, falsche Assoziation | billig |
 | `copyedit-language` | Betonung, Wortwahl, Bilder, Grammatik, Register, Rhythmus | billig |
-| `copyedit-coherence` | Aufbau, Anschlüsse, Bezüge, Widersprüche über Distanz | mittel |
-| `copyedit-plausibility` | Anachronismen, Größenordnungen, Zuordnung; liefert „Zu belegen" | mittel |
-| `copyedit-facts` | Recherche gegen die Belegliste | teuer |
 | `copyedit-humanize` | Maschinelle Muster: Satzlängen, Antithesen, Dreiklänge, Floskeln | billig |
-
-## Zuschnitt
-
-Umfang nach Größe der Änderung, am Ende einer Änderungsrunde statt nach jedem Komma. Zuschnitte baut `scripts/kompilieren.py`.
+| `copyedit-coherence` | Aufbau, Anschlüsse, Bezüge, Widersprüche über Distanz | mittel |
+| `copyedit-plausibility` | Anachronismen, Größenordnungen; liefert „Zu belegen" | mittel |
+| `copyedit-facts` | Recherche gegen die Belegliste | teuer |
 
 | Geändert | Linsen | Umfang |
 |---|---|---|
 | Satz | clarity, language | Abschnitt |
 | Absatz umgebaut oder verschoben | zusätzlich coherence | Abschnitt |
-| Kapitel fertig | coherence, plausibility | `--kapitel N` |
+| Kapitel fertig | coherence, plausibility, humanize | `--kapitel N` |
 | Werk fertig | coherence, dann facts | `--naht N`, `--abriss` |
 
-`humanize` läuft, wenn ein Abschnitt inhaltlich steht, und immer vor der Veröffentlichung. Nie beim Schreiben.
+Am Ende einer Änderungsrunde, nicht nach jedem Komma. Oli ruft die Linsen selbst auf; Claude liest den Abschnitt vorher einmal als Leser.
 
-Neue Überschrift, Einstiegssatz oder Bildunterschrift: Mini-Lauf mit `clarity`, zusammen mit dem Abschnitt, den sie ankündigt.
+## Reparieren statt flicken
 
-Oli ruft die Linsen selbst auf. Ein neuer Abschnitt geht direkt an ihn. Claude liest ihn vorher einmal als Leser.
+**Ein Prüflauf liefert Befunde, keine Aufgabenliste.** Vor der ersten Änderung steht ein Urteil über den ganzen Abschnitt.
 
-## Was in dieser Reihe zusätzlich geprüft wird
+- **Bis etwa fünf Befunde:** einzeln beheben, nach jedem Eingriff den Absatz ganz lesen.
+- **Mehr, oder mehrere zum Aufbau:** nicht flicken. Der Abschnitt geht zurück auf Stufe 1. Zwanzig einzeln reparierte Sätze ergeben einen Text, der an zwanzig Stellen stimmt und im Ganzen tot ist: Jede Reparatur wird defensiv formuliert, und die Übergänge zwischen den geflickten Stellen trägt niemand mehr.
 
-Die Linsen sind blind und kennen die Erzählhaltung nicht. Diese Prüfung macht Claude selbst, am fertigen Abschnitt:
+Der Befundberg ist die Diagnose, nicht die Aufgabe. Die Ursache ist fast immer eine von vieren:
 
-- **Leitfragen-Rahmen im Einstieg.** Der Abschnitt fängt mit einer Sache an, nicht mit einer Frage, die er dann beantwortet.
-- **Spannungs-Grammatik.** „Gezündet hat die Sache von außen." Vorangestelltes Verb plus Platzhalter kündigt eine Wendung an, statt sie zu zeigen. Ebenso die Verneinung eines Einwands, den niemand erhoben hat („am Geld lag es nicht"), und die wertende Beigabe zum Fakt („ohne Beziehungen"). Test: streichen. Fehlt nichts, war es Ansage.
-- **Werkstattgeschichte.** Wer welche Fassung neu schrieb, welches Upgrade den Anlass gab, wie viele Standorte dazukamen: Herkunft der Software, nicht Kultur. Erkennungszeichen ist die Chronologie als Bauform. Ein Gründungsabschnitt nennt Namen, Ort, Jahr und geht zur Perle.
-- **Analytische Abschnitts-Schlüsse.** „Auch das war eine soziale Lösung …", „das gab es schon vor den Plattformen", „genau darin liegt der Kern". Ein Schluss darf schlicht zum nächsten Element überleiten.
-- **Analytische Glossen** mitten im Text: „bekam damit denselben Rang wie …".
-- **Behaupteter Vibe.** „Die waren cool", „avantgardistisch", „revolutionär". Zeigen statt behaupten.
-- **Featureliste statt Strang.** Gästebuch, Besucherzähler und animierte GIFs gehören in ihren Strang, nicht je in einen eigenen Abschnitt. Und die große Klammer erkennen: nicht „Winamp", sondern „die Musik wandert ins Netz".
-- **Genanntes ohne Anschauung.** Wird eine Seite erwähnt (Suck.com), muss dastehen, was daran war, sonst weglassen.
-- **Das schön Sinnlose klein eingeführt.** „Zwischen all dem standen auch ein paar Seiten …" für etwas, das kulturell im Zentrum steht.
+- zu wenig Material, der Text füllt
+- der Auftragssatz war ein Thema statt eines Ziels
+- die Klangprobe passte nicht zu dem, was der Abschnitt tun sollte
+- der Abschnitt will zu viel auf einmal
 
-## Befunde
+Welche es war, gehört ins Briefing der Neufassung. Ohne das kommt dieselbe Fassung zurück.
 
-- Nie den alten Befund mitgeben. Ob eine gemeldete Stelle behoben ist, prüft Claude selbst.
-- Nach dem Einarbeiten zweiter Lauf. Reparaturen erzeugen neue Schäden.
-- Eine Form ist kein Befund, solange der Satz etwas sagt. Ein Befund entsteht, wo die Form eine leere Stelle verdeckt.
-- Jeden Befund gegen `state/decisions.md` abgleichen, über die **Stelle** im Text, nicht über die Formulierung. Nur Offenes an Oli.
-- Abgelehnter Befund sofort nach `state/decisions.md`, bestätigter Sachverhalt nach `knowledge/fakten.md`.
+**Eine Form ist kein Befund, solange der Satz etwas sagt.** Ein Befund entsteht, wo die Form eine leere Stelle verdeckt.
+
+Nie den alten Befund an einen Agenten mitgeben. Nach dem Einarbeiten ein zweiter Lauf, weil Reparaturen neue Schäden erzeugen. Jeden Befund gegen `state/decisions.md` abgleichen, über die **Stelle** im Text, nicht über die Formulierung; nur Offenes an Oli. Abgelehnter Befund sofort nach `state/decisions.md`, bestätigter Sachverhalt nach `knowledge/fakten.md`.
+
+Was diese Reihe inhaltlich falsch machen kann, steht in [erzaehlhaltung.md](erzaehlhaltung.md) und wird von Claude selbst geprüft.
 
 ## Was die Agenten sehen
 
