@@ -13,7 +13,7 @@ Genau vier Teile, nichts sonst. Keine Konventionen, keine Verbotslisten, kein fr
 
 **1. Auftrag.** Ein Satz: Was soll der Abschnitt beim Leser hinterlassen? Das Ziel, nicht das Thema. Nicht „Mailboxen", sondern „Wie es sich anfühlte, sich nachts in ein fremdes Wohnzimmer einzuwählen, und warum daraus eine Kultur wurde". Steht die Outline gut, ist das ihr erster Satz.
 
-**2. Sachstand.** Der Abschnitt „Sachstand" aus Stufe 1, vollständig und wörtlich. **Die redaktionellen Notizen bleiben draußen**, sonst schreibt der `writer` gegen Fehlannahmen an, die der Leser nie hatte. Nicht zu Stichpunkten eindampfen: Was du hier wegkürzt, fehlt im Text, und was du weglässt, erfindet der `writer` neu. Ungeprüftes bleibt draußen. Umfang des Zieltextes nennen.
+**2. Intake.** Der Abschnitt „Intake" aus Stufe 1, vollständig und wörtlich. Redaktionelle Hinweise darin sind in Ordnung, der `writer` erkennt sie. Nicht zu Stichpunkten eindampfen: Was du hier wegkürzt, fehlt im Text, und was du weglässt, erfindet der `writer` neu. Ungeprüftes bleibt draußen. Umfang des Zieltextes nennen.
 
 Damit ist die zweite Stufe eine **Umformulierung**, keine Erzeugung. Der Inhalt steht, es geht nur noch um die Sprache.
 

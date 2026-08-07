@@ -8,7 +8,7 @@ agent-visible: no
 
 # Erzählhaltung
 
-Was diese Reihe inhaltlich falsch machen kann. Die Linsen finden das nicht, sie kennen die Erzählhaltung nicht. Claude prüft es selbst, am fertigen Abschnitt und vor der Übergabe. `editor-outline` liest es vorher, weil die Auswahl im Sachstand passiert und nicht im Text.
+Was diese Reihe inhaltlich falsch machen kann. Die Linsen finden das nicht, sie kennen die Erzählhaltung nicht. Claude prüft es selbst, am fertigen Abschnitt und vor der Übergabe. `editor-outline` liest es vorher, weil die Auswahl im Intake passiert und nicht im Text.
 
 - **Leitfragen-Rahmen im Einstieg.** Der Abschnitt fängt mit einer Sache an, nicht mit einer Frage, die er dann beantwortet.
 - **Spannungs-Grammatik.** „Gezündet hat die Sache von außen." Vorangestelltes Verb plus Platzhalter kündigt eine Wendung an, statt sie zu zeigen. Ebenso die Verneinung eines Einwands, den niemand erhoben hat („am Geld lag es nicht"), und die wertende Beigabe zum Fakt („ohne Beziehungen"). Test: streichen. Fehlt nichts, war es Ansage.

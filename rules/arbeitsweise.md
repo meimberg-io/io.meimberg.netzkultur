@@ -23,7 +23,7 @@ Bei Kritik zuerst klären, ob Inhalt oder Formulierung gemeint ist. Inhaltliche 
 
 Nie in der Hauptsession, auch nicht bei einem einzelnen Absatz. Er bekommt Auftrag, Material, Klangprobe, Vorwissen des Lesers.
 
-Keine Regelwerke, keine Konventionen, keine Verbotslisten ins Briefing. Belegt am 2026-07-31: Ein Prompt mit Sachstand und sieben Verboten lieferte drei unbrauchbare Fassungen, ein Ein-Satz-Auftrag drei brauchbare. Symptomlisten laufen nach dem Schreiben, siehe [pruefen.md](pruefen.md).
+Keine Regelwerke, keine Konventionen, keine Verbotslisten ins Briefing. Belegt am 2026-07-31: Ein Prompt mit Intake und sieben Verboten lieferte drei unbrauchbare Fassungen, ein Ein-Satz-Auftrag drei brauchbare. Symptomlisten laufen nach dem Schreiben, siehe [pruefen.md](pruefen.md).
 
 Das gilt für das Schreiben aus Material. Beim **Umschreiben** eines fertigen Textes ist es anders: Dort steht der Inhalt schon, es gibt nichts, worum man herumschreiben könnte, und eine mechanische Liste (Gedankenstrich, Dreiklang, Floskel) ist dann ein brauchbares Werkzeug. Der Unterschied ist nicht die Liste, sondern ob der Text noch entsteht.
 
