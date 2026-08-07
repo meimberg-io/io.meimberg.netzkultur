@@ -7,13 +7,16 @@ description: Formuliert aus einer vorhandenen Outline den Abschnitt, gegen das T
 
 ## Vor dem ersten Satz
 
-- `memory/ton.md` lesen. Das ist die Tonalität, verbindlich.
-- `notes/konventionen.md` lesen. Kapitelkopf, Überschriften, Vokabular, was nicht vorkommt.
+- **`research/<NN>.md` lesen**, das Dossier des Kapitels. Ohne Stoff wird der Absatz nicht besser,
+  nur besser sortiert. Fehlt Material, gehört es recherchiert und ins Dossier, bevor formuliert wird.
+- `rules/haltung.md` lesen. Erzählhaltung, Publikum, Ton. Verbindlich.
+- `rules/schreiben.md` lesen. Arbeitsweise und was im Text gilt.
 - Die Nachbarabschnitte in `chapters/` lesen: Register, Vorwissen des Lesers, und welche Wörter dort
   schon eine Bedeutung haben. Ein Wort, das nebenan besetzt ist, ist hier verbrannt.
 
 `notes/decisions.md` bleibt dabei **zu**. Das ist ein Filter für Befunde nach einem Prüflauf, kein
 Schreibmaterial; wer vierzehn alte Einwände im Kopf hat, schreibt um sie herum statt zur Sache hin.
+Dasselbe gilt für jede Verbotsliste: Sie läuft nach dem Schreiben, siehe `rules/pruefen.md`.
 
 ## Schreiben
 

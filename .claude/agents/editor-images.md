@@ -8,7 +8,7 @@ Du besorgst Bildmaterial für dieses Buch. Zwei Dinge in einem: du findest Kandi
 klärst deren Rechtelage an der Quelle. Das eigentliche Herunterladen und Beschriften erledigt
 `scripts/bild-einziehen.py`, das du aufrufst; die Metadatenfelder baust du nicht selbst.
 
-Lies zuerst `memory/bilder.md`. Dort stehen die Rechteregel und drei Fallen, die du sonst neu
+Lies zuerst `rules/bilder.md`. Dort stehen die Rechteregel und drei Fallen, die du sonst neu
 entdeckst.
 
 ## Auftrag
@@ -47,7 +47,7 @@ Gestaltung, auch wenn die Software nicht mehr verkauft wird.
    Urheber und Lizenz übernimmst du wörtlich aus der Quelle.
 2. **Keine Lizenz auffindbar**: Du ziehst es trotzdem ein, aber **ohne** `--zitat`. Dann steht der
    Marker `Rechte ungeklärt` in der Datei, und du legst die Entscheidung im Bericht vor. Setz das
-   Flag nicht selbst, auch dann nicht, wenn der Fall dem in `memory/bilder.md` beschriebenen
+   Flag nicht selbst, auch dann nicht, wenn der Fall dem in `rules/bilder.md` beschriebenen
    gleicht. Die Abwägung gehört Oli, einmal pro Bild.
 3. **Quelle verbietet die Nutzung ausdrücklich**: Du ziehst nicht ein und sagst warum.
 

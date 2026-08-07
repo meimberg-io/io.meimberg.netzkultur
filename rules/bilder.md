@@ -1,3 +1,11 @@
+---
+rolle: regel
+liest: editor-images
+wann: vor der Bildsuche
+modus: ganz
+agentensichtbar: ja
+---
+
 # Bilder: Metadaten, Rechte, Fallstricke
 
 Bilder werden mit `scripts/bild-einziehen.py` eingezogen. Das Skript lädt die Datei und schreibt

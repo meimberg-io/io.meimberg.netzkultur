@@ -1,3 +1,11 @@
+---
+rolle: stand
+liest: claude
+wann: laufend, sobald ein Punkt offen bleibt
+modus: abfrage
+agentensichtbar: nein
+---
+
 # Offene Punkte: Kapitel 01
 
 Alles, was an Kapitel 01 noch zu tun ist. Claude pflegt diese Liste **selbst und sofort**: Jeder
@@ -152,6 +160,40 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
     1998 (aus Umfangsgründen gestrichen, siehe Outline), die Scherz-RFCs samt RFC 1149 (Brieftaube,
     1. April 1990; von Oli gestrichen, weil der Platz für den Inhalt der Reihe gebraucht wurde),
     RFC 1855 (gehört als Pointe nach 01.06), IETF, Standard-Stufen, die Umstellung auf TCP/IP.
+
+- **`copyedit-facts` über den AfroNet-Absatz** (01.01, Ende von „FidoNet verband die Inseln", Fassung
+  von Oli, eingesetzt 2026-08-07). Zu prüfen sind:
+  - **Ken Onwere, 1993, FidoNet-basiert, Nordamerika.** Bestätigt sich in zwei unabhängigen Quellen
+    (siehe unten). Ergänzend belegt und noch nicht im Text: Onwere war ein in den USA geborener
+    Nigerianer und lebte in San Diego; aufgebaut hat er das Netz mit vier Sysops, **Idette Vaughan**
+    (*The BlackNet*), **Alex Hartley** (*Alex's Place*), **Nathaniel Saunders** (*Minority Affairs*)
+    und **John Alston** (*VulcanNet*). Technisch war es ein **Echomail-Backbone**, der Konferenzen mit
+    afrikanischen und afroamerikanischen Themen von der West- zur Ostküste verteilte, freiwillig
+    betrieben und für jeden offen.
+  - **„einer der ersten sicheren, unabhängigen digitalen Räume".** Die Erstheit ist ungedeckt, der
+    Schutzraum dagegen belegt: Beteiligte beschreiben das AfroNet als den Ort, an dem man „seine
+    Leute" fand, und als Verschnaufpause von dem Rassismus, der ihnen im übrigen frühen Netz
+    entgegenschlug. Ältere Systeme liefen schon davor, etwa *SpiritDatatree* von William Murrell in
+    Boston ab April 1992, was gegen „einer der ersten" spricht, wenn der Maßstab die einzelne Mailbox
+    ist, und dafür, wenn der Maßstab der Verbund ist.
+  - **Offen:** wie lange das AfroNet lief (keine Quelle nennt ein Ende) und wie groß es war (keine
+    Knotenzahl). Der Hopkins-Syllabus sagt abweichend „teils schon in den 1980ern", meint damit aber
+    vermutlich die beteiligten Mailboxen, nicht den Verbund.
+  - **Stärkste ungenutzte Konkretion:** Das AfroNet verbreitete Berichte aus erster Hand über
+    Rassismus bei **AT&T**. Steht bisher nur auf einer Seite (blacksoftware.com) und wäre, wenn es
+    sich halten lässt, das Detail, das dem Absatz einen Vorgang statt einer Beschreibung gibt.
+  - **Quellen, noch nicht nach `sources/` gesichert:**
+    [loriemerson.net](https://loriemerson.net/2021/04/12/excavating-future-histories-of-the-internet-afronet-newsletter-telegraph/) ·
+    [blacksoftware.com](https://blacksoftware.com/before-blacks-had-the-internet/) ·
+    [AFRONET BBS List, Africa Center (403 beim Abruf)](https://www.africa.upenn.edu/BBS_Internet/afro_bbs.html) ·
+    [LARB, Alternative Internets and Their Lost Histories](https://lareviewofbooks.org/article/alternative-internets-and-their-lost-histories/).
+    Dazu weiterhin Charlton McIlwain, *Black Software* (siehe [kandidaten.md](kandidaten.md)).
+  - **Die Datierung verschiebt die Einordnung.** 1993 liegt neun Jahre hinter dem Fido-Start und
+    zeitlich neben den kommerziellen Diensten, nicht neben Jennings. Im Fido-Abschnitt ist das ein
+    Sprung nach vorn. Beim Gegenlesen prüfen.
+  - **Dopplung mit dem Absatz davor.** Der endet auf „lange bevor das Wort ‚Internet' in Zeitungen
+    stand", der AfroNet-Absatz beginnt mit „weit vor dem kommerziellen World Wide Web". Zwei Absätze
+    hintereinander mit derselben Pointe.
 
 - **Der Netiquette-Satz in 01.06 kann jetzt kürzer werden.** Dort steht „1995 erschien er als
   RFC 1855, in derselben Dokumentenreihe, in der auch die technischen Protokolle des Netzes stehen".

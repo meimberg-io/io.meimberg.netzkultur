@@ -8,19 +8,51 @@
 
 ---
 
-## Wo was liegt
+## Die Kontext-Architektur
+
+Jede Datei außerhalb von `chapters/` gehört zu genau **einem** Moment im Ablauf. Der Moment steht im
+Frontmatter der Datei, und `scripts/kontext-lint.py` hält das durch. Eine Datei ohne Leser wird
+verdrahtet oder gelöscht: So ist `memory/digest.md` neun Monate lang unbemerkt tot gewesen, während
+die Kapitel ohne ihr Material geschrieben wurden.
+
+| Ebene | Frage | Modus | Wer lädt |
+|---|---|---|---|
+| `rules/` | Wie wird gearbeitet? | **ganz gelesen**, max. 150 Zeilen | die Skills, deterministisch |
+| `research/` | Welcher Stoff liegt vor? | durchsucht | `editor-outline`, `editor-write`, `copyedit-facts` |
+| `memory/` | Was ist gesichert wahr? | durchsucht | die Fakten-Linsen |
+| `notes/` | Wo stehen wir? | durchsucht | ich, zwischen den Läufen |
+| `sources/` | Was ist das Rohmaterial? | 1:1-Kopien | beim Materialsammeln |
+
+**Die Asymmetrie ist Absicht.** Beim **Schreiben** wird Material geladen und keine Verbotsliste. Beim
+**Prüfen** laufen die Verbotslisten, und die Linsen sehen sonst nichts. Ein Agent, der sieben Dinge
+vermeiden muss, schreibt um Formulierungen herum statt zur Sache hin; ein Absatz ohne Stoff wird
+durch keine Regel gut.
+
+| Datei | Inhalt |
+|---|---|
+| `rules/schreiben.md` | Arbeitsweise und was im Text gilt. Vor dem ersten Satz |
+| `rules/haltung.md` | Erzählhaltung, Publikum, Ton |
+| `rules/pruefen.md` | Welche Linse wann, Blindheitsregeln, was die Agenten sehen dürfen |
+| `rules/bilder.md` | Rechteregel und die Fallen der Metadaten |
+| `research/<NN>.md` | Dossier pro Kapitel: recherchiertes Material mit Herkunft |
+| `research/quellen.md` | Welche Quelle taugt wofür: Belegapparat, Zeitzeuge, Steinbruch |
+| `memory/fakten.md` | Von Oli bestätigt, gilt gegen Modellwissen |
+| `notes/issues.md`, `notes/<NN>_issues.md` | Offene Punkte, werkweit und pro Kapitel |
+| `notes/decisions.md` | Abgelehnte Befunde. Filter nach einem Prüflauf, nie beim Schreiben |
+| `notes/kandidaten.md` | Stoff, der noch nicht drin ist |
+| `notes/publikation.md` | Zielplattform und Stand |
+
+## Wo der Text liegt
 
 | Verzeichnis | Inhalt |
 |---|---|
 | `chapters/` | Das Longform-Projekt. `Index.md` plus eine Datei je Abschnitt, `manuscript.md` ist das Kompilat |
-| `drafts/kapitel/` | Die Ursprungsfassungen `01.md` bis `07.md`, aus denen die Szenen geschnitten wurden. Vollständig überführt, können weg, sobald das Ergebnis geprüft ist. **Nicht** weiterschreiben, die Wahrheit liegt in `chapters/` |
+| `drafts/kapitel/` | Die Ursprungsfassungen `01.md` bis `07.md`. Vollständig überführt. **Nicht** weiterschreiben, die Wahrheit liegt in `chapters/` |
 | `drafts/` | Kürzere Texte und Snippets rund um das Buch |
 | `sources/` | Quellen-Snapshots, 1:1-Kopien. Herkunft je Datei in `sources/sources.md` |
 | `assets/` | Bilder. Metadaten werden über den Lightroom-Katalog in `lightroom/` gepflegt |
-| `notes/` | `konventionen.md` (Regeln der Reihe, beim Schreiben gelesen), `decisions.md` (abgelehnte Befunde, nur nach einem Prüflauf gelesen), `issues.md` und `<NN>_issues.md` (offene Punkte), `kandidaten.md` (Stoff, der noch nicht drin ist) |
-| `memory/` | `fakten.md` (bestätigte Fakten), `ton.md` (Tonalitätsbriefing), `bilder.md` (Metadaten und Rechte), `quellen.md` (Bewertung der Quellen), `redaktions-workflow.md`, `oli.md` |
 | `longform-scripts/` | Eigene Longform-Compile-Steps, die das Plugin selbst lädt |
-| `scripts/` | Repo-Werkzeuge: Prüftexte bauen, Bilder mit Lightroom-Metadaten einziehen |
+| `scripts/` | Repo-Werkzeuge: Prüftexte bauen, Bilder einziehen, Kontext prüfen |
 
 ## Wie Longform hier funktioniert
 
@@ -79,10 +111,15 @@ scripts/kapitel-kompilieren.py --abriss        # Überschriftenbaum, je zwei Sä
 Ohne Argument kommt das ganze Buch. Longform selbst kann nur den kompletten Draft kompilieren,
 deshalb dieses Skript.
 
+**Kontext prüfen:** `scripts/kontext-lint.py` prüft, ob jede Datei unter `rules/`, `research/`,
+`memory/` und `notes/` einen Leser hat, ob dieser Leser sie tatsächlich lädt, ob kein Skill auf einen
+toten Pfad zeigt und ob die Regeldateien kurz genug zum Ganzlesen sind. Nach jeder Änderung an der
+Kontext-Ebene laufen lassen.
+
 **Bilder besorgen:** der Agent `editor-images` sucht Bilder zu einer Textstelle, klärt Urheber und
 Lizenz an der Quelle und zieht sie mit `scripts/bild-einziehen.py` samt Metadaten ein. Er ist der
 einzige Agent hier, der nicht prüft, sondern etwas herstellt. Regeln und Fallen:
-[memory/bilder.md](memory/bilder.md).
+[rules/bilder.md](rules/bilder.md).
 
 ## Wie Skills, Agenten und Commands hier zusammenhängen
 
@@ -104,11 +141,11 @@ nichts. Deshalb gilt für die Aufteilung nur eine Frage: Muss die Arbeit blind s
 
 ## Schreiben
 
-**`/editor-outline`** baut erst das Inhalts-Skelett aus Fakten, das Oli prüft, bevor Prosa entsteht.
-**`/editor-write`** formuliert daraus in einem Zug gegen [memory/ton.md](memory/ton.md) und
-[notes/konventionen.md](notes/konventionen.md) und legt den Text dann vor. Die Outline ist Planung,
-nicht Gliederung: Wer sie Punkt für Punkt in Sätze übersetzt, bekommt Staccato. Die Linsen startet Oli
-selbst, sie laufen nicht automatisch hinterher.
+**`/editor-outline`** baut erst das Inhalts-Skelett aus dem Kapitel-Dossier, das Oli prüft, bevor
+Prosa entsteht. **`/editor-write`** formuliert daraus in einem Zug gegen [rules/haltung.md](rules/haltung.md)
+und [rules/schreiben.md](rules/schreiben.md) und legt den Text dann vor. Die Outline ist Planung,
+nicht Gliederung: Wer sie Punkt für Punkt in Sätze übersetzt, bekommt Staccato. Die Linsen startet
+Oli selbst, sie laufen nicht automatisch hinterher.
 
 ## Prüfen
 
@@ -116,8 +153,8 @@ Fünf Linsen, jede allein, weil zusammengelegte Prüfungen sich gegenseitig verd
 **`/copyedit-clarity`** (versteht der Leser den Satz beim ersten Lesen),
 **`/copyedit-language`** (Betonung, Wortwahl, Bilder), **`/copyedit-coherence`** (Aufbau, Anschlüsse,
 Widersprüche), **`/copyedit-plausibility`** (Anachronismen, Größenordnungen, Belegliste),
-**`/copyedit-facts`** (Recherche). Welche wann läuft:
-[memory/redaktions-workflow.md](memory/redaktions-workflow.md).
+**`/copyedit-facts`** (Recherche). Welche wann läuft und was die Agenten sehen dürfen:
+[rules/pruefen.md](rules/pruefen.md).
 
 Geprüft wird auf drei Ebenen, weil ein Abschnitt allein die Anschlüsse nicht zeigt:
 
@@ -133,23 +170,17 @@ Schreiboperation unter `chapters/` und `drafts/` mechanisch auf lange Gedankenst
 
 ---
 
-## Konventionen
+## Was in jeder Session gilt
 
-- **Nie lokal am Satz redigieren.** Vor der Änderung den Abschnitt lesen, bei Strukturfragen das
-  Kapitel und die Einleitung. Danach prüfen, was die Änderung woanders zerrissen hat. Der
-  Prüfradius richtet sich nach der Größe der Änderung.
-- **Diskussion ist nicht Text.** Was Oli im Gespräch sagt, ist Begründung. In den Text gehört kein
-  Satz, der eine Behauptung verneint, die nur in einer Vorfassung stand. Prüfen: Stünde dieser Satz
-  auch da, wenn wir nie darüber geredet hätten?
+Alles Weitere steht in `rules/` und wird dort geladen, wo es gebraucht wird. Hier stehen nur die vier
+Regeln, für die es keinen späteren Leser gibt:
+
+- **Texte nicht committen.** Oli committet redaktionelle Änderungen selbst. Werkzeuge, Skripte und
+  Konfiguration dagegen schon.
+- **Offene Punkte sofort festhalten** → `notes/<NN>_issues.md`, nicht nur im Chat und nicht in
+  `decisions.md`. Dort steht, was entschieden ist, nicht was offen ist.
+- **Bestätigte Fakten** → `memory/fakten.md`, sobald Oli einen Sachverhalt bestätigt. Recherchiertes
+  Material dagegen → `research/<NN>.md`, sofort beim Finden, mit Herkunft am Eintrag.
 - **Quellen reinkopieren, nicht verlinken.** Ein Pointer wird beim Materialsammeln nie konsultiert,
   eine lokale Kopie schon. Snapshots nach `sources/`, Herkunft in `sources/sources.md`. Staleness
   ist okay, solange die Herkunft dransteht.
-- **Offene Punkte sofort festhalten** → `notes/<NN>_issues.md`, nicht nur im Chat und nicht in
-  `decisions.md`. Dort steht, was entschieden ist, nicht was offen ist.
-- **Bestätigte Fakten** → `memory/fakten.md`, sobald Oli einen Sachverhalt bestätigt. Gilt gegen
-  anderslautendes Modellwissen.
-- **Bildrechte:** keine Lizenz erfinden, Herkunft nie weglassen. Findet sich keine
-  Lizenzangabe, entscheidet Oli pro Bild, ob es als Bildzitat läuft; bis dahin trägt die
-  Datei den Marker „Rechte ungeklärt". Details in [memory/bilder.md](memory/bilder.md).
-- **Texte nicht committen.** Oli committet redaktionelle Änderungen selbst. Werkzeuge, Skripte und
-  Konfiguration dagegen schon.

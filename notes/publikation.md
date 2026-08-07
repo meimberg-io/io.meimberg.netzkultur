@@ -1,3 +1,11 @@
+---
+rolle: stand
+liest: claude
+wann: beim Veröffentlichen
+modus: abfrage
+agentensichtbar: nein
+---
+
 # Publikation
 
 Wohin das Buch veröffentlicht wird und was dort schon angelegt ist. Übernommen aus dem

@@ -1,3 +1,11 @@
+---
+rolle: wissen
+liest: editor-outline, copyedit-facts, copyedit-plausibility
+wann: bevor eine Behauptung geschrieben oder angezweifelt wird
+modus: abfrage
+agentensichtbar: ja
+---
+
 # Bestätigte Fakten
 
 Von Oli bestätigt, gilt gegen anderslautendes Modellwissen. Wird durchsucht, nicht gelesen.

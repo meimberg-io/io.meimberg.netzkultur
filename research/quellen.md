@@ -1,3 +1,11 @@
+---
+rolle: material
+liest: editor-outline, copyedit-facts
+wann: beim Materialsammeln, vor dem Zitieren einer Quelle
+modus: abfrage
+agentensichtbar: ja
+---
+
 # Quellen dieses Buches
 
 Herkunft und Bewertung der eingezogenen Quellen. Die Snapshots selbst liegen in `sources/`, die Herkunft je Datei in `sources/sources.md`.

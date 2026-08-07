@@ -1,3 +1,11 @@
+---
+rolle: stand
+liest: claude
+wann: bei der Planung eines Kapitels
+modus: abfrage
+agentensichtbar: nein
+---
+
 # Kandidaten: Content für die Netzkultur-Reihe
 
 Alles, was noch nicht in den Kapiteln steht und hineinpassen könnte. Eine Zeile pro Element, mit

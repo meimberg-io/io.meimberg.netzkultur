@@ -10,7 +10,14 @@ Formuliertes.
 
 ## Vorbereitung
 
+- **`research/<NN>.md` lesen**, das Dossier des Kapitels. Das ist der Stoff, aus dem die Outline
+  entsteht. Steht dort zum Thema nichts oder zu wenig, wird **jetzt** recherchiert, und das Ergebnis
+  kommt mit Quelle ins Dossier, bevor die Outline geschrieben wird. Eine Outline aus vier
+  Datenpunkten ergibt einen Text aus vier Datenpunkten.
+- `research/quellen.md` sagt, welche Quelle wofür taugt: Belegapparat, Zeitzeuge oder
+  Materialsteinbruch.
 - `memory/fakten.md` nach dem Thema durchsuchen. Was dort steht, gilt gegen Modellwissen.
+- `rules/schreiben.md` lesen, Abschnitt „Arbeitsweise".
 - Die Nachbarabschnitte in `chapters/` lesen: was sie schon erzählen, worauf der Abschnitt hinauslaufen
   muss, welche Begriffe dort bereits eine Bedeutung haben.
 - Umfang festlegen. Ein Abschnitt neben vier gleichrangigen trägt 400 bis 500 Wörter. Also auswählen,

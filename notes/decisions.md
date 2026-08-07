@@ -1,3 +1,11 @@
+---
+rolle: stand
+liest: claude
+wann: nach einem Prüflauf, als Filter vor der Übergabe an Oli
+modus: abfrage
+agentensichtbar: nein
+---
+
 # Abgelehnte Befunde
 
 Stellen, an denen eine Prüfung etwas gemeldet hat und Oli entschieden hat, dass es so bleibt.

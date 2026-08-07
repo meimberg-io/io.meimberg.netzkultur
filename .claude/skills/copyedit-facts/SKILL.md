@@ -9,11 +9,16 @@ weiß man es?
 
 ## Auftrag
 
-Bevor du zu einer Aussage recherchierst, schlag in `memory/fakten.md` nach. Dort stehen bereits
+Bevor du zu einer Aussage recherchierst, schlag an zwei Stellen nach. In `memory/fakten.md` stehen
 bestätigte Sachverhalte; was du dort findest, gilt, auch wenn es deinem Wissen widerspricht, und
-wird weder nachrecherchiert noch als Fehler gemeldet. Du schlägst nach, indem du suchst. Ein
-Suchlauf über die Stichwörter des Textes genügt, und die Datei kommt nicht als Ganzes in deinen
-Kontext.
+wird weder nachrecherchiert noch als Fehler gemeldet. In `research/<NN>.md` steht das Dossier des
+Kapitels: das Material, aus dem der Text entstanden ist, mit Herkunft am Eintrag. Eine Aussage, die
+dort mit Quelle steht, ist belegt; eine Aussage im Text, die dort **fehlt**, ist dein erster
+Kandidat, denn genau dort ist jemand über den Beleg hinausgegangen. `research/quellen.md` sagt dir,
+welche Quelle Belegapparat ist und welche nur Zeitzeuge.
+
+Du schlägst nach, indem du suchst. Ein Suchlauf über die Stichwörter des Textes genügt, die Dateien
+kommen nicht als Ganzes in deinen Kontext.
 
 Bekommst du eine Liste **Zu belegen**, arbeitest du die zuerst ab, vollständig. Danach gehst du
 den Text selbst durch und nimmst auf, was dir zusätzlich prüfbar erscheint. Die Liste begrenzt
