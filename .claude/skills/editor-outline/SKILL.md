@@ -17,7 +17,7 @@ Das Vorbild ist eine gesprochene Notiz, die jemand macht, der das Thema kennt un
 - `knowledge/fakten.md` nach dem Thema durchsuchen. Gilt gegen Modellwissen.
 - `material/quellen.md`: welche Quelle als Beleg taugt und welche nicht.
 - Die Nachbarabschnitte in `manuscript/`: worauf der Abschnitt hinausläuft, welche Begriffe dort schon eine Bedeutung haben.
-- `rules/arbeitsweise.md`.
+- `rules/arbeitsweise.md` und `rules/erzaehlhaltung.md`. Das zweite entscheidet, was aus dem Dossier überhaupt in Frage kommt.
 
 ## Ergebnis
 
@@ -50,6 +50,10 @@ Das Vorbild ist eine gesprochene Notiz, die jemand macht, der das Thema kennt un
 ## Umfang
 <Wortzahl des späteren Textes. Der Sachstand darf und soll länger sein.>
 ```
+
+**Das Dossier ist ein Steinbruch, keine Abarbeitungsliste.** Es enthält absichtlich mehr, als in den Text kann. Wer alles mitnimmt, was belegt ist, schreibt eine Abhandlung. Faustregel: Der Sachstand ist etwa doppelt so lang wie der Zieltext, nicht fünfmal. Passt mehr hinein, war die Auswahl zu schwach.
+
+Herkunft der Software gehört fast nie hinein: wer welche Fassung schrieb, welche Sprache, welches Upgrade, welche Konferenz. Ein Halbsatz reicht, meist gar nichts.
 
 Der Abschnitt **Sachstand** ist die eigentliche Arbeit. Ist er dünn, wird der Text dünn, und keine Formulierung rettet das. Ein Sachstand, der nur aus belegten Einzelfakten besteht, ist noch nicht fertig: Dann fehlt die Frage, warum diese Fakten nebeneinander stehen.
 
