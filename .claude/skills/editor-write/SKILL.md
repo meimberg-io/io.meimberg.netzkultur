@@ -1,43 +1,36 @@
 ---
 name: editor-write
-description: Formuliert aus einer vorhandenen Outline den Abschnitt, gegen das Tonalitätsbriefing. Zweite Stufe nach editor-outline. Nutzen, wenn der Inhalt steht und Prosa daraus werden soll.
+description: Zweite Stufe des Schreibens - baut aus der Outline das Briefing für den Agenten writer, nimmt den Text entgegen und setzt ihn ein. Nutzen, wenn der Inhalt steht und Prosa daraus werden soll. Formuliert nicht selbst.
 ---
 
 # Formulieren
 
-## Vor dem ersten Satz
+Du formulierst nicht. Du baust das Briefing, startest den Agenten `writer` und setzt ein, was zurückkommt. Auch bei einem einzelnen Absatz. Warum: `rules/arbeitsweise.md`.
 
-- **`research/<NN>.md` lesen**, das Dossier des Kapitels. Ohne Stoff wird der Absatz nicht besser,
-  nur besser sortiert. Fehlt Material, gehört es recherchiert und ins Dossier, bevor formuliert wird.
-- `rules/haltung.md` lesen. Erzählhaltung, Publikum, Ton. Verbindlich.
-- `rules/schreiben.md` lesen. Arbeitsweise und was im Text gilt.
-- Die Nachbarabschnitte in `chapters/` lesen: Register, Vorwissen des Lesers, und welche Wörter dort
-  schon eine Bedeutung haben. Ein Wort, das nebenan besetzt ist, ist hier verbrannt.
+## Briefing
 
-`notes/decisions.md` bleibt dabei **zu**. Das ist ein Filter für Befunde nach einem Prüflauf, kein
-Schreibmaterial; wer vierzehn alte Einwände im Kopf hat, schreibt um sie herum statt zur Sache hin.
-Dasselbe gilt für jede Verbotsliste: Sie läuft nach dem Schreiben, siehe `rules/pruefen.md`.
+Genau vier Teile, nichts sonst. Keine Konventionen, keine Verbotslisten, kein früherer Befund, nichts aus `state/decisions.md`.
 
-## Schreiben
+**1. Auftrag.** Ein Satz: Was soll der Abschnitt beim Leser hinterlassen? Das Ziel, nicht das Thema. Nicht „Mailboxen", sondern „Wie es sich anfühlte, sich nachts in ein fremdes Wohnzimmer einzuwählen, und warum daraus eine Kultur wurde". Steht die Outline gut, ist das ihr erster Satz.
 
-Der Abschnitt wird in einem Zug geschrieben, als zusammenhängende Erzählung.
+**2. Material.** Die Perlen der Outline wörtlich, Kontext im Fakt selbst („ARPA = Forschungsagentur des US-Verteidigungsministeriums"). Ungeprüftes bleibt draußen. Tragendes markieren. Umfang in Wörtern nennen.
 
-**Die Outline ist Planung, nicht Gliederung.** Wer sie Punkt für Punkt in Sätze übersetzt, bekommt
-Staccato: ein Fakt pro Satz, Absätze mit Ankündigungssatz davor („Das Problem war Geld.", „Praktisch
-sah das so aus."), kein Absatz, der aus dem vorigen wächst. Beim Schreiben liegt die Liste weg.
+**3. Klangprobe.** Ein bis zwei ganze Absätze aus `rules/stimme.md`, oder besser ein Absatz aus einem Nachbarabschnitt, der schon so klingt, wie es weitergehen soll. Nie mehr als zwei, sonst kopiert der `writer` statt zu treffen.
 
-Was recherchiert ist, kommt in den Text. Was aus dem Modellgedächtnis nachgefüllt wird, damit ein
-Absatz anschaulich wirkt, wird zum Fehler. Kontext ist davon nicht betroffen: Wer eine Person, eine
-Firma oder eine Behörde nennt, sagt auch, wofür sie steht.
+**4. Vorwissen.** Zwei, drei Sätze: was der Leser gerade gelesen hat, welche Begriffe eingeführt sind, welche Wörter nebenan besetzt und hier verbrannt sind.
 
-## Übergabe
+Ein vollständiges Briefing mit der Outline daneben: `beispiel/3-briefing.md`.
 
-Der fertige Abschnitt geht direkt an Oli. **Keine `copyedit-`Linse wird von hier aus gestartet**, auch
-nicht als Angebot: Oli will den Text zuerst selbst lesen und ruft die Linsen danach über die
-`/copyedit-`Commands auf, wenn er sie haben will.
+## Ablauf
 
-Vor der Übergabe liest du den Abschnitt einmal selbst, als Leser und nicht als Autor. Das ist Urteil,
-keine Prüfroutine.
+1. Outline lesen, `material/dossier-<NN>.md` für die Belege daneben.
+2. Nachbarabschnitte in `text/` lesen, daraus Teil 3 und 4.
+3. Briefing bauen, `writer` starten.
+4. `Fehlt:`-Zeile im Rücklauf: recherchieren, ins Dossier eintragen, Briefing ergänzen, neu laufen lassen. Nicht selbst überschreiben.
+5. Text einsetzen, dabei `rules/form.md` anwenden: Dateiname, Kapitelkopf, Überschriften.
+6. Neuen Abschnitt in `text/index.md` eintragen, an der richtigen Stelle und Ebene. Wer das vergisst, hat eine Datei, die in keinem Prüfzuschnitt vorkommt. Pflegt Longform den Index, entfällt der Schritt.
+7. Einmal als Leser lesen.
 
-Wenn Kritik kommt, wird daraus kein Patch. Beanstandete Sätze sind Symptome; der Abschnitt wird neu
-gedacht, notfalls über den Agenten `editor-free` mit Ein-Satz-Auftrag.
+Der Abschnitt geht direkt an Oli. Keine `copyedit-`Linse von hier aus starten, auch nicht als Angebot.
+
+Trifft der Text nicht, nicht am Satz nachbessern. Auftrag schärfen und `writer` neu starten. Meist fehlte Material, oder der Auftragssatz war eine Themenangabe statt eines Ziels.

@@ -1,9 +1,9 @@
 ---
-rolle: material
-liest: editor-outline, editor-write, copyedit-facts
-wann: vor dem ersten Satz eines Abschnitts dieses Kapitels
-modus: abfrage
-agentensichtbar: ja
+role: material
+readers: editor-outline, editor-write, copyedit-facts
+when: vor dem ersten Satz eines Abschnitts dieses Kapitels
+mode: lookup
+agent-visible: yes
 ---
 
 # Dossier: Bevor das Internet ein öffentlicher Ort war
@@ -46,7 +46,7 @@ recherchiert werden. Was fehlt, wird vor dem Schreiben recherchiert und kommt hi
 
 ## AfroNet
 
-Recherchiert am 2026-08-07, noch nicht nach `sources/` gesichert.
+Recherchiert am 2026-08-07, noch nicht nach `material/quellen/` gesichert.
 
 - **Ken Onwere**, in den USA geborener Nigerianer, wohnhaft in San Diego, gründete das **AfroNet**
   **1993** als FidoNet-basiertes Mailsystem.

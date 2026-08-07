@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Szenen aus chapters/Index.md zu Prueftexten zusammensetzen.
+"""Szenen aus text/Index.md zu Prueftexten zusammensetzen.
 
 Longform kompiliert immer den ganzen Draft. Die Kohaerenzpruefung braucht aber
 kleinere und andere Zuschnitte, deshalb dieses Skript. Es liest die Reihenfolge
@@ -16,9 +16,9 @@ Die drei Zuschnitte entsprechen den drei Pruefebenen:
 Ohne Argument kommt das ganze Buch. Ausgabe nach stdout oder --out.
 
 Beispiele:
-    scripts/kapitel-kompilieren.py --kapitel 1
-    scripts/kapitel-kompilieren.py --naht 1 --out /tmp/naht-1-2.md
-    scripts/kapitel-kompilieren.py --abriss
+    scripts/kompilieren.py --kapitel 1
+    scripts/kompilieren.py --naht 1 --out /tmp/naht-1-2.md
+    scripts/kompilieren.py --abriss
 """
 
 import argparse
@@ -92,8 +92,11 @@ def pick_chapter(groups, wanted):
     if wanted.isdigit():
         n = int(wanted)
         for name, kids in groups:
-            if re.match(rf"^(Kapitel\s*)?{n}\b", PREFIX.sub("", name)) or \
-               re.match(rf"^{n}\s*[-–—]", name):
+            # Numerisch vergleichen, damit 1, 01 und 001 dasselbe Kapitel treffen.
+            fuehrend = re.match(r"^\s*(\d+)", name)
+            if fuehrend and int(fuehrend.group(1)) == n:
+                return name, kids
+            if re.match(rf"^(Kapitel\s*)?{n}\b", PREFIX.sub("", name)):
                 return name, kids
         sys.exit(f"Kapitel {n} nicht gefunden. Vorhanden:\n  "
                  + "\n  ".join(name for name, _ in groups))
@@ -114,7 +117,7 @@ def first_sentences(text, count=2):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--projekt", type=pathlib.Path, default=pathlib.Path("chapters"))
+    ap.add_argument("--projekt", type=pathlib.Path, default=pathlib.Path("text"))
     ap.add_argument("--kapitel", metavar="N|TEIL", help="ein Kapitel vollstaendig")
     ap.add_argument("--naht", type=int, metavar="N",
                     help="letzte Szene von Kapitel N plus erste von N+1")

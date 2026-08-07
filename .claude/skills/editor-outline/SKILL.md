@@ -1,57 +1,50 @@
 ---
 name: editor-outline
-description: Erstellt das Inhalts-Skelett eines Abschnitts, bevor Prosa entsteht - reine Fakten mit Kontext, nach festem Schema. Nutzen, wenn ein Abschnitt neu geschrieben oder inhaltlich neu aufgesetzt wird. Liefert keinen Fließtext.
+description: Erste Stufe des Schreibens - klärt stichpunktartig, was ein Abschnitt sagen soll, mit Belegen und in der Reihenfolge, die trägt. Nutzen, bevor Prosa entsteht. Liefert keinen Fließtext.
 ---
 
 # Outline
 
-Erste Stufe des Schreibens. Ergebnis ist eine Liste von Fakten und der rote Faden, nichts
-Formuliertes.
+Hier wird entschieden, **was** gesagt wird. Kein Fließtext, keine Rhetorik, keine Adjektive wie „bahnbrechend".
 
-## Vorbereitung
+## Vorher lesen
 
-- **`research/<NN>.md` lesen**, das Dossier des Kapitels. Das ist der Stoff, aus dem die Outline
-  entsteht. Steht dort zum Thema nichts oder zu wenig, wird **jetzt** recherchiert, und das Ergebnis
-  kommt mit Quelle ins Dossier, bevor die Outline geschrieben wird. Eine Outline aus vier
-  Datenpunkten ergibt einen Text aus vier Datenpunkten.
-- `research/quellen.md` sagt, welche Quelle wofür taugt: Belegapparat, Zeitzeuge oder
-  Materialsteinbruch.
-- `memory/fakten.md` nach dem Thema durchsuchen. Was dort steht, gilt gegen Modellwissen.
-- `rules/schreiben.md` lesen, Abschnitt „Arbeitsweise".
-- Die Nachbarabschnitte in `chapters/` lesen: was sie schon erzählen, worauf der Abschnitt hinauslaufen
-  muss, welche Begriffe dort bereits eine Bedeutung haben.
-- Umfang festlegen. Ein Abschnitt neben vier gleichrangigen trägt 400 bis 500 Wörter. Also auswählen,
-  nicht alles aufnehmen, was zum Thema existiert.
+- `material/dossier-<NN>.md`: der Stoff. Zu wenig darin heißt: jetzt recherchieren und das Ergebnis mit Quelle eintragen, bevor die Outline entsteht.
+- `knowledge/fakten.md` nach dem Thema durchsuchen. Gilt gegen Modellwissen.
+- `material/quellen.md`: welche Quelle als Beleg taugt und welche nicht.
+- Die Nachbarabschnitte in `text/`: worauf der Abschnitt hinausläuft, welche Begriffe dort schon eine Bedeutung haben.
+- `rules/arbeitsweise.md`.
 
-## Regeln
-
-1. **Keine Rhetorik.** Keine Adjektive wie „spektakulär", „überraschend", „bahnbrechend".
-2. **Kontext steht im Fakt selbst.** Nicht „ARPA", sondern „ARPA = Forschungsagentur des
-   US-Verteidigungsministeriums". Nicht „Ostküste", sondern „US-Ostküste".
-3. **Chronologisch oder als Ursache-Wirkung-Kette sortieren.**
-4. **Belegstatus mitschreiben.** Recherchiertes mit Quelle in Klammern, Ergänzungen aus Modellwissen
-   mit `(ungeprüft)`. Was ungeprüft bleibt, kommt in `notes/<NN>_issues.md`.
-
-## Schema
+## Ergebnis
 
 ```
-### 1. Ausgangslage & Problem
-* [Fakt/Kontext]
+## Auftrag
+<ein Satz: was der Abschnitt beim Leser hinterlassen soll. Das Ziel, nicht das Thema.>
 
-### 2. Die Auslöser & Handlungen (Was passiert ist)
-* [Fakt/Kontext]
-* [Wichtige Namen, Daten, Fachbegriffe inklusive Erklärung]
+## Vorwissen
+<was der Leser davor gelesen hat, welche Begriffe eingeführt sind>
 
-### 3. Konflikt & Wendepunkt (Unerwartete Eigendynamik)
-* [Fakt/Kontext]
+## Bogen
+<drei bis sechs Stationen in ihrer Reihenfolge, je eine Zeile. Jede folgt aus der
+ vorigen, nicht bloß nach ihr.>
 
-### 4. Ergebnisse & Konsequenzen
-* [Fakt/Kontext]
+## Perlen
+<die Fakten, die vorkommen. Kontext im Fakt selbst: nicht „ARPA", sondern
+ „ARPA = Forschungsagentur des US-Verteidigungsministeriums".
+ Belegstatus dahinter: (Quelle: …) oder (ungeprüft).
+ Tragende Perlen markieren.>
+
+## Weggelassen
+<was zum Thema existiert und draußen bleibt, je mit einem Halbsatz warum>
+
+## Umfang
+<Wortzahl. Ein Abschnitt neben vier gleichrangigen trägt 400 bis 500 Wörter.>
 ```
 
-Liegt zu einem Abschnitt nichts vor, steht dort `[Keine Angaben]`.
+Ohne Auswahl wird der Text eine Aufzählung. Was hier weggelassen wird, bleibt im Dossier verfügbar.
 
-## Übergabe
+Ungeprüftes steht in der Outline, geht aber nicht ins Briefing der zweiten Stufe und kommt nach `state/issues-<NN>.md`.
 
-Die Outline geht an Oli, bevor formuliert wird. Sie ist in einer Minute geprüft; ein falscher Aufbau
-kostet sonst einen ganzen Text. Danach `editor-write`.
+Die Outline geht an Oli, bevor formuliert wird. Danach `editor-write`.
+
+Eine durchgearbeitete Outline mit dem Material, aus dem sie entstand, und dem Text, der daraus wurde: `beispiel/2-outline.md`.

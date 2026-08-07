@@ -1,9 +1,9 @@
 ---
-rolle: stand
-liest: claude
-wann: laufend, sobald ein Punkt offen bleibt
-modus: abfrage
-agentensichtbar: nein
+role: state
+readers: claude, editor-outline
+when: laufend, sobald ein Punkt offen bleibt
+mode: lookup
+agent-visible: no
 ---
 
 # Offene Punkte: Kapitel 01
@@ -14,7 +14,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 
 - **Regeln der Reihe** → [konventionen.md](konventionen.md)
 - **Abgelehnte Befunde** → [decisions.md](decisions.md)
-- **Belegte Sachverhalte** → [memory/fakten.md](../memory/fakten.md)
+- **Belegte Sachverhalte** → [knowledge/fakten.md](../knowledge/fakten.md)
 - **Werkweite Punkte** → [issues.md](issues.md)
 
 ---
@@ -66,7 +66,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   eingefügt, weil E-Mail und Mailinglisten im ganzen Werk dreimal vorausgesetzt und nie eingeführt
   waren). `copyedit-clarity`, `copyedit-language` und `copyedit-plausibility` sind zweimal gelaufen und eingearbeitet, die
   Recherche fehlt noch. Bereits belegt: FTP RFC 114 vom 16. April 1971 (siehe
-  [fakten.md](../memory/fakten.md)); Tomlinson bei BBN 1971, SNDMSG plus CPYNET, @-Zeichen.
+  [fakten.md](../knowledge/fakten.md)); Tomlinson bei BBN 1971, SNDMSG plus CPYNET, @-Zeichen.
   **Offen und vor der Veröffentlichung zu klären:**
   - Die Drei-Viertel-Zahl. Die Auftragsstudie wird als **1973** *und* als **1974 (MITRE)** datiert,
     die Quellen widersprechen sich; deshalb steht im Text nur „Mitte der Siebziger" und keine
@@ -112,7 +112,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   - **Mehrere Leute gleichzeitig an einem Großrechner**, Voraussetzung dafür, dass ein Postfach vor
     dem Netz überhaupt Sinn ergibt.
   - **FTP-Autor Abhay Bhushan (MIT).** RFC 114 und der 16. April 1971 sind belegt
-    ([fakten.md](../memory/fakten.md)), der Name nicht. Ebenfalls offen, **ab wann FTP tatsächlich
+    ([fakten.md](../knowledge/fakten.md)), der Name nicht. Ebenfalls offen, **ab wann FTP tatsächlich
     lief**: Ein Spezifikationspapier beendet den Bandversand nicht, der Text behauptet das jetzt auch
     nicht mehr, aber die Formulierung hängt am Beleg.
   - **Anonymes FTP:** Login als `anonymous` mit der eigenen Mailadresse als Passwort, ohne Prüfung.
@@ -133,7 +133,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 
 - **`copyedit-facts` über den neuen H3 „Requests for Comments (RFCs)"** (01.02, geschrieben
   2026-08-06, eingesetzt zwischen „Das ARPANET" und „Die erste Spam-Mail"). Keine Linse ist bisher
-  darüber gelaufen. Belegt ist nur die Nummer 114 vom 16. April 1971 ([fakten.md](../memory/fakten.md)),
+  darüber gelaufen. Belegt ist nur die Nummer 114 vom 16. April 1971 ([fakten.md](../knowledge/fakten.md)),
   alles andere steht aus Modellwissen im Text:
   - **RFC 1 „Host Software", 7. April 1969, Steve Crocker an der UCLA.** Datum, Nummer und Autor
     gelten als gesichert, sind aber nicht geprüft. Im Text steht kein Titel und keine Nummer, nur
@@ -182,7 +182,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   - **Stärkste ungenutzte Konkretion:** Das AfroNet verbreitete Berichte aus erster Hand über
     Rassismus bei **AT&T**. Steht bisher nur auf einer Seite (blacksoftware.com) und wäre, wenn es
     sich halten lässt, das Detail, das dem Absatz einen Vorgang statt einer Beschreibung gibt.
-  - **Quellen, noch nicht nach `sources/` gesichert:**
+  - **Quellen, noch nicht nach `material/quellen/` gesichert:**
     [loriemerson.net](https://loriemerson.net/2021/04/12/excavating-future-histories-of-the-internet-afronet-newsletter-telegraph/) ·
     [blacksoftware.com](https://blacksoftware.com/before-blacks-had-the-internet/) ·
     [AFRONET BBS List, Africa Center (403 beim Abruf)](https://www.africa.upenn.edu/BBS_Internet/afro_bbs.html) ·

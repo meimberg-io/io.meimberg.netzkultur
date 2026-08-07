@@ -11,7 +11,7 @@ sources:
     locator: https://neal.fun/internet-artifacts/
     paths:
       - artefakte.md
-    local: sources/internet-artifacts/
+    local: material/quellen/internet-artifacts/
     snapshot_at: 2026-07-31
     revision: —
     source_date: 2024
@@ -22,7 +22,7 @@ sources:
     locator: https://internet.medialities.org/syllabus/
     paths:
       - syllabus.md
-    local: sources/hopkins-syllabus/
+    local: material/quellen/hopkins-syllabus/
     snapshot_at: 2026-07-31
     revision: —
     source_date: aktuelle Fassung, Archivjahrgänge 2020–2022 daneben
@@ -33,7 +33,7 @@ sources:
     locator: https://lowendbox.com/tag/usenet/
     paths:
       - usenet-serie.md
-    local: sources/lowendbox-usenet/
+    local: material/quellen/lowendbox-usenet/
     snapshot_at: 2026-07-31
     revision: —
     source_date: 2022-04-25 und 2022-04-29
@@ -45,7 +45,7 @@ sources:
     paths:
       - socialnetwork.md
       - gen-x-internetkultur.md
-    local: sources/chatgpt-dialoge/
+    local: material/quellen/chatgpt-dialoge/
     snapshot_at: 2026-07-27
     revision: manual
     source_date: 2026-07-27
@@ -70,7 +70,7 @@ Das Topic bündelt zwei zusammenhängende, aber getrennt zu verwertende Fäden:
 
 ## Quelle `chatgpt-dialoge` — Olis Fragen + die Antworten
 
-| Datei in `sources/chatgpt-dialoge/` | Worum es geht |
+| Datei in `material/quellen/chatgpt-dialoge/` | Worum es geht |
 |-------------------------------------|---------------|
 | `socialnetwork.md` | **Faden 1.** Zwei Frageblöcke von Oli + Antworten: Social Graph → Interest Graph, warum es keinen Facebook-Nachfolger gab (Netzwerkeffekt, Kontext-Trennung, Geschäftsmodell, Context Collapse), Twitter als öffentliches Gespräch und sein Zerfall, „ambient awareness", Kontaktkreise/Google+-Circles, soziale Distanzen 1–6 |
 | `gen-x-internetkultur.md` | **Faden 2.** Gen X als Mitaufbauer der Netzkultur, Emoticons/Memes vor TikTok, „kulturelle Amnesie", der Feed kennt keine Genealogie, fehlende Rolle des „erwachsenen Netzkulturmenschen" |
@@ -108,7 +108,7 @@ Bluesky-Wachstum 26 → 41 Mio., der Facebook-Video-Test 2026.
 Eine interaktive Zeitleiste von Neal Agarwal mit 57 anfassbaren Artefakten von der ARPANET-Karte
 (1977) bis zur iPhone-Vorstellung (2007). Als Materialsteinbruch für die Reihe gezogen.
 
-| Datei in `sources/internet-artifacts/` | Worum es geht |
+| Datei in `material/quellen/internet-artifacts/` | Worum es geht |
 |---|---|
 | `artefakte.md` | Alle 57 Artefakte mit Jahr, Titel und Begleittext, englische Originaltexte, aus dem gerenderten DOM |
 
@@ -126,7 +126,7 @@ Vorläufern bis zur Blockchain, jede Woche mit Einleitungsessay und vollständig
 frühere Jahrgänge (2020, 2021, 2022) liegen als Archiv daneben und schneiden den Stoff anders zu;
 eine eigene **Usenet-Woche gibt es erst in der aktuellen Fassung**.
 
-| Datei in `sources/hopkins-syllabus/` | Worum es geht |
+| Datei in `material/quellen/hopkins-syllabus/` | Worum es geht |
 |---|---|
 | `syllabus.md` | Alle elf Wochen mit Thema, Pflichtlektüre und Zusatzmaterial samt URLs, dazu Filmliste und Aufgabenformate |
 
@@ -141,7 +141,7 @@ Drei Blogbeiträge von 2022 auf einer Hosting-Website: Teil 1 erklärt Technik u
 Teil 2 erzählt die Folklore (Spambots, Kibo, Scientology, Ewiger September, DejaNews und Google),
 Teil 3 ist eine Anleitung für die heutige Nutzung und hier nicht mitgeschnitten.
 
-| Datei in `sources/lowendbox-usenet/` | Worum es geht |
+| Datei in `material/quellen/lowendbox-usenet/` | Worum es geht |
 |---|---|
 | `usenet-serie.md` | Volltexte der Teile 1 und 2, bereinigt um Navigation und Kommentare |
 

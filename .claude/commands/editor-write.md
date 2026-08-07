@@ -1,9 +1,8 @@
 ---
-description: Aus der Outline den Abschnitt formulieren und vor der Übergabe prüfen
+description: Zweite Stufe - Briefing bauen, writer laufen lassen, Text einsetzen
 argument-hint: [Abschnitt]
 ---
 
 Formuliere $ARGUMENTS aus der vorliegenden Outline.
 
-Benutze den Skill `editor-write`. In einem Zug schreiben, die Outline liegt dabei weg, und der
-Prüflauf läuft vor der Übergabe an mich, nicht danach.
+Benutze den Skill `editor-write`. Du formulierst nicht selbst: Briefing bauen, Agent `writer` starten, Text einsetzen. Zeig mir vorher das Briefing, wenn der Auftragssatz nicht eindeutig aus der Outline hervorgeht.

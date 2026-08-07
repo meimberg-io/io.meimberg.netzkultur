@@ -1,16 +1,16 @@
 ---
-rolle: material
-liest: editor-outline, editor-write, copyedit-facts
-wann: vor dem ersten Satz eines Abschnitts dieses Kapitels
-modus: abfrage
-agentensichtbar: ja
+role: material
+readers: editor-outline, editor-write, copyedit-facts
+when: vor dem ersten Satz eines Abschnitts dieses Kapitels
+mode: lookup
+agent-visible: yes
 ---
 
 # Dossier: Was vom alten Netz geblieben ist
 
 Recherchiertes Material für Kapitel 07, Rückblick und Gegenwart. Leitfrage: Ist die alte Netzkultur
 verschwunden oder lebt sie in veränderter Form weiter? Kern-Quelle ist Olis eigenes Denken in den
-beiden ChatGPT-Dialogen (`sources/chatgpt-dialoge/`): kulturelle Amnesie, „der Feed kennt keine
+beiden ChatGPT-Dialogen (`material/quellen/chatgpt-dialoge/`): kulturelle Amnesie, „der Feed kennt keine
 Genealogie" (gen-x-internetkultur) und das Verschwinden des klassischen Social Network
 (socialnetwork). Alle Web-Belege am **2026-07-29/30** recherchiert.
 

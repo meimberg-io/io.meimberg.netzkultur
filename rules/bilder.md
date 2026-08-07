@@ -1,9 +1,9 @@
 ---
-rolle: regel
-liest: editor-images
-wann: vor der Bildsuche
-modus: ganz
-agentensichtbar: ja
+role: rule
+readers: editor-images
+when: vor der Bildsuche
+mode: full
+agent-visible: yes
 ---
 
 # Bilder: Metadaten, Rechte, Fallstricke

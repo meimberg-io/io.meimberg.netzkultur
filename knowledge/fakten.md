@@ -1,9 +1,9 @@
 ---
-rolle: wissen
-liest: editor-outline, copyedit-facts, copyedit-plausibility
-wann: bevor eine Behauptung geschrieben oder angezweifelt wird
-modus: abfrage
-agentensichtbar: ja
+role: knowledge
+readers: editor-outline, copyedit, copyedit-facts, copyedit-plausibility
+when: bevor eine Behauptung geschrieben oder angezweifelt wird
+mode: lookup
+agent-visible: yes
 ---
 
 # Bestätigte Fakten

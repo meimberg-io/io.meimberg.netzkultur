@@ -1,9 +1,9 @@
 ---
-rolle: material
-liest: editor-outline, editor-write, copyedit-facts
-wann: vor dem ersten Satz eines Abschnitts dieses Kapitels
-modus: abfrage
-agentensichtbar: ja
+role: material
+readers: editor-outline, editor-write, copyedit-facts
+when: vor dem ersten Satz eines Abschnitts dieses Kapitels
+mode: lookup
+agent-visible: yes
 ---
 
 # Dossier: Einleitung

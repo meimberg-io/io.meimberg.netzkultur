@@ -1,150 +1,276 @@
 #!/usr/bin/env python3
 """Prueft die Kontext-Architektur des Repos.
 
-Jede Datei unter rules/, memory/, research/ und notes/ ist ein Kontext-Objekt und traegt
-einen Vertrag im Frontmatter: wer sie laedt, wann, ganz oder per Abfrage, und ob blinde
-Pruef-Agenten sie sehen duerfen. Dieses Skript haelt den Vertrag ein.
+Jede Datei unter rules/, knowledge/, material/ und state/ ist ein Kontext-Objekt und traegt
+einen Vertrag im Frontmatter: welche Rolle sie hat, wer sie laedt, wann, ganz oder per
+Abfrage, und ob blinde Pruef-Agenten sie sehen duerfen. Dieses Skript haelt den Vertrag ein.
 
 Geprueft wird:
 
-1. Vertrag vorhanden und vollstaendig (rolle, liest, wann, modus, agentensichtbar).
-2. Kein verwaistes Objekt: jeder genannte Leser existiert als Skill oder Agent,
-   und die Datei wird dort auch tatsaechlich referenziert. Genau so ist digest.md
-   neun Monate lang unbemerkt tot gewesen.
-3. Kein toter Verweis: jeder Pfad, den ein Skill, Agent oder Command nennt, existiert.
-4. Regeln bleiben lesbar: rolle=regel heisst modus=ganz und hoechstens MAX_REGEL Zeilen.
-   Eine Regeldatei, die man nicht am Stueck liest, wird ueberflogen.
+1. Vertrag vorhanden und vollstaendig (role, readers, when, mode, agent-visible).
+2. Rolle passt zum Verzeichnis. Das Verzeichnis IST die Rolle; eine Regel in knowledge/
+   wird nicht gelesen, wenn sie gelesen werden muesste.
+3. Ladeverhalten passt zur Rolle: Regeln werden ganz gelesen und bleiben unter MAX_RULE
+   Zeichen. Wissen, Material und Stand wachsen unbegrenzt und werden nur abgefragt.
+4. Leserliste stimmt in BEIDE Richtungen:
+   - jeder eingetragene Leser existiert und referenziert die Datei auch,
+   - und jeder Skill/Agent, der die Datei referenziert, steht als Leser drin ("!name",
+     wenn die Nennung ein Verbot ist).
+   Ohne die zweite Richtung waechst die Verdrahtung still an der Deklaration vorbei.
+5. Kein toter Verweis, weder aus einem Lader noch aus einer Kontextdatei heraus.
+6. Hinweise: nicht ersetzte {{PLATZHALTER}} (nur dort, wo beim Aufsetzen etwas einzutragen
+   ist) und dieselbe Ueberschrift in zwei Regeldateien oder in CLAUDE.md.
 
 Exit 1, wenn etwas nicht stimmt.
 """
 
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-KONTEXT_DIRS = ["rules", "memory", "research", "notes"]
-LADER_DIRS = [".claude/skills", ".claude/agents", ".claude/commands"]
-PFLICHTFELDER = ["rolle", "liest", "wann", "modus", "agentensichtbar"]
-ROLLEN = {"regel", "wissen", "material", "stand"}
-MODI = {"ganz", "abfrage"}
-MAX_REGEL = 150
 
-# "claude" und "oli" sind Leser ohne eigene Datei: die Hauptsession und der Mensch.
-LESER_OHNE_DATEI = {"claude", "oli"}
+# Verzeichnis -> erlaubte Rolle. Das Verzeichnis ist die Rolle, nicht nur ihr Aufbewahrungsort.
+DIR_ROLE = {
+    "rules": "rule",           # normativ, wird ganz gelesen, bevor gehandelt wird
+    "knowledge": "knowledge",  # gepruefte Fakten, schlaegt Modellwissen, wird durchsucht
+    "material": "material",    # Rohstoff und Belege, wird durchsucht
+    "state": "state",          # Beschlusslage und offene Punkte, punktuell gelesen
+}
+LOADER_DIRS = [".claude/skills", ".claude/agents", ".claude/commands"]
+REQUIRED = ["role", "readers", "when", "mode", "agent-visible"]
+MODES = {"full", "lookup"}
+VISIBILITY = {"yes", "no"}
+MAX_RULE = 4000  # Zeichen, nicht Zeilen: gemessen wird der Kontext, den eine Regel kostet
+
+# Leser ohne eigene Datei: die Hauptsession und der Mensch.
+READERS_WITHOUT_FILE = {"claude", "oli"}
+
+# Dateien, die es pro Kapitel gibt und die in den Ladern als Muster stehen.
+NUMBERED = [
+    (re.compile(r"^material/dossier-\d+\.md$"), "material/dossier-<NN>.md"),
+    (re.compile(r"^state/issues-\d+\.md$"), "state/issues-<NN>.md"),
+]
+
+# Nur hier ist ein offener Platzhalter ein Befund: Diese Dateien muessen beim Aufsetzen
+# ausgefuellt werden. In den wachsenden Ablagen sind {{...}} Musterzeilen und bleiben stehen,
+# bis der erste echte Eintrag sie ersetzt.
+PLACEHOLDER_DIRS = {"rules"}
+
+PATH_IN_TEXT = re.compile(
+    r"(?<![\w/-])(?:\.\./)?(?:rules|knowledge|material|state|text|assets|scripts|beispiel)/[\w./<>-]+"
+    r"\.(?:md|py|js|json)"
+)
 
 
-def frontmatter(pfad):
+def frontmatter(path):
     """Gibt das Frontmatter als dict zurueck, oder None wenn keins da ist."""
-    text = pfad.read_text(encoding="utf-8")
+    text = path.read_text(encoding="utf-8")
     if not text.startswith("---\n"):
         return None
-    ende = text.find("\n---\n", 4)
-    if ende == -1:
+    end = text.find("\n---\n", 4)
+    if end == -1:
         return None
-    felder = {}
-    for zeile in text[4:ende].splitlines():
-        if ":" not in zeile:
+    fields = {}
+    for line in text[4:end].splitlines():
+        if ":" not in line:
             continue
-        schluessel, wert = zeile.split(":", 1)
-        felder[schluessel.strip()] = wert.strip()
-    return felder
+        key, value = line.split(":", 1)
+        fields[key.strip()] = value.strip()
+    return fields
 
 
-def lader():
+def loaders():
     """Alle Skills, Agenten und Commands mit ihrem Volltext."""
-    gefunden = {}
-    for verzeichnis in LADER_DIRS:
-        for pfad in (REPO / verzeichnis).rglob("*.md"):
-            name = pfad.parent.name if pfad.name == "SKILL.md" else pfad.stem
-            gefunden.setdefault(name, []).append(pfad)
-    return gefunden
+    found = defaultdict(list)
+    for directory in LOADER_DIRS:
+        for path in (REPO / directory).rglob("*.md"):
+            name = path.parent.name if path.name == "SKILL.md" else path.stem
+            found[name].append(path)
+    return found
+
+
+def context_files():
+    files = []
+    for directory in DIR_ROLE:
+        files.extend(sorted((REPO / directory).glob("*.md")))
+    return files
+
+
+def name_variants(rel):
+    """Wie eine Datei in einem Lader stehen darf: konkret oder als <NN>-Muster."""
+    variants = [str(rel)]
+    for pattern, generic in NUMBERED:
+        if pattern.match(str(rel)):
+            variants.append(generic)
+    return variants
+
+
+def check_contract(path, rel, fm, errors):
+    missing = [f for f in REQUIRED if f not in fm]
+    if missing:
+        errors.append(f"{rel}: Vertrag unvollstaendig, fehlt: {', '.join(missing)}")
+        return False
+
+    expected = DIR_ROLE[rel.parts[0]]
+    if fm["role"] != expected:
+        errors.append(
+            f"{rel}: role '{fm['role']}' passt nicht zu {rel.parts[0]}/, erwartet '{expected}'. "
+            "Entweder die Rolle korrigieren oder die Datei verschieben."
+        )
+    if fm["mode"] not in MODES:
+        errors.append(f"{rel}: mode '{fm['mode']}' unbekannt, erlaubt: {sorted(MODES)}")
+    if fm["agent-visible"] not in VISIBILITY:
+        errors.append(f"{rel}: agent-visible '{fm['agent-visible']}' unbekannt, erlaubt: yes, no")
+    if not fm["readers"].strip():
+        errors.append(
+            f"{rel}: kein Leser eingetragen. Eine Kontextdatei, die niemand laedt, wirkt nicht."
+        )
+
+    if fm["role"] == "rule":
+        if fm["mode"] != "full":
+            errors.append(f"{rel}: role=rule verlangt mode=full")
+        groesse = len(path.read_text(encoding="utf-8"))
+        if groesse > MAX_RULE:
+            errors.append(
+                f"{rel}: {groesse} Zeichen, erlaubt sind {MAX_RULE}. "
+                "Was nicht hineinpasst, ist keine Regel, sondern Wissen."
+            )
+    elif fm["mode"] != "lookup":
+        errors.append(
+            f"{rel}: role={fm['role']} verlangt mode=lookup. Diese Ablagen wachsen; "
+            "wer sie ganz laedt, sprengt frueher oder spaeter den Kontext."
+        )
+    return True
+
+
+def parse_readers(value):
+    """readers: a, b, !c  ->  ({a, b}, {c}).
+
+    Ein '!' davor heisst: Dieser Lader nennt die Datei ausdruecklich, um sie zu verbieten
+    ("sieh da nicht hinein"). Das ist Verdrahtung wie jede andere und gehoert deklariert,
+    sonst meldet der Rueckwaerts-Check sie ewig als Luecke.
+    """
+    plain, forbidden = set(), set()
+    for entry in (n.strip() for n in value.split(",")):
+        if not entry:
+            continue
+        (forbidden if entry.startswith("!") else plain).add(entry.lstrip("!"))
+    return plain, forbidden
+
+
+def check_readers(rel, fm, all_loaders, reader_texts, errors, hints):
+    """Beide Richtungen: deklarierte Leser laden wirklich, ladende Leser sind deklariert."""
+    variants = name_variants(rel)
+    plain, forbidden = parse_readers(fm["readers"])
+
+    for name in plain | forbidden:
+        if name in READERS_WITHOUT_FILE:
+            continue
+        if name not in all_loaders:
+            errors.append(f"{rel}: Leser '{name}' existiert nicht in .claude/")
+        elif name in plain and not any(v in reader_texts.get(name, "") for v in variants):
+            errors.append(
+                f"{rel}: '{name}' ist als Leser eingetragen, laedt die Datei aber nicht. "
+                "Entweder dort referenzieren oder hier austragen."
+            )
+
+    for name, text in reader_texts.items():
+        if name in plain or name in forbidden or not any(v in text for v in variants):
+            continue
+        meldung = (
+            f"{rel}: '{name}' referenziert die Datei, steht aber nicht in readers. "
+            "Eintragen, oder als '!{name}' fuehren, wenn die Nennung ein Verbot ist."
+        ).replace("{name}", name)
+        # Bei agent-visible: no kann die Nennung ein Verbot sein, das ist ein Urteil.
+        (hints if fm["agent-visible"] == "no" else errors).append(meldung)
+
+
+def check_dead_links(loader_texts, context, errors):
+    """Tote Pfade, aus Ladern und aus Kontextdateien heraus."""
+    sources = [(f".claude/…/{name}", REPO, text) for name, text in loader_texts.items()]
+    sources += [
+        (str(p.relative_to(REPO)), p.parent, p.read_text(encoding="utf-8")) for p in context
+    ]
+    for label, base, text in sources:
+        for hit in sorted(set(PATH_IN_TEXT.findall(text))):
+            if "<" in hit:  # Muster wie dossier-<NN>.md
+                continue
+            target = (base / hit).resolve() if hit.startswith("../") else (REPO / hit)
+            if not target.exists():
+                errors.append(f"{label}: verweist auf '{hit}', das es nicht gibt")
+
+
+def check_duplicate_headings(context, hints):
+    """Dieselbe H2 in zwei Regeldateien heisst: ein Thema, zwei Heimaten.
+
+    CLAUDE.md zaehlt mit. Sie wird immer geladen und zieht deshalb Inhalt an, der
+    laengst in rules/ steht; die zweite Fassung ist die, die zuerst veraltet.
+    """
+    seen = defaultdict(list)
+    candidates = [p for p in context if p.parent.name == "rules"]
+    if (REPO / "CLAUDE.md").exists():
+        candidates.append(REPO / "CLAUDE.md")
+    for path in candidates:
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.startswith("## "):
+                seen[line[3:].strip().lower()].append(path.name)
+    for heading, where in sorted(seen.items()):
+        if len(where) > 1:
+            hints.append(
+                f"Ueberschrift '{heading}' steht in {', '.join(where)}. "
+                "Eine Sache, eine Heimat, sonst laufen die Fassungen auseinander."
+            )
 
 
 def main():
-    fehler = []
-    warnungen = []
-    alle_lader = lader()
-    ladertexte = {
-        name: "\n".join(p.read_text(encoding="utf-8") for p in pfade)
-        for name, pfade in alle_lader.items()
+    errors, hints = [], []
+    all_loaders = loaders()
+    loader_texts = {
+        name: "\n".join(p.read_text(encoding="utf-8") for p in paths)
+        for name, paths in all_loaders.items()
+    }
+    # Commands sind Aufrufe, keine Lader. Sie duerfen Pfade nennen, ohne Leser zu sein,
+    # und werden deshalb nur auf tote Verweise geprueft.
+    commands = REPO / ".claude" / "commands"
+    reader_texts = {
+        name: "\n".join(
+            p.read_text(encoding="utf-8") for p in paths if commands not in p.parents
+        )
+        for name, paths in all_loaders.items()
     }
 
-    kontextdateien = []
-    for verzeichnis in KONTEXT_DIRS:
-        kontextdateien.extend(sorted((REPO / verzeichnis).glob("*.md")))
-
-    for pfad in kontextdateien:
-        rel = pfad.relative_to(REPO)
-        fm = frontmatter(pfad)
+    context = context_files()
+    for path in context:
+        rel = path.relative_to(REPO)
+        fm = frontmatter(path)
 
         if fm is None:
-            fehler.append(f"{rel}: kein Vertrag im Frontmatter. Verdrahten oder loeschen.")
+            errors.append(f"{rel}: kein Vertrag im Frontmatter. Verdrahten oder loeschen.")
             continue
-
-        fehlend = [f for f in PFLICHTFELDER if f not in fm]
-        if fehlend:
-            fehler.append(f"{rel}: Vertrag unvollstaendig, fehlt: {', '.join(fehlend)}")
+        if not check_contract(path, rel, fm, errors):
             continue
+        check_readers(rel, fm, all_loaders, reader_texts, errors, hints)
 
-        if fm["rolle"] not in ROLLEN:
-            fehler.append(f"{rel}: rolle '{fm['rolle']}' unbekannt, erlaubt: {sorted(ROLLEN)}")
-        if fm["modus"] not in MODI:
-            fehler.append(f"{rel}: modus '{fm['modus']}' unbekannt, erlaubt: {sorted(MODI)}")
+    for path in list(context) + [REPO / "CLAUDE.md"]:
+        if path.exists() and "{{" in path.read_text(encoding="utf-8"):
+            rel = path.relative_to(REPO)
+            if rel.parts[0] in PLACEHOLDER_DIRS or rel.name == "CLAUDE.md":
+                hints.append(f"{rel}: noch nicht ausgefuellt, enthaelt {{{{PLATZHALTER}}}}.")
 
-        if fm["rolle"] == "regel":
-            if fm["modus"] != "ganz":
-                fehler.append(f"{rel}: rolle=regel verlangt modus=ganz")
-            zeilen = len(pfad.read_text(encoding="utf-8").splitlines())
-            if zeilen > MAX_REGEL:
-                fehler.append(
-                    f"{rel}: {zeilen} Zeilen, erlaubt sind {MAX_REGEL}. "
-                    "Was nicht hineinpasst, ist keine Regel, sondern Wissen."
-                )
+    check_dead_links(loader_texts, context, errors)
+    check_duplicate_headings(context, hints)
 
-        leser = [n.strip() for n in fm["liest"].split(",") if n.strip()]
-        for name in leser:
-            if name in LESER_OHNE_DATEI:
-                continue
-            # Kapitel-Dossiers werden in den Skills als Muster referenziert, nicht einzeln.
-            varianten = [str(rel)]
-            if rel.parent.name == "research" and rel.stem.isdigit():
-                varianten.append("research/<NN>.md")
+    for line in hints:
+        print(f"hinweis  {line}")
+    for line in errors:
+        print(f"FEHLER   {line}")
 
-            if name not in alle_lader:
-                fehler.append(f"{rel}: Leser '{name}' existiert nicht in .claude/")
-            elif not any(v in ladertexte[name] for v in varianten):
-                fehler.append(
-                    f"{rel}: '{name}' ist als Leser eingetragen, laedt die Datei aber nicht. "
-                    "Entweder dort referenzieren oder hier austragen."
-                )
-
-    # Tote Verweise aus den Ladern heraus.
-    verweis = re.compile(r"(?:rules|memory|research|notes|sources|scripts)/[\w./-]+\.(?:md|py|js)")
-    for name, text in ladertexte.items():
-        for treffer in sorted(set(verweis.findall(text))):
-            if not (REPO / treffer).exists():
-                fehler.append(f".claude/…/{name}: verweist auf '{treffer}', das es nicht gibt")
-
-    # Kontextdateien, die niemand als Leser nennt, sind tot; nur ein Hinweis, kein Fehler,
-    # weil manches bewusst nur von Oli gelesen wird.
-    for pfad in kontextdateien:
-        fm = frontmatter(pfad)
-        if fm and fm.get("liest", "").strip() in LESER_OHNE_DATEI:
-            warnungen.append(
-                f"{pfad.relative_to(REPO)}: wird nur von der Hauptsession gelesen, "
-                "kein Skill laedt sie deterministisch."
-            )
-
-    for zeile in warnungen:
-        print(f"hinweis  {zeile}")
-    for zeile in fehler:
-        print(f"FEHLER   {zeile}")
-
-    if fehler:
-        print(f"\n{len(fehler)} Fehler.")
+    if errors:
+        print(f"\n{len(errors)} Fehler.")
         return 1
-    print(f"\nKontext-Architektur in Ordnung ({len(kontextdateien)} Objekte).")
+    print(f"\nKontext-Architektur in Ordnung ({len(context)} Objekte, {len(hints)} Hinweise).")
     return 0
 
 

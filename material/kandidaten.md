@@ -1,9 +1,9 @@
 ---
-rolle: stand
-liest: claude
-wann: bei der Planung eines Kapitels
-modus: abfrage
-agentensichtbar: nein
+role: material
+readers: claude
+when: bei der Planung eines Kapitels
+mode: lookup
+agent-visible: no
 ---
 
 # Kandidaten: Content für die Netzkultur-Reihe
@@ -13,11 +13,11 @@ Inhalt und Herkunft, sortiert nach Zielkapitel. Wer etwas einarbeitet, löscht d
 
 Nichts hier ist belegt. Vor der Verwendung im Text durch `copyedit-facts`.
 
-Herkunft: `konzept` = [Gesamtkonzept](sources/Geschichte%20der%20Netzkultur/gesamtkonzept.md) ·
-`nealfun` = [neal.fun](sources/internet-artifacts/artefakte.md) ·
-`hopkins` = [Syllabus](sources/hopkins-syllabus/syllabus.md) ·
-`lowendbox` = [Usenet-Serie](sources/lowendbox-usenet/usenet-serie.md) ·
-`dialoge` = [ChatGPT-Dialoge](sources/chatgpt-dialoge/) · `notiz` = Olis Notiz
+Herkunft: `konzept` = [Gesamtkonzept](material/quellen/Geschichte%20der%20Netzkultur/gesamtkonzept.md) ·
+`nealfun` = [neal.fun](material/quellen/internet-artifacts/artefakte.md) ·
+`hopkins` = [Syllabus](material/quellen/hopkins-syllabus/syllabus.md) ·
+`lowendbox` = [Usenet-Serie](material/quellen/lowendbox-usenet/usenet-serie.md) ·
+`dialoge` = [ChatGPT-Dialoge](material/quellen/chatgpt-dialoge/) · `notiz` = Olis Notiz
 
 ---
 

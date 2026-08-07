@@ -1,9 +1,9 @@
 ---
-rolle: stand
-liest: claude
-wann: beim Veröffentlichen
-modus: abfrage
-agentensichtbar: nein
+role: state
+readers: claude
+when: beim Veröffentlichen
+mode: lookup
+agent-visible: no
 ---
 
 # Publikation

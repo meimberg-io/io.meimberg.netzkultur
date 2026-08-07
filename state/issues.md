@@ -1,15 +1,15 @@
 ---
-rolle: stand
-liest: claude
-wann: laufend, sobald ein Punkt offen bleibt
-modus: abfrage
-agentensichtbar: nein
+role: state
+readers: claude
+when: laufend, sobald ein Punkt offen bleibt
+mode: lookup
+agent-visible: no
 ---
 
 # Offene Punkte: die ganze Reihe
 
 Was mehr als ein Kapitel betrifft. Kapitelbezogenes steht in `<NN>_issues.md`, entschieden ist, was
-in [decisions.md](decisions.md) steht, belegt ist, was in [memory/fakten.md](../memory/fakten.md)
+in [decisions.md](decisions.md) steht, belegt ist, was in [knowledge/fakten.md](../knowledge/fakten.md)
 steht. Claude pflegt diese Liste selbst und sofort, nicht auf Nachfrage.
 
 - Kapitel 01 → [01_issues.md](01_issues.md)
@@ -24,7 +24,7 @@ steht. Claude pflegt diese Liste selbst und sofort, nicht auf Nachfrage.
 - **Sammel-Kapitel oder Epochen-Kapitel?** Eine Entscheidung vom 2026-07-28 hielt fest, dass Memes
   und Subkultur in das Kapitel ihrer Zeit gehören und *nicht* in ein separates Sammel-Kapitel, das
   die Epochen aushöhlt; namentlich sollten Dancing Baby und Hamster Dance im Web-Kapitel stehen.
-  (Stand im aufgelösten `memory/digest.md`, dort bereits als offen markiert; beim Umbau der
+  (Stand im aufgelösten `dem aufgelösten Digest`, dort bereits als offen markiert; beim Umbau der
   Kontext-Ebene am 2026-08-07 nicht mit übernommen, weil der Widerspruch hier steht.) Der heutige Aufbau macht das Gegenteil: „Die Sprache des Netzes" und „Memes und
   andere Phänomene" sind genau solche Sammel-Kapitel, `decisions.md` führt die Querschnittskapitel
   seit dem 2026-07-31 als gesetzte Konvention, und Dancing Baby, Hamster Dance, Bert, Mahir, JenniCam

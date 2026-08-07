@@ -1,9 +1,9 @@
 ---
-rolle: stand
-liest: claude
-wann: nach einem Prüflauf, als Filter vor der Übergabe an Oli
-modus: abfrage
-agentensichtbar: nein
+role: state
+readers: claude, !copyedit, !editor-write
+when: nach einem Prüflauf, als Filter vor der Übergabe an Oli
+mode: lookup
+agent-visible: no
 ---
 
 # Abgelehnte Befunde
@@ -26,9 +26,9 @@ Was hier **nicht** hingehört:
 - **Konventionen der Reihe** → [konventionen.md](konventionen.md), die werden beim Schreiben gelesen.
 - **Aufgaben und offene Punkte** → [`<NN>_issues.md`](01_issues.md) pro Kapitel, [issues.md](issues.md)
   für Werkweites.
-- **Bestätigte Sachverhalte** → [memory/fakten.md](../memory/fakten.md). Dort liegen auch die beiden
+- **Bestätigte Sachverhalte** → [knowledge/fakten.md](../knowledge/fakten.md). Dort liegen auch die beiden
   entschiedenen Quellenkonflikte, die Btx-Endsumme und das AOL-Gateway-Datum.
-- **Tonalität** → [memory/ton.md](../memory/ton.md).
+- **Tonalität** → [rules/stimme.md](../rules/stimme.md).
 
 ---
 
