@@ -23,7 +23,7 @@ Bei Kritik zuerst klären, ob Inhalt oder Formulierung gemeint ist. Inhaltliche 
 
 Nie in der Hauptsession, auch nicht bei einem einzelnen Absatz. Er bekommt Auftrag, Intake, Klangprobe und das Vorwissen des Lesers. Projektregeln bekommt er nicht.
 
-**Belegt am 2026-08-08**, vier Läufe über denselben Intake: Sein Briefing ist Olis Blog-Prompt, angepasst aufs Sachbuch (dritte Person, keine Überschriften, kein Fazit, Länge aus dem Auftrag). Sprachlich das beste Ergebnis, das das Projekt bisher hatte. Die verbliebenen Schwächen lagen sämtlich im Intake, keine in der zweiten Stufe. Der Hebel für die Qualität ist deshalb der Intake.
+**Belegt am 2026-08-08**, sechs Läufe: Sein Briefing ist Olis Blog-Prompt, angepasst aufs Sachbuch (dritte Person, keine Überschriften, kein Fazit, Länge aus dem Auftrag). Sprachlich das beste Ergebnis, das das Projekt bisher hatte. Die verbliebenen Schwächen lagen sämtlich im Intake, keine in der zweiten Stufe. Der Hebel für die Qualität ist deshalb der Intake. Gegenprobe im selben Lauf: Fünf Regeln, die ich aus Einzelbefunden ergänzt hatte, machten den Text **schlechter**, weil sie zu stärkerem Kürzen führten und dabei Substanz mitnahmen. Ohne sie erfüllte derselbe Intake dieselben Anforderungen von allein. Das Briefing bleibt deshalb bei Olis Fassung plus den vier nötigen Anpassungen: dritte Person, keine Überschriften, kein Fazit, Länge aus dem Intake.
 
 Damit ist die zweite Stufe ein **Umschreiben**, und darauf beruht, dass eine lange Symptomliste im Briefing hier nützt statt zu schaden: Der Inhalt steht schon, es gibt nichts, worum man herumschreiben könnte. Beim Erzeugen aus dem Nichts wäre dieselbe Liste schädlich.
 
