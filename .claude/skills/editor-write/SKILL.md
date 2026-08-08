@@ -1,38 +1,25 @@
 ---
 name: editor-write
-description: Zweite Stufe des Schreibens - baut aus der Outline das Briefing für den Agenten writer, nimmt den Text entgegen und setzt ihn ein. Nutzen, wenn der Inhalt steht und Prosa daraus werden soll. Formuliert nicht selbst.
+description: Zweite Stufe des Schreibens - gibt den Intake eines Abschnitts an den Agenten writer und setzt den zurückkommenden Text ein. Nutzen, wenn der Intake steht und Prosa daraus werden soll. Formuliert nicht selbst.
 ---
 
 # Formulieren
 
-Du formulierst nicht. Du baust das Briefing, startest den Agenten `writer` und setzt ein, was zurückkommt. Auch bei einem einzelnen Absatz. Warum: `rules/arbeitsweise.md`.
-
-## Briefing
-
-Genau vier Teile, nichts sonst. Keine Konventionen, keine Verbotslisten, kein früherer Befund, nichts aus `state/decisions.md`.
-
-**1. Auftrag.** Ein Satz: Was soll der Abschnitt beim Leser hinterlassen? Das Ziel, nicht das Thema. Nicht „Mailboxen", sondern „Wie es sich anfühlte, sich nachts in ein fremdes Wohnzimmer einzuwählen, und warum daraus eine Kultur wurde". Steht die Outline gut, ist das ihr erster Satz.
-
-**2. Intake.** Der Abschnitt „Intake" aus Stufe 1, vollständig und wörtlich. Redaktionelle Hinweise darin sind in Ordnung, der `writer` erkennt sie. Nicht zu Stichpunkten eindampfen: Was du hier wegkürzt, fehlt im Text, und was du weglässt, erfindet der `writer` neu. Ungeprüftes bleibt draußen. Umfang des Zieltextes nennen.
-
-Damit ist die zweite Stufe eine **Umformulierung**, keine Erzeugung. Der Inhalt steht, es geht nur noch um die Sprache.
-
-**3. Klangprobe.** Ein bis zwei ganze Absätze aus `rules/stimme.md`, **ausgewählt nach dem, was dieser Abschnitt zu tun hat**: eine erzählende Probe für eine Anekdote, eine erklärende für eine technische Strecke. Nicht jedes Mal dieselbe, sonst klingt am Ende jeder Abschnitt gleich. Bei längeren Passagen zwei verschieden gebaute, damit die Spannweite sichtbar wird. Steht im Werk schon ein Nachbarabsatz, der genau richtig klingt, ist er die bessere Probe. Nie mehr als zwei.
-
-**4. Vorwissen.** Zwei, drei Sätze: was der Leser gerade gelesen hat, welche Begriffe eingeführt sind, welche Wörter nebenan besetzt und hier verbrannt sind.
-
-Ein vollständiges Briefing mit der Outline daneben: `beispiel/3-briefing.md`.
+Du formulierst nicht. Du übergibst den Intake an den Agenten `writer` und setzt ein, was zurückkommt. Auch bei einem einzelnen Absatz. Warum: `rules/arbeitsweise.md`.
 
 ## Ablauf
 
-1. Outline lesen, `material/dossier-<NN>.md` für die Belege daneben.
-2. Nachbarabschnitte in `manuscript/` lesen, daraus Teil 3 und 4.
-3. Briefing bauen, `writer` starten.
-4. `Fehlt:`-Zeile im Rücklauf: recherchieren, ins Dossier eintragen, Briefing ergänzen, neu laufen lassen. Nicht selbst überschreiben.
-5. Text einsetzen, dabei `rules/form.md` anwenden: Dateiname, Kapitelkopf, Überschriften.
-6. Neuen Abschnitt in `manuscript/index.md` eintragen, an der richtigen Stelle und Ebene. Wer das vergisst, hat eine Datei, die in keinem Prüfzuschnitt vorkommt. Pflegt Longform den Index, entfällt der Schritt.
-7. Einmal als Leser lesen.
+1. Intake laden: `material/intake/<NN>.<MM>.md`. Gibt es keinen, ist Stufe 1 noch nicht gelaufen; dann `editor-outline` statt zu improvisieren.
+2. Agent `writer` starten. Sein Auftrag ist der **Intake im Wortlaut**, sonst nichts. Nicht eindampfen, nicht kommentieren, keine Regeln beilegen: Sein Prompt steht in `.claude/agents/writer.md` und wird automatisch geladen.
+3. Kommt eine `Fehlt:`-Zeile zurück, ist das ein Rechercheauftrag. Ergebnis ins Dossier, Intake ergänzen, neu laufen lassen. Nicht selbst überschreiben.
+4. Text in `manuscript/` einsetzen und dabei `rules/form.md` anwenden: Dateiname, Kapitelkopf, Überschriften.
+5. Den neuen Abschnitt in Longform an der richtigen Stelle einsortieren, damit er in `manuscript/Index.md` steht. Eine Szene, die dort fehlt, kommt in keinem Prüfzuschnitt vor.
+6. Einmal als Leser lesen.
+
+Soll der Abschnitt einem bestimmten Ton folgen, leg dem Auftrag einen bis zwei Absätze aus `rules/stimme.md` bei, ausgewählt nach dem, was dieser Abschnitt zu tun hat. Nie mehr als zwei, sonst kopiert der `writer` statt zu treffen.
+
+## Übergabe
 
 Der Abschnitt geht direkt an Oli. Keine `copyedit-`Linse von hier aus starten, auch nicht als Angebot.
 
-Trifft der Text nicht, nicht am Satz nachbessern. Auftrag schärfen und `writer` neu starten. Meist fehlte Material, oder der Auftragssatz war eine Themenangabe statt eines Ziels.
+Trifft der Text nicht, wird nicht am Satz nachgebessert. Der Intake wird geschärft und der `writer` läuft neu. Fast immer fehlte Stoff, oder der Auftragssatz war eine Themenangabe statt eines Ziels.

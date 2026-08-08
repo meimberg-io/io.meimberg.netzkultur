@@ -73,6 +73,10 @@ Der Abschnitt **Intake** ist die eigentliche Arbeit. Ist er dünn, wird der Text
 
 Ungeprüftes steht im Intake mit Markierung, geht aber nicht in die zweite Stufe und kommt nach `state/issues-<NN>.md`.
 
+## Wohin damit
+
+Der Intake wird als `material/intake/<NN>.<MM>.md` gespeichert, benannt nach dem Abschnitt. Dort holt ihn `editor-write` ab. Ohne diese Datei funktioniert die zweite Stufe nur in derselben Sitzung, und Olis Korrekturen am Intake wären verloren.
+
 ## Übergabe
 
 Der Intake geht an Oli, bevor formuliert wird. Er ist die Stelle, an der er inhaltlich eingreift, und der Grund, warum er das Thema nicht selbst recherchieren muss. Danach `editor-write`.

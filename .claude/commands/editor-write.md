@@ -1,8 +1,8 @@
 ---
-description: Zweite Stufe - Briefing bauen, writer laufen lassen, Text einsetzen
+description: Zweite Stufe - Intake an den writer geben, Text einsetzen
 argument-hint: [Abschnitt]
 ---
 
-Formuliere $ARGUMENTS aus der vorliegenden Outline.
+Formuliere $ARGUMENTS.
 
-Benutze den Skill `editor-write`. Du formulierst nicht selbst: Briefing bauen, Agent `writer` starten, Text einsetzen. Zeig mir vorher das Briefing, wenn der Auftragssatz nicht eindeutig aus der Outline hervorgeht.
+Benutze den Skill `editor-write`. Du formulierst nicht selbst: Intake aus `material/intake/` laden, Agent `writer` damit starten, Text einsetzen.

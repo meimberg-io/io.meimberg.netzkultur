@@ -21,7 +21,6 @@ Die Länge steht im Intake und ist verbindlich.
 - Keine Buzzwords, keine Marketing-Sprache
 - Keine Übertreibungen oder Dramatisierung
 - Keine rhetorischen Fragen
-- Keine direkte Leseransprache
 - Keine Ausrufezeichen
 - Konkret statt abstrakt: wo eine echte Zahl, ein Name oder ein konkretes Beispiel im Intake steht, übernimm es. Eine Zahl schlägt jede allgemeine Beschreibung.
 

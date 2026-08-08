@@ -1,6 +1,6 @@
 ---
 role: material
-readers: editor-outline, editor-write, copyedit-facts
+readers: editor-outline, copyedit-facts
 when: vor dem ersten Satz eines Abschnitts dieses Kapitels
 mode: lookup
 agent-visible: yes
