@@ -8,7 +8,7 @@ agent-visible: no
 
 # Form
 
-Mechanisches, das die Hauptsession anwendet, nachdem der Text vom `writer` zurückkommt. Nicht ins Briefing geben.
+Mechanisches, das beim Einsetzen des fertigen Textes angewendet wird.
 
 ## Gliederung
 
@@ -37,6 +37,10 @@ Die Querschnittskapitel tragen im unteren Slot „_Ein Querschnitt durch alle Ja
 **Überschrift ist Etikett, der Text steht allein.** Der erste Satz formuliert die Überschrift nicht weiter („Fanpages" → „Ein großer Teil dieser Seiten waren Schreine") und steigt nicht mit vagem Rückbezug ein („dieser Seiten", „das", „dafür", „daneben"). Test: den Text ohne Überschriften lesen, jeder Absatz muss für sich Sinn ergeben.
 
 Keine Gliederungsebene „Teil 1", „Teil 2", keine durchnummerierten Abschnitte. Kein einheitliches Tempus erzwingen; Präsens, Präteritum und Nominalphrasen dürfen nebeneinander stehen.
+
+## Links
+
+**Links stehen im Fließtext**, als Markdown-Link auf vorhandenen Wörtern oder in einem Halbsatz, der auch ohne Link trägt. Verlinkt wird auf die stabile Seite eines Archivs (etwa `archive.org/details/…`), nie auf eine Download- oder Serveradresse. Frei erreichbare Kopien geschützter Werke werden verlinkt, nicht selbst angeboten.
 
 ## Zeit
 

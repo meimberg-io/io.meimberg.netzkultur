@@ -1,6 +1,6 @@
 ---
 role: material
-readers: editor-outline, copyedit-facts
+readers: editor, copyedit-facts
 when: beim Materialsammeln, vor dem Zitieren einer Quelle
 mode: lookup
 agent-visible: yes

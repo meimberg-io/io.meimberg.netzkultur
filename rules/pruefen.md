@@ -28,6 +28,14 @@ Eine Linse pro Lauf, jede über den Agenten `copyedit`. Zwei Prüfungen in einem
 
 Am Ende einer Änderungsrunde, nicht nach jedem Komma. Oli ruft die Linsen selbst auf; Claude liest den Abschnitt vorher einmal als Leser.
 
+## Prüfradius
+
+Nie lokal am Satz redigieren. Vor der Änderung den Abschnitt lesen, bei Strukturfragen das Kapitel und die Einleitung. Danach prüfen, was die Änderung woanders zerrissen hat.
+
+Vor dem ersten Satz lesen, was der Leser schon weiß, also auch die Nachbarabschnitte. Ein Wort, das dort besetzt ist, ist hier verbrannt: „Die Post war nicht vorgesehen" als Überschrift, acht Zeilen nach einem H3 „Das Monopol der Bundespost", ist nicht zu retten.
+
+Was Oli im Gespräch sagt, ist Begründung, kein Textbaustein.
+
 ## Reparieren statt flicken
 
 **Ein Prüflauf liefert Befunde, keine Aufgabenliste.** Vor der ersten Änderung steht ein Urteil über den ganzen Abschnitt.

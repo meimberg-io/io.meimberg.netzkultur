@@ -1,7 +1,3 @@
----
-status: draft
-comment:
----
 ### Wer sich Hacker nannte
 
 Das Wort ist älter als die Heimcomputer und älter als die Netze. Am Massachusetts Institute of Technology hieß ein _Hack_ eine Lösung, die kunstvoller war als nötig, und die Leute, die dort nachts an den Maschinen des Modelleisenbahnclubs und später an den Rechnern saßen, nannten sich selbst so. Steven Levy schrieb diese Haltung 1984 in seinem Buch _Hackers_ als Grundsätze auf: Der Zugang zu Maschinen und zu allem, was zeigt, wie diese Welt funktioniert, soll unbegrenzt sein; man misstraut Autoritäten und beurteilt jemanden nach dem, was er tut, nicht nach Aussehen, Alter, Geschlecht oder Stellung; und alle Informationen müssen frei sein.

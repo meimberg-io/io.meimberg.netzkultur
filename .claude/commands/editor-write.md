@@ -1,8 +1,12 @@
 ---
-description: Zweite Stufe - Intake an den writer geben, Text einsetzen
+description: Abschnitt formulieren lassen, über den Editor
 argument-hint: [Abschnitt]
 ---
 
-Formuliere $ARGUMENTS.
+Starte den Agenten `editor` und lass ihn den Skill `editor-write` auf folgenden Abschnitt anwenden:
 
-Benutze den Skill `editor-write`. Du formulierst nicht selbst: Intake aus `material/intake/` laden, Agent `writer` damit starten, Text einsetzen.
+$ARGUMENTS
+
+Der Agent lädt zuerst den Projektkontext nach seiner eigenen Anleitung und formuliert dann selbst nach dem Skill.
+
+Zeig mir den Text, bevor etwas in `manuscript/` eingesetzt wird.

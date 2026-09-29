@@ -59,7 +59,7 @@ NUMBERED = [
 PLACEHOLDER_DIRS = {"rules"}
 
 PATH_IN_TEXT = re.compile(
-    r"(?<![\w/-])(?:\.\./)?(?:rules|knowledge|material|state|manuscript|assets|scripts|beispiel)/[\w./<>-]+"
+    r"(?<![\w/-])(?:\.\./)?(?:rules|knowledge|material|state|manuscript|assets|scripts)/[\w./<>-]+"
     r"\.(?:md|py|js|json)"
 )
 

@@ -1,25 +1,79 @@
 ---
 name: editor-write
-description: Zweite Stufe des Schreibens - gibt den Intake eines Abschnitts an den Agenten writer und setzt den zurückkommenden Text ein. Nutzen, wenn der Intake steht und Prosa daraus werden soll. Formuliert nicht selbst.
+description: Formuliert einen Abschnitt des Buchs aus Outline oder Intake. Enthält Stimme, Struktur und die Anti-KI-Regeln. Nutzen für jeden neuen Abschnitt und jede Neufassung, sobald die inhaltliche Grundlage steht.
 ---
 
 # Formulieren
 
-Du formulierst nicht. Du übergibst den Intake an den Agenten `writer` und setzt ein, was zurückkommt. Auch bei einem einzelnen Absatz. Warum: `rules/arbeitsweise.md`.
+Transformiere die Vorlage in fertigen Text. Genre, Erzählperspektive, Ton und Publikum stehen in `rules/stimme.md` — von dort kommt, wie der Text klingt. Was hier steht, gilt unabhängig davon: Der Text soll klingen, als hätte ihn ein Mensch geschrieben, nicht eine KI.
 
 ## Ablauf
 
-1. Intake laden: `material/intake/<NN>.<MM>.md`. Gibt es keinen, ist Stufe 1 noch nicht gelaufen; dann `editor-outline` statt zu improvisieren.
-2. Agent `writer` starten. Sein Auftrag ist der **Intake im Wortlaut**, sonst nichts. Nicht eindampfen, nicht kommentieren, keine Regeln beilegen: Sein Prompt steht in `.claude/agents/writer.md` und wird automatisch geladen.
-3. Kommt eine `Fehlt:`-Zeile zurück, ist das ein Rechercheauftrag. Ergebnis ins Dossier, Intake ergänzen, neu laufen lassen. Nicht selbst überschreiben.
-4. Text in `manuscript/` einsetzen und dabei `rules/form.md` anwenden: Dateiname, Kapitelkopf, Überschriften.
-5. Den neuen Abschnitt in Longform an der richtigen Stelle einsortieren, damit er in `manuscript/Index.md` steht. Eine Szene, die dort fehlt, kommt in keinem Prüfzuschnitt vor.
-6. Einmal als Leser lesen.
+1. Vorlage laden: `material/outline/<NN>.<MM>.md`. Gibt es die Datei nicht, ist Stufe 1 noch nicht gelaufen — dann `/editor-plot`, statt zu improvisieren.
+2. Formulieren, nach den Regeln unten.
+3. Text in `manuscript/` einsetzen und dabei `rules/form.md` anwenden: Dateiname, Kapitelkopf, Überschriften.
+4. Den Abschnitt in Longform einsortieren, damit er in `manuscript/Index.md` steht.
+5. Einmal als Leser lesen.
 
-Soll der Abschnitt einem bestimmten Ton folgen, leg dem Auftrag einen bis zwei Absätze aus `rules/stimme.md` bei, ausgewählt nach dem, was dieser Abschnitt zu tun hat. Nie mehr als zwei, sonst kopiert der `writer` statt zu treffen.
+Fehlt Stoff, den der Abschnitt bräuchte, wird nicht am Satz nachgebessert: Recherche ins Dossier, Outline schärfen, neu formulieren.
 
-## Übergabe
+## Ziel
 
-Der Abschnitt geht direkt an Oli. Keine `copyedit-`Linse von hier aus starten, auch nicht als Angebot.
+Ein Text, der klar und reflektiert geschrieben ist, strukturiert, aber nicht akademisch wirkt, und die Gedanken sauber entfaltet, ohne unnötig aufzublähen.
 
-Trifft der Text nicht, wird nicht am Satz nachgebessert. Der Intake wird geschärft und der `writer` läuft neu. Fast immer fehlte Stoff, oder der Auftragssatz war eine Themenangabe statt eines Ziels.
+Die Länge steht in der Vorlage und ist verbindlich.
+
+## Stil
+
+- Keine Buzzwords, keine Marketing-Sprache
+- Keine Übertreibungen oder Dramatisierung
+- Keine rhetorischen Fragen
+- Keine Ausrufezeichen
+- Konkret statt abstrakt: wo eine echte Zahl, ein Name oder ein konkretes Beispiel in der Vorlage steht, übernimm es. Eine Zahl schlägt jede allgemeine Beschreibung.
+
+## Menschlich schreiben (Anti-KI)
+
+Der Text wird daran gemessen, dass er nicht nach generiertem Text klingt. Halte dich strikt an die folgenden Regeln. Sie haben Vorrang, wenn sie mit dem gewünschten Stil kollidieren.
+
+Satzbau:
+- Variiere die Satzlänge bewusst. KI-Text ist gleichförmig (Subjekt-Prädikat-Objekt, immer gleich lang). Echter Text ist ungleich: lange Sätze neben kurzen, gelegentlich ein bewusstes Fragment.
+- Vermeide gehäufte parallele Satzstrukturen.
+
+Verbotene Muster:
+- Kein langer Gedankenstrich zur Verbindung von Satzteilen. Setze stattdessen ein Komma, einen Punkt oder eine Klammer.
+- Keine angehängten Stimmungs-Halbsätze am Satzende („…, ohne Hype", „…, ehrlich und direkt"). Solche Anhängsel ganz streichen.
+- Keine Antithese-Pointe: nicht „Das ist kein X, sondern ein Y" und nicht „nicht nur X, sondern auch Y". Stell die Aussage direkt hin.
+- Keine Dreiklänge aus drei Adjektiven oder Begriffen um des Rhythmus willen.
+- Keine bemühten Vergleiche oder Metaphern.
+- Keine Füll- und Meta-Sätze: „Es ist wichtig zu beachten", „Zusammenfassend lässt sich sagen".
+- Keine künstliche Dramaturgie („Während andere noch…").
+
+Verbotene Wörter und Floskeln, niemals verwenden: in der heutigen Zeit, heutzutage, in der Welt der, revolutionär, bahnbrechend, wegweisend, innovativ, mühelos, nahtlos, im Handumdrehen, Game-Changer, Meilenstein, das Beste aus beiden Welten, unverzichtbar, ein absolutes Muss, zukunftssicher, maßgeschneiderte Lösung, ganzheitlicher Ansatz, spielt eine entscheidende Rolle, von entscheidender Bedeutung, nicht zu unterschätzen, vielfältige Möglichkeiten, auf das nächste Level, tauchen wir ein.
+
+Platzhalter-Substantive vermeiden: Nenn das gemeinte Ding beim Namen. Nicht „die Lösung", „die Maßnahme", „das Vorhaben".
+
+## Struktur
+
+- Beginne mit einem kurzen, direkten Einstieg
+- Die Struktur ergibt sich aus dem Inhalt, nicht aus einem festen Schema
+- Keine starre Dramaturgie erzwingen, kein Lehrbuchaufbau
+- Der Text liest sich wie ein durchdachter, fließender Gedankengang
+- Kein Fazit und keine verallgemeinerte Lehre am Ende. Ein Abschnitt darf schlicht enden.
+
+## Verdichtung
+
+Tiefe statt Länge um der Länge willen. Wiederholungen, Füllwörter und inhaltlich leere Absätze raus. Erweitert wird nur, wo es echten Mehrwert gibt.
+
+## Formatierung
+
+Reiner Fließtext, keine Überschriften, keine Listen, keine Hervorhebungen, keine Links, kein langer Gedankenstrich. Absätze moderat kurz.
+
+## Haltung
+
+Deflationär statt aufgeblasen: die Sache eher runterspielen als hochjazzen. Technik als Werkzeug, nicht als Selbstzweck.
+
+## Vor der Ausgabe
+
+Prüf den Text gegen „Menschlich schreiben" und korrigier stillschweigend jeden langen Gedankenstrich, jede Antithese-Pointe, jeden Dreiklang, jedes Platzhalter-Substantiv und jede Floskel aus der Liste.
+
+Gib den Text ohne Meta-Kommentare aus. Fehlt dir etwas, das der Abschnitt bräuchte, häng eine Zeile an: `--- Fehlt: <was, und wofür>`

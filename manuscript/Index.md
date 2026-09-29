@@ -10,15 +10,16 @@ longform:
       - 00.02 - Was dieses Buch erzählt
       - 00.03 - Ein Blick zurück, um die Gegenwart zu verstehen
     - 01 - Bevor das Internet ein öffentlicher Ort war
-    - - 01.01 - Über Mailboxen und telefonierende Computer
-      - 01.02 - Die Netze der Universitäten
-      - 01.03 - Das Usenet
-      - 01.04 - Die Anfänge der Netzkunst
-      - 01.05 - Die Hackerkultur
-      - 01.06 - Wie man miteinander umging
-      - 01.07 - Die Cyberpunk-Utopie
-      - 01.08 - Der große Wendepunkt
-      - 01.09 - Das Erbe wandert ins Web
+    - - 01.01 - C64, Amiga und Konsorten
+      - 01.02 - Über Mailboxen und telefonierende Computer
+      - 01.03 - Die Netze der Universitäten
+      - 01.04 - Das Usenet
+      - 01.05 - Die Anfänge der Netzkunst
+      - 01.06 - Die Hackerkultur
+      - 01.07 - Wie man miteinander umging
+      - 01.08 - Die Cyberpunk-Utopie
+      - 01.09 - Der große Wendepunkt
+      - 01.10 - Das Erbe wandert ins Web
     - 02 - Die ersten Jahre des öffentlichen Internets
     - - 02.01 - Ich bin drin
       - 02.02 - Die anarchischen Gründerjahre
@@ -87,4 +88,5 @@ longform:
   ignoredFiles:
     - manuscript
     - "1"
+    - kompilat
 ---

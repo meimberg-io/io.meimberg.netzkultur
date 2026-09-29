@@ -1,6 +1,6 @@
 ---
 role: state
-readers: claude, !copyedit, !editor-write
+readers: claude, editor, !copyedit, !editor-write
 when: nach einem Prüflauf, als Filter vor der Übergabe an Oli
 mode: lookup
 agent-visible: no

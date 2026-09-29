@@ -9,7 +9,7 @@ Geschrieben wird mit Claude Code. Was die Agenten dabei dürfen und woran sie si
 Immer in zwei Schritten, und zwischen beiden schaust du drauf.
 
 ```
-/editor-outline 01.03      # was gesagt werden soll: Fakten, Reihenfolge, Auftrag
+/editor-plot 01.03      # was gesagt werden soll: Fakten, Reihenfolge, Auftrag
                            # → du liest die Outline und korrigierst sie
 /editor-write 01.03        # wie es gesagt wird: fertige Prosa
                            # → du liest den Text
@@ -43,7 +43,6 @@ Zwei Prüfungen in einem Lauf verdrängen einander, deshalb einzeln. Welche wann
 | `state/` | **Wo wir stehen.** Offene Punkte pro Kapitel und werkweit, getrennt nach „du entscheidest" und „Claude erledigt". Dazu `decisions.md`: Befunde, die du abgelehnt hast, damit sie nicht wiederkommen. |
 | `rules/` | **Die Vorgaben.** Klang, Format, Arbeitsweise, Prüfverfahren, Bildrechte, Longform-Mechanik. Kurz gehalten, weil sie vollständig gelesen werden. |
 | `assets/` | Bilder. Urheber, Lizenz und Bildunterschrift stehen in der Datei selbst, gepflegt über Lightroom. |
-| `beispiel/` | Eine Passage von Dossier über Outline und Briefing bis zum fertigen Text. Zum Nachschauen, wie fein das Material sein muss. |
 | `drafts/` | **Dein Notizzettel.** Unsortiertes, Halbfertiges, Kopiertes. Agenten fassen das nicht an und lesen es nicht, außer du nennst ausdrücklich eine Datei daraus. |
 | `scripts/`, `longform-scripts/`, `lightroom/` | Werkzeuge und Katalog. |
 

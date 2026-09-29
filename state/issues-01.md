@@ -1,6 +1,6 @@
 ---
 role: state
-readers: claude, editor-outline
+readers: claude, editor
 when: laufend, sobald ein Punkt offen bleibt
 mode: lookup
 agent-visible: no
@@ -21,7 +21,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 
 ## Zu entscheiden (Oli)
 
-- **Wie heißt Horton im Text?** Für den neu gefassten H3 „Entstehung des Usenets" (01.03) ist das
+- **Wie heißt Horton im Text?** Für den neu gefassten H3 „Entstehung des Usenets" (01.04) ist das
   Berkeley-Gateway recherchiert, das die ARPANET-Verteiler `SF-LOVERS` und `HUMAN-NETS` in die
   `fa.*`-Gruppen einspeiste. Eingerichtet hat es **Mary Ann Horton**, die damals als *Mark Horton*
   veröffentlichte. Bellovin (2019) und en.Wikipedia schreiben durchgehend Mary Ann Horton und „she";
@@ -32,6 +32,9 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 - **Zeitraum des Kapitels.** Der Kopf sagt „etwa 1978 bis 1994". Die Demoszene-Bilder reichen bis
   1997, der Ausblick bis in die Gegenwart. Entweder den Zeitraum auf 1996/97 dehnen oder ihn als
   ungefähre Ära lesen und so lassen. (Bilder und Ausblick bleiben, das ist entschieden.)
+  Mit dem neuen 01.01 (C64, Amiga) passt „1978 bis 1994" vorn wie hinten: C64 ab 1983 in
+  Deutschland, Commodore-Konkurs und C64-Produktionsende 1994. Der neue Abschnitt verlangt keine
+  Änderung.
 
 - **Titel „Die Anfänge der Netzkunst".** Der Titel weckt die Erwartung auf den Kunstbetrieb, der in
   dieser Reihe nicht vorkommt (siehe [konventionen.md](konventionen.md)). Der H2 erzählt die Kunst der
@@ -45,7 +48,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   der Tracker ein Werkzeug. Prüfen, ob eine gemeinsame Achse den Abschnitt rund macht oder ob der
   Rahmensatz genügt.
 
-- **Reihenfolge der Stationen in 01.02.** Sie steht jetzt Post → Spam → MUDs → Karlsruhe → IRC und
+- **Reihenfolge der Stationen in 01.03.** Sie steht jetzt Post → Spam → MUDs → Karlsruhe → IRC und
   schiebt damit zwei Fäden ineinander: Mail (Station 1, 2, 4) und Echtzeit/Textwelten (3, 5).
   `copyedit-coherence` schlägt **Post → Spam → Karlsruhe → MUDs → IRC** vor. Dann läuft der Mail-Strang in
   einem Zug 1971 → 1978 → 1984, der Echtzeit-Strang 1978 → 1988, und der IRC-Einstieg findet die
@@ -54,29 +57,38 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 - **Die MUD-Station widerlegt die IRC-Station.** Bestand schon vorher. Die MUDs schildern Spieler,
   „die zeitgleich online waren"; der IRC-Einstieg sagt zehn Jahre später „Mailboxen und
   Mailinglisten waren Schreibmedien" und lässt die MUDs genau da weg, wo sie seine Behauptung
-  widerlegen. 01.01 nennt zusätzlich „Diskussionsforen und Chats" in Mailboxen. Entweder der
+  widerlegen. 01.02 nennt zusätzlich „Diskussionsforen und Chats" in Mailboxen. Entweder der
   IRC-Einstieg grenzt sich gegen die MUDs ab, oder er verzichtet auf die Erstheit.
 - **Vier Premieren auf zwei Seiten.** „Die erste Spam-Mail" und „Die erste Mail nach Karlsruhe" als
   Überschriften, dazu „die erste Nachricht von einem Rechner zu einem anderen" und „die erste
   [Mailingliste]" im neuen H3. Die Erste-Geste entwertet sich. Eine davon kann anders ansetzen.
-- **`SF-LOVERS` steht zweimal da, in zwei Medien.** Neu im H3 als Mailingliste, in 01.03 als
+- **`SF-LOVERS` steht zweimal da, in zwei Medien.** Neu im H3 als Mailingliste, in 01.04 als
   „Stammgast in `rec.arts.sf-lovers`". Gleicher Name, kein Signal, dass es dieselbe Runde ist, die
   ins Usenet umgezogen ist. Als Bogen nutzen oder eines von beidem ersetzen.
 - **Anonyme FTP-Archive haben keinen Platz.** Der neue H3 „Die ungeplante Erfindung der E-Mail" führt FTP
   als Nutzung ein (Dateien von einem fremden Rechner holen), nicht als Ort. Die öffentlichen Archive,
   in denen man stöberte, und ihre Suche (Archie) kommen nirgends vor, obwohl sie das sind, was vom
-  Dateitransfer kulturell blieb. Entweder in „Das Erbe wandert ins Web" (01.09) aufnehmen oder
+  Dateitransfer kulturell blieb. Entweder in „Das Erbe wandert ins Web" (01.10) aufnehmen oder
   bewusst weglassen.
 
 ## Zu erledigen (Claude)
 
-- **„Hierarchien" fällt im Schlussabsatz von „Entstehung des Usenets" (01.03) ohne Einführung** und
+- **01.01 nach dem dritten Prüflauf überarbeitet** (2026-09-29): erste Hälfte einzeln korrigiert,
+  Amiga-Teil neu geordnet, Olis Satz eingebunden, Olis Korrekturen übernommen (Schlusssatz
+  gestrichen, „später“, „Viele der alten Hefte …“). Der Abschnitt endet wieder auf den Compilern.
+  Neue Fassung noch ohne Prüflauf (clarity, language).
+- **Baustein für 01.04 „Die deutsche Ecke des Usenets": Amiga als Usenet-Knoten.** Entschieden
+  (Oli, 2026-09-27): gehört nach 01.04, nicht nach 01.01. Private Knoten im Sub-Netz (`sub.*`)
+  liefen auf Amigas mit Dillon UUCP, belegt über die UUCP-Karten `u.sub.*` vom Januar 1994;
+  Material in `material/dossier-01.md`, Abschnitt „Heimcomputer (01.01)", Eintrag „Amiga im Usenet".
+
+- **„Hierarchien" fällt im Schlussabsatz von „Entstehung des Usenets" (01.04) ohne Einführung** und
   wird vom Folge-H3 („Diese Hierarchien …") als bekannt vorausgesetzt. Bestand in der alten Fassung
   genauso, ist also kein Schaden des Umbaus, aber weiterhin die schwächste Naht im H2. Löst sich von
   selbst, wenn `fa.*` in „Die Kartografie der Subkulturen" einzieht, weil dort die erste Hierarchie
   benannt und gezeigt wird (siehe [kandidaten.md](../material/kandidaten.md)).
 
-- **Prüflauf über den neu gefassten H3 „Entstehung des Usenets"** (01.03, Fassung vom 2026-08-07,
+- **Prüflauf über den neu gefassten H3 „Entstehung des Usenets"** (01.04, Fassung vom 2026-08-07,
   201 Wörter): `copyedit-clarity`, `copyedit-language`, danach `copyedit-coherence` über den ganzen
   H2. Belege stehen vollständig in [dossier-01.md](../material/dossier-01.md) § „Die Gründung des
   Usenets" (recherchiert 2026-08-07, Snapshots nach `material/quellen/` fehlen noch). Im Text steht
@@ -89,10 +101,10 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   - **Die Cancel-Nachricht seit 1983** stammt noch aus der alten Fassung und ist nie belegt worden.
   - **Warum die Duke keinen ARPANET-Anschluss hatte, steht bewusst nicht im Text**, nur „und an
     einen zu kommen war nicht leicht". Die Bedingung ist belegt (Bellovin: „To be on it, you had to
-    be a defense contractor or a university with a research contract from DARPA"), 01.02 hat sie dem
+    be a defense contractor or a university with a research contract from DARPA"), 01.03 hat sie dem
     Leser schon gesagt, und ausformuliert lud sie den Absatz politisch auf. Nicht nachtragen.
 
-- **`copyedit-facts` über den neuen H3 „Die ungeplante Erfindung der E-Mail"** (01.02, vor der Spam-Mail
+- **`copyedit-facts` über den neuen H3 „Die ungeplante Erfindung der E-Mail"** (01.03, vor der Spam-Mail
   eingefügt, weil E-Mail und Mailinglisten im ganzen Werk dreimal vorausgesetzt und nie eingeführt
   waren). `copyedit-clarity`, `copyedit-language` und `copyedit-plausibility` sind zweimal gelaufen und eingearbeitet, die
   Recherche fehlt noch. Bereits belegt: FTP RFC 114 vom 16. April 1971 (siehe
@@ -123,7 +135,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
     die Ostküstenknoten kamen erst 1970 dazu, und der Rahmensatz „Seit 1969" lädt dazu ein, das
     Beispiel auf 1969 zu beziehen. Ebenfalls zu prüfen, ob Remote Login 1971 schon im Betrieb war
     oder erst nach der ICCC-Demo von 1972.
-- **`copyedit-facts` über den neuen H3 „Ein Netz für Rechenzeit"** (01.02, geschrieben 2026-08-06,
+- **`copyedit-facts` über den neuen H3 „Ein Netz für Rechenzeit"** (01.03, geschrieben 2026-08-06,
   ersetzt den früheren H3 „Die ungeplante Erfindung der E-Mail" und erweitert ihn zur
   Nutzungsgeschichte in drei Stationen: Einloggen, Dateien holen, Nachrichten schreiben).
   `copyedit-clarity`, `copyedit-language`, `copyedit-coherence` und `copyedit-plausibility` sind
@@ -161,7 +173,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   - Unverändert offen aus dem früheren Textstand: die Drei-Viertel-Zahl samt Messgröße, `MsgGroup`,
     `SF-LOVERS`, der Bandversand als übliche Praxis.
 
-- **`copyedit-facts` über den neuen H3 „Requests for Comments (RFCs)"** (01.02, geschrieben
+- **`copyedit-facts` über den neuen H3 „Requests for Comments (RFCs)"** (01.03, geschrieben
   2026-08-06, eingesetzt zwischen „Das ARPANET" und „Die erste Spam-Mail"). Keine Linse ist bisher
   darüber gelaufen. Belegt ist nur die Nummer 114 vom 16. April 1971 ([fakten.md](../knowledge/fakten.md)),
   alles andere steht aus Modellwissen im Text:
@@ -189,9 +201,9 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   - **Nicht im Text und bewusst weggelassen:** der RFC Editor als Amt und Jon Postels Amtszeit bis
     1998 (aus Umfangsgründen gestrichen, siehe Outline), die Scherz-RFCs samt RFC 1149 (Brieftaube,
     1. April 1990; von Oli gestrichen, weil der Platz für den Inhalt der Reihe gebraucht wurde),
-    RFC 1855 (gehört als Pointe nach 01.06), IETF, Standard-Stufen, die Umstellung auf TCP/IP.
+    RFC 1855 (gehört als Pointe nach 01.07), IETF, Standard-Stufen, die Umstellung auf TCP/IP.
 
-- **`copyedit-facts` über den AfroNet-Absatz** (01.01, Ende von „FidoNet verband die Inseln", Fassung
+- **`copyedit-facts` über den AfroNet-Absatz** (01.02, Ende von „FidoNet verband die Inseln", Fassung
   von Oli, eingesetzt 2026-08-07). Zu prüfen sind:
   - **Ken Onwere, 1993, FidoNet-basiert, Nordamerika.** Bestätigt sich in zwei unabhängigen Quellen
     (siehe unten). Ergänzend belegt und noch nicht im Text: Onwere war ein in den USA geborener
@@ -225,15 +237,15 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
     stand", der AfroNet-Absatz beginnt mit „weit vor dem kommerziellen World Wide Web". Zwei Absätze
     hintereinander mit derselben Pointe.
 
-- **Der Netiquette-Satz in 01.06 kann jetzt kürzer werden.** Dort steht „1995 erschien er als
+- **Der Netiquette-Satz in 01.07 kann jetzt kürzer werden.** Dort steht „1995 erschien er als
   RFC 1855, in derselben Dokumentenreihe, in der auch die technischen Protokolle des Netzes stehen".
-  Der Relativsatz war nötig, solange die Reihe nirgends eingeführt war. Mit dem neuen H3 in 01.02 ist
+  Der Relativsatz war nötig, solange die Reihe nirgends eingeführt war. Mit dem neuen H3 in 01.03 ist
   sie es, und der Satz kann zum Rückbezug werden, ohne die Reihe noch einmal zu erklären. Nicht
   automatisch geändert, weil es ein fremdes Kapitel ist.
 
-- **Archie gehört nach 01.09, nicht in 01.02.** Beim Schreiben von „Ein Netz für Rechenzeit"
+- **Archie gehört nach 01.10, nicht in 01.03.** Beim Schreiben von „Ein Netz für Rechenzeit"
   ausgebaut: Das Programm der McGill University in Montreal durchsuchte 1990 die Dateinamen der
-  anonymen FTP-Archive und gilt als erste Suchmaschine des Netzes. In 01.02 riss es den Abschnitt um
+  anonymen FTP-Archive und gilt als erste Suchmaschine des Netzes. In 01.03 riss es den Abschnitt um
   fünfzehn Jahre auseinander (`copyedit-coherence`, `copyedit-plausibility`). In „Das Erbe wandert ins
   Web" steht es dagegen am richtigen Platz, weil dort ohnehin erzählt wird, was vom alten Netz ins Web
   wanderte. Zu belegen sind Jahr, Ort, Urheber und die Erstheitsbehauptung.
@@ -254,8 +266,41 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
     eines Begriffs durchgehend fett aus (MUD, Avatar, Spam, Bots, IRC).
   - Ein langer Gedankenstrich war drin und ist raus (2026-08-06).
 
-- **Prüflauf über den neuen H2 „Die Hackerkultur".** Der Abschnitt ist neu geschrieben und noch von
-  keinem Agenten gesehen: `copyedit-clarity`, `copyedit-language`, `copyedit-plausibility`, danach `copyedit-facts`. Belege, aus
+- **01.06 wird neu gebaut, die alte Fassung ist raus.** Oli hat `manuscript/01.06 - Die Hackerkultur.md`
+  geleert; der alte Text steht noch in `git show HEAD` und in `manuscript/kompilat.md`. Am 2026-08-11 ist
+  dazu die Outline `material/outline/01.06.md` entstanden, Material in `material/dossier-01.md`,
+  Abschnitt „Hackerkultur". **Die folgenden vier Einträge beziehen sich auf die alte Fassung** und sind
+  erst wieder gültig, wenn Stufe 2 gelaufen ist.
+  - **Sachfehler der alten Fassung, in der Outline korrigiert:** „Brzezinski" muss **Brezinski** heißen;
+    „ein _Hack_ war eine Lösung, die kunstvoller war als nötig" ist die spätere, romantische Lesart
+    (TMRC-Wörterbuch 1959: „a project undertaken on bad self-advice; an entropy booster"); der Btx-Hack
+    war eine Vorführung von **Wau Holland und Steffen Wernéry** in Wernérys Wohnung vor Presse und
+    Datenschutzbeauftragtem, nicht „der Club" abstrakt.
+  - **Der Streit um den Btx-Hergang stand nicht im alten Text.** Ob das Sparkassen-Passwort wirklich aus
+    einem Speicherüberlauf fiel, ist bis heute offen; die Bundespost hat das immer bestritten. Die
+    Outline nimmt den Widerspruch auf. Wenn Oli ihn nicht im Text will, fällt die Passage weg, dann
+    bleibt der Hack aber unbelegt legitimiert.
+- **Was aus 01.06 herausfliegt und in Kapitel 02 neu eingeführt werden muss.** Die Outline vom
+  2026-08-11 streicht die **Electronic Frontier Foundation**, Steve Jackson Games und den
+  Neidorf-Prozess. Damit stimmt die Annahme weiter unten („Die EFF wird jetzt in K01 gegründet, K02 kann
+  darauf aufbauen") nicht mehr. Entweder K02 führt die EFF selbst ein, oder 01.06 bekommt einen Satz
+  zurück. → auch in [issues.md](issues.md)
+- **Kochs Todesdatum ist strittig.** de.Wikipedia „KGB-Hack" nennt den **30. Mai 1989** für den Fund der
+  verbrannten Leiche bei Ohof, en.Wikipedia „Karl Koch (hacker)" den **1. Juni 1989**; als Todestag gilt
+  der 23. oder 24. Mai. Die Outline verzichtet deshalb aufs Tagesdatum („im Frühsommer 1989"). Wenn ein
+  Datum in den Text soll: entscheiden und nach `knowledge/fakten.md`.
+- **Die zwei unbelegten Wau-Holland-Zitate sind in der Outline ersetzt, nicht gelöst.** Statt
+  „Vertreibung aus dem Paradies" und „Wer sich bezahlen lasse, sei kein Hacker mehr" trägt die belegte
+  Ergänzung der Hackerethik um Punkt 7 und 8 (`ccc.de/hackerethics`, Anlass laut Club: Hacker boten ihr
+  Wissen Geheimdiensten an). Falls die Zitate doch in den Text sollen, braucht es einen deutschen
+  Originalbeleg.
+- **„White hat" und „black hat" gehören sprachlich nicht in Kapitel 01.** Belegt ist: OED datiert die
+  erste Verwendung im Computer-Slang auf 1990, „white-hat hacker" ist erst Ende der Neunziger in
+  Gebrauch, und im Jargon File 2.1.1 (1990) kommen beide Ausdrücke nicht vor. Die Outline behandelt sie
+  deshalb als **Zuschreibung von außen** und nicht als Selbstbezeichnung der Szene. Nur sekundär belegt
+  und vor Verwendung nachzuziehen, falls der Ausblick doch in den Text soll: „ethical hacking" 1995
+  (IBM, John Patrick) und der Start der Konferenzreihe _Black Hat_ 1997.
+- **Prüflauf über den alten H2 „Die Hackerkultur".** Bezieht sich auf die inzwischen geleerte Fassung: `copyedit-clarity`, `copyedit-language`, `copyedit-plausibility`, danach `copyedit-facts`. Belege, aus
   denen er entstanden ist, damit der Faktencheck nicht bei null anfängt:
   Hackerethik und die beiden CCC-Zusätze `ccc.de/hackerethics`; KGB-Hack (Namen, Handles, 2. März
   1989, Urteil 15. Februar 1990, Kochs Leiche 30. Mai 1989 bei Ohof) de.wikipedia „KGB-Hack";
@@ -281,7 +326,10 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 - **Begriffskollision „Cracker".** Im Netzkunst-H2 heißt Cracker, wer Kopierschutz entfernt; in der
   Hackerkultur geht es um Leute, die in fremde Systeme eindringen. Der neue Abschnitt weicht dem
   Wort aus, aber die Szene selbst hat es zur Abgrenzung benutzt („Hacker bauen, Cracker brechen
-  ein"). Prüfen, ob ein Satz das klärt oder ob die Klärung mehr verwirrt als hilft.
+  ein"). Prüfen, ob ein Satz das klärt oder ob die Klärung mehr verwirrt als hilft. Die Outline vom
+  2026-08-11 entscheidet sich für einen Halbsatz, weil 01.06 den Cracker jetzt zwingend braucht: Das
+  Wort ist dort der Beleg dafür, dass die Szene die Trennlinie selbst gezogen hat („coined c. 1985 by
+  hackers in defense against journalistic misuse of HACKER", Jargon File 2.1.1).
 - **Datenklo und Hackerbibel stehen jetzt an zwei Stellen** (H3 „Das Monopol der Bundespost" und H3
   „Die Magazine der Szene"). Gewollt als Rückgriff oder Dopplung? Entscheiden.
 - **Kandidaten, die im Hackerkultur-H2 fehlen** und Recherche brauchen, falls der Abschnitt noch

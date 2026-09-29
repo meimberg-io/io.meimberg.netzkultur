@@ -8,7 +8,7 @@ agent-visible: no
 
 # Offene Punkte: die ganze Reihe
 
-Was mehr als ein Kapitel betrifft. Kapitelbezogenes steht in `<NN>_issues.md`, entschieden ist, was
+Was mehr als ein Kapitel betrifft. Kapitelbezogenes steht in `issues-<NN>.md`, entschieden ist, was
 in [decisions.md](decisions.md) steht, belegt ist, was in [knowledge/fakten.md](../knowledge/fakten.md)
 steht. Claude pflegt diese Liste selbst und sofort, nicht auf Nachfrage.
 

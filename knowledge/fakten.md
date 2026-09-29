@@ -1,6 +1,6 @@
 ---
 role: knowledge
-readers: editor-outline, copyedit, copyedit-facts, copyedit-plausibility
+readers: editor, copyedit, copyedit-facts, copyedit-plausibility
 when: bevor eine Behauptung geschrieben oder angezweifelt wird
 mode: lookup
 agent-visible: yes
