@@ -13,6 +13,7 @@ in [decisions.md](decisions.md) steht, belegt ist, was in [knowledge/fakten.md](
 steht. Claude pflegt diese Liste selbst und sofort, nicht auf Nachfrage.
 
 - Kapitel 01 → [01_issues.md](01_issues.md)
+- Kapitel 02 → [issues-02.md](issues-02.md)
 
 ---
 
@@ -42,7 +43,8 @@ steht. Claude pflegt diese Liste selbst und sofort, nicht auf Nachfrage.
   [01_issues.md](01_issues.md)); danach gehört der Strang weitergeführt, weil sich das Thema nach
   1993 stark ausgeweitet hat. K02 hat Crypto Wars und Hacktivismus schon, aber ohne Bogen zur Szene
   aus K01; später kommen Anonymous, Leaks, Bug-Bounty-Ökonomie und staatliche Angreifer hinzu. Als
-  Entwicklung anlegen, nicht als Wiederholung.
+  Entwicklung anlegen, nicht als Wiederholung. Die EFF kommt in K01 nicht vor, K02 führt sie selbst
+  ein (Oli, 2026-09-29); die Aufgabe steht in [issues-02.md](issues-02.md).
 - **Die Blog-Ära der 2000er fehlt der Reihe.** K02 hat mit Justin Hall die Wurzel, K03 und K06 haben
   Foren und Plattformen, aber das Jahrzehnt dazwischen (Blogosphäre, Spreeblick, Bildblog,
   Kommentarkultur) hat keinen Ort. Strukturfrage, kein Fund aus einer Quelle.

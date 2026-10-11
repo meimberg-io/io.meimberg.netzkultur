@@ -21,6 +21,26 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 
 ## Zu entscheiden (Oli)
 
+- **01.06, vor Stufe 2** (geschärfte Outline vom 2026-09-30, `material/outline/01.06.md`):
+  - **Der Eintrag `black hat` von 2001 im Jargon File.** Neu recherchiert, Primärquelle: erste Fassung
+    mit dem Wort ist 4.3.0 vom 30. April 2001, vermerkt „[common among security specialists]",
+    erklärt als „A cracker". Steht jetzt in Kernthese und Abschnitt 6 und baut den Schluss (das
+    Wörterbuch hält ihn für einen Cracker, draußen kommt er als Hacker zurück). Ohne ihn: Hüte nur mit
+    Western, „1990 kein Hut" und „spätestens Ende der Neunziger".
+  - **Zwei Streichungen kommen teilweise zurück.** Kochs Gang zum Verfassungsschutz 1988 als
+    Nebensatz (Faktencheck: sonst liest sich Stolls Spur als das, was die Gruppe zu Fall brachte) und
+    Levys Punkt 1 mit zwei Wörtern Zitat, „unbegrenzt und vollständig" (Diagnose: sonst trägt „keiner
+    setzt eine Grenze" nicht).
+  - **Sundevils Ruf, mit Bruce Sterling beim Namen.** Kostet einen Belegpunkt und eine Person, trägt
+    aber die Einordnung (Razzia gegen Betrug, öffentlich als Schlag gegen die Hacker gelesen) und den
+    Übergang zu Abschnitt 6. Ohne ihn endet Abschnitt 5 auf den Mailboxen, und Abschnitt 6 beginnt
+    wie bisher mit der Presse.
+  - **§ 202a ohne die Neufassung von 2007?** Die Outline lässt 2007 draußen, Präteritum und „sollte
+    straflos bleiben" tragen. Ein Halbsatz „seit 2007 genügt der Zugang" kostet einen Belegpunkt und
+    beantwortet die Frage, die ein heutiger Leser hat.
+  - **Umfang:** rund 1.040 statt 900 bis 950 Wörter, 32 statt 29 Belegpunkte. Die Dichte bleibt bei
+    gut drei je hundert Wörter.
+
 - **Wie heißt Horton im Text?** Für den neu gefassten H3 „Entstehung des Usenets" (01.04) ist das
   Berkeley-Gateway recherchiert, das die ARPANET-Verteiler `SF-LOVERS` und `HUMAN-NETS` in die
   `fa.*`-Gruppen einspeiste. Eingerichtet hat es **Mary Ann Horton**, die damals als *Mark Horton*
@@ -266,50 +286,52 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
     eines Begriffs durchgehend fett aus (MUD, Avatar, Spam, Bots, IRC).
   - Ein langer Gedankenstrich war drin und ist raus (2026-08-06).
 
-- **01.06 wird neu gebaut, die alte Fassung ist raus.** Oli hat `manuscript/01.06 - Die Hackerkultur.md`
-  geleert; der alte Text steht noch in `git show HEAD` und in `manuscript/kompilat.md`. Am 2026-08-11 ist
-  dazu die Outline `material/outline/01.06.md` entstanden, Material in `material/dossier-01.md`,
-  Abschnitt „Hackerkultur". **Die folgenden vier Einträge beziehen sich auf die alte Fassung** und sind
-  erst wieder gültig, wenn Stufe 2 gelaufen ist.
-  - **Sachfehler der alten Fassung, in der Outline korrigiert:** „Brzezinski" muss **Brezinski** heißen;
-    „ein _Hack_ war eine Lösung, die kunstvoller war als nötig" ist die spätere, romantische Lesart
-    (TMRC-Wörterbuch 1959: „a project undertaken on bad self-advice; an entropy booster"); der Btx-Hack
-    war eine Vorführung von **Wau Holland und Steffen Wernéry** in Wernérys Wohnung vor Presse und
-    Datenschutzbeauftragtem, nicht „der Club" abstrakt.
-  - **Der Streit um den Btx-Hergang stand nicht im alten Text.** Ob das Sparkassen-Passwort wirklich aus
-    einem Speicherüberlauf fiel, ist bis heute offen; die Bundespost hat das immer bestritten. Die
-    Outline nimmt den Widerspruch auf. Wenn Oli ihn nicht im Text will, fällt die Passage weg, dann
-    bleibt der Hack aber unbelegt legitimiert.
-- **Was aus 01.06 herausfliegt und in Kapitel 02 neu eingeführt werden muss.** Die Outline vom
-  2026-08-11 streicht die **Electronic Frontier Foundation**, Steve Jackson Games und den
-  Neidorf-Prozess. Damit stimmt die Annahme weiter unten („Die EFF wird jetzt in K01 gegründet, K02 kann
-  darauf aufbauen") nicht mehr. Entweder K02 führt die EFF selbst ein, oder 01.06 bekommt einen Satz
-  zurück. → auch in [issues.md](issues.md)
 - **Kochs Todesdatum ist strittig.** de.Wikipedia „KGB-Hack" nennt den **30. Mai 1989** für den Fund der
-  verbrannten Leiche bei Ohof, en.Wikipedia „Karl Koch (hacker)" den **1. Juni 1989**; als Todestag gilt
-  der 23. oder 24. Mai. Die Outline verzichtet deshalb aufs Tagesdatum („im Frühsommer 1989"). Wenn ein
+  verbrannten Leiche bei Ohof, de.Wikipedia „Karl Koch (Hacker)" und en.Wikipedia „Karl Koch (hacker)" den **1. Juni 1989**; als Todestag gilt
+  der 23. oder 24. Mai. Outline und Text verzichten deshalb aufs Tagesdatum („im Frühsommer 1989"). Wenn ein
   Datum in den Text soll: entscheiden und nach `knowledge/fakten.md`.
-- **Die zwei unbelegten Wau-Holland-Zitate sind in der Outline ersetzt, nicht gelöst.** Statt
-  „Vertreibung aus dem Paradies" und „Wer sich bezahlen lasse, sei kein Hacker mehr" trägt die belegte
-  Ergänzung der Hackerethik um Punkt 7 und 8 (`ccc.de/hackerethics`, Anlass laut Club: Hacker boten ihr
-  Wissen Geheimdiensten an). Falls die Zitate doch in den Text sollen, braucht es einen deutschen
-  Originalbeleg.
-- **„White hat" und „black hat" gehören sprachlich nicht in Kapitel 01.** Belegt ist: OED datiert die
-  erste Verwendung im Computer-Slang auf 1990, „white-hat hacker" ist erst Ende der Neunziger in
-  Gebrauch, und im Jargon File 2.1.1 (1990) kommen beide Ausdrücke nicht vor. Die Outline behandelt sie
-  deshalb als **Zuschreibung von außen** und nicht als Selbstbezeichnung der Szene. Nur sekundär belegt
-  und vor Verwendung nachzuziehen, falls der Ausblick doch in den Text soll: „ethical hacking" 1995
-  (IBM, John Patrick) und der Start der Konferenzreihe _Black Hat_ 1997.
-- **Prüflauf über den alten H2 „Die Hackerkultur".** Bezieht sich auf die inzwischen geleerte Fassung: `copyedit-clarity`, `copyedit-language`, `copyedit-plausibility`, danach `copyedit-facts`. Belege, aus
-  denen er entstanden ist, damit der Faktencheck nicht bei null anfängt:
-  Hackerethik und die beiden CCC-Zusätze `ccc.de/hackerethics`; KGB-Hack (Namen, Handles, 2. März
-  1989, Urteil 15. Februar 1990, Kochs Leiche 30. Mai 1989 bei Ohof) de.wikipedia „KGB-Hack";
-  Phrack (17. November 1985, Taran King und Knight Lightning) en.wikipedia „Phrack"; 2600 (Januar
-  1984, Corley und Ruderman, 2600-Hz-Ton) en.wikipedia „2600: The Hacker Quarterly"; § 202a über
-  das 2. WiKG vom 15. Mai 1986 (BGBl. I S. 721) dejure.org; Operation Sundevil (8./9. Mai 1990,
-  ~15 Städte, drei Verhaftungen), Steve Jackson Games (1. März 1990), EFF (Juli 1990, Kapor,
-  Barlow, Gilmore), Neidorf-Prozess (Zusammenbruch nach vier Tagen, Dokument für 13 Dollar)
-  en.wikipedia „Operation Sundevil" / „Craig Neidorf".
+- **01.07 auf das Jargon File aus 01.06 umstellen.** Entschieden (Oli, 2026-09-30): 01.06 nennt das
+  **Jargon File** beim Namen und führt es kurz ein (1975 von Raphael Finkel in Stanford begonnen, am
+  MIT weitergeführt, 1990 von Eric S. Raymond neu herausgegeben), 01.07 greift darauf zurück, statt es
+  als neu vorzustellen. **Erst umsetzen, wenn 01.06 aus der geschärften Outline neu geschrieben ist**,
+  dann Kohärenz über beide. Vorschlag für den Absatz „Diese Sprache dokumentierte die Szene selbst …"
+  in „Netiquette, Zeichen für den Ton und zwei Erfindungen, die blieben":
+  - **Streichen, weil es jetzt in 01.06 steht:** Finkel, 1975, das Stanforder Labor, „wanderte ans
+    MIT", die Einführung „in einer Datei zu sammeln, dem **Jargon File**" samt Fettung (der
+    Erstauftritt ist jetzt in 01.06).
+  - **Behalten, weil es neu ist:** was darin stand (Fachwörter, Scherze, Anekdoten), dass immer mehr
+    Leute es ergänzten, das Buch von 1983 (_The Hacker's Dictionary_), Zugehörigkeit und Spott als
+    Schluss.
+  - **Rückbezug über den Inhalt, nicht über das Kapitel** (`rules/form.md`, Abschnitt Zeit): an das
+    anknüpfen, was der Leser vom Jargon File schon weiß, das Wörterbuch, in dem die Hacker den Cracker
+    vom Hacker trennten. Kein „wie oben", kein „bereits erwähnt".
+  - **Jahreszahlen nicht verwirren:** 01.06 nennt die Fassung von 1990, 01.07 das Buch von 1983; 1983
+    ist die ältere Form. Der Satz darf nicht so klingen, als sei das Buch aus der Fassung von 1990
+    entstanden.
+  - Richtung, nicht Wortlaut (Formulierung ist Stufe 2 oder Olis Hand): „Diese Sprache sammelten die
+    Hacker im Jargon File, demselben Wörterbuch, in dem sie den Cracker vom Hacker trennten; 1983 war es
+    als Buch erschienen, _The Hacker's Dictionary_." Dann weiter mit „Wer die Wörter kannte …".
+- **01.06: Outline geschärft (2026-09-30), wartet auf Olis Freigabe, danach Stufe 2 neu.** Die zweite
+  Fassung (Stufe 2 nach der Outline vom Vormittag) hat im zweiten Prüflauf die Substanz gehalten
+  (`copyedit-plausibility` 3 statt 8 Befunde), die Prosa ist aber ins Stakkato gekippt
+  (`copyedit-clarity` 19, `copyedit-language` 19). Oli: Plot schärfen, dann neu schreiben.
+  **Erledigt:** Der Faktencheck der zweiten Fassung und die Nachrecherche stehen im Dossier
+  (`material/dossier-01.md`, Abschnitt „Hackerkultur", markiert **Berichtigt (2)** und **Neu (2)**).
+  Die Outline `material/outline/01.06.md` ist überschrieben: Spannung neu gefasst (§ 202a zog die
+  Grenze 1986 an den Daten, das bloße Eindringen sollte straflos bleiben; Sundevil galt Betrug und
+  wurde öffentlich zur Hackerjagd; der schwarze Hut kam erst 2001 ins Jargon File, als Wort der
+  Sicherheitsleute und erklärt als Cracker), eine Klangvorgabe für Stufe 2 ersetzt „eine Tatsache je
+  Satz", je Abschnitt ein Feld „Verbindungen", die Lücken im Vorwissen sind geschlossen, 32 statt 29
+  Belegpunkte, rund 1.040 Wörter.
+  **Offen:** die Fragen unter „Zu entscheiden", dann Stufe 2 mit der Klangvorgabe im Briefing, dann
+  Prüflauf `copyedit-clarity`, `copyedit-language`, `copyedit-plausibility`.
+  **Beim nächsten `copyedit-facts` zuerst**, weil neu und nur einfach belegt: dass das Abstreiten der
+  Post den Anstoß gab (nur de.Wikipedia nach golem 2014, als Aussage von Holland und Fix); dass die
+  Oktober-Warnung einer anderen Lücke galt (nur heise 2024, steht nicht im Text, trägt aber die
+  Reihenfolge); „white-hat hacker" spätestens Ende der Neunziger (nur en.Wikipedia nach OED); das
+  Internet von 1988 als Netz vor allem der Universitäten und Forschung (Weltwissen); Hübners
+  Selbstanzeige (nur en.Wikipedia, nicht im Text). Primär geprüft und ohne Befund: Sterling zu
+  Sundevil (Gutenberg), Jargon File 2.1.1, 3.0.0 und 4.3.0 (catb.org), BT-Drs. 16/3656.
 - **Prüflauf über den neuen H3 „Malen mit gezählten Farben".** Neu geschrieben, von keinem Agenten
   gesehen: `copyedit-clarity`, `copyedit-language`, `copyedit-plausibility`, danach `copyedit-facts`. Zu belegen sind: sechzehn
   feste Farben beim C64 und die feldweise Farbverwaltung; beim Amiga die begrenzte Palette und der
@@ -319,19 +341,7 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
   Bildmetadaten. Ungedeckt und am ehesten strittig: dass Motive
   „oft" aus Buchdeckeln, Comics und Plattencovern übernommen wurden. Der Streit darüber ist mit den
   beiden Bildern von der Party 1993 belegt (siehe unten), die Häufigkeitsaussage „oft" noch nicht.
-- **Wau Hollands „Vertreibung aus dem Paradies" belegen.** Steht im KGB-Hack-Abschnitt als indirekte
-  Rede. Gefunden nur in einer englischsprachigen Sekundärquelle (`hackstory.net`), also
-  rückübersetzt. Deutschen Originalbeleg finden oder den Satz streichen. Dasselbe gilt für „Wer
-  sich bezahlen lasse, sei kein Hacker mehr".
-- **Begriffskollision „Cracker".** Im Netzkunst-H2 heißt Cracker, wer Kopierschutz entfernt; in der
-  Hackerkultur geht es um Leute, die in fremde Systeme eindringen. Der neue Abschnitt weicht dem
-  Wort aus, aber die Szene selbst hat es zur Abgrenzung benutzt („Hacker bauen, Cracker brechen
-  ein"). Prüfen, ob ein Satz das klärt oder ob die Klärung mehr verwirrt als hilft. Die Outline vom
-  2026-08-11 entscheidet sich für einen Halbsatz, weil 01.06 den Cracker jetzt zwingend braucht: Das
-  Wort ist dort der Beleg dafür, dass die Szene die Trennlinie selbst gezogen hat („coined c. 1985 by
-  hackers in defense against journalistic misuse of HACKER", Jargon File 2.1.1).
-- **Datenklo und Hackerbibel stehen jetzt an zwei Stellen** (H3 „Das Monopol der Bundespost" und H3
-  „Die Magazine der Szene"). Gewollt als Rückgriff oder Dopplung? Entscheiden.
+- **Begriffskollision „Cracker".** Im Netzkunst-H2 heißt Cracker, wer Kopierschutz entfernt; in 01.06, wer in fremde Systeme eindringt. Laut Faktencheck vom 2026-09-29 kein Widerspruch: Das Wort ist in der Kopierszene ab 1980/81 sekundär belegt, das Jargon File beansprucht mit „coined c. 1985" nur die Bedeutung Sicherheitsbrecher. Die Outline vom 2026-09-30 entscheidet sich für einen Halbsatz im H3 „Cracker, White Hat, Black Hat": neu war die Bedeutung, nicht das Wort; kein Datum für die Kopierszene, keine Herkunftsbehauptung. Beim Prüflauf der neuen Fassung ansehen, ob der Halbsatz trägt, dann streichen. Offen bleibt die Einzelquelle für „ab 1980/81", der Faktencheck hat sie nicht festgehalten.
 - **Kandidaten, die im Hackerkultur-H2 fehlen** und Recherche brauchen, falls der Abschnitt noch
   wachsen soll: die 414s und der Kongress-Auftritt von 1983, der Film _WarGames_ als Auslöser der
   öffentlichen Wahrnehmung, Legion of Doom gegen Masters of Deception, die 2600-Treffen als
@@ -339,8 +349,9 @@ Erledigtes wird gelöscht; was dabei entschieden wurde, kommt nach `decisions.md
 - **Hackerkultur in den späteren Kapiteln wieder aufgreifen.** Nach dem Start des öffentlichen
   Internets hat sich das Thema stark weiterentwickelt (Crypto Wars und Hacktivismus stehen schon in
   K02, aber ohne Bogen zur Szene aus K01; später Anonymous, Leaks, Bug-Bounty-Ökonomie, staatliche
-  Angreifer). Gehört als Faden durchgezogen, nicht als Wiederholung. Die EFF wird jetzt in K01
-  gegründet, K02 kann darauf aufbauen statt sie neu einzuführen. → auch in [issues.md](issues.md)
+  Angreifer). Gehört als Faden durchgezogen, nicht als Wiederholung. Die EFF kommt in K01 nicht vor:
+  01.06 endet mit den Razzien vom Mai 1990, **K02 führt die EFF selbst ein** (Oli, 2026-09-29), siehe
+  [issues-02.md](issues-02.md). → auch in [issues.md](issues.md)
 - **Die „Release-Szene" wird vorausgesetzt, aber nie eingeführt.** Der Abschnitt „Bilder aus
   Buchstaben" nennt „die Textlogos in den Begleitdateien der späteren Release-Szene"; der Begriff
   fällt weder im Cracker-Absatz noch in K02 oder K03.

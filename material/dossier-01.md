@@ -46,72 +46,130 @@ recherchiert werden. Was fehlt, wird vor dem Schreiben recherchiert und kommt hi
 
 ## Hackerkultur
 
-Recherchiert am 2026-08-11 für 01.06, noch nicht nach `material/quellen/` gesichert.
+Recherchiert am 2026-08-11 für 01.06. **Berichtigt am 2026-09-30** nach dem Faktencheck vom 2026-09-29 (`copyedit-facts` über den eingesetzten Text): Was dort als überdehnt oder falsch galt, ist hier korrigiert und mit **Berichtigt** markiert, nicht danebengeschrieben. **Zweiter Durchgang am selben Tag** nach dem Faktencheck der zweiten Fassung und der Nachrecherche für die geschärfte Outline: markiert mit **Berichtigt (2)** und **Neu (2)**. Noch nicht nach `material/quellen/` gesichert.
 
 ### Das Wort und seine ursprüngliche Bedeutung
 
 - **Das TMRC-Wörterbuch von Juni 1959**, geschrieben von **Peter R. Samson** am Tech Model Railroad
-  Club des MIT, ist der früheste Fund. Wortlaut der Einträge:
-  - `HACK` = „something done without constructive end; a project undertaken on bad self-advice; an
-    entropy booster; to produce, or attempt to produce, a hack"
+  Club, dem Modelleisenbahnclub des MIT, ist der früheste Fund für das Substantiv. Wortlaut:
+  - `HACK` = „1) something done without constructive end; 2) a project undertaken on bad
+    self-advice; 3) an entropy booster; 4) to produce, or attempt to produce, a hack3."
   - `HACKER` = „one who hacks, or makes them"
-  - **Das ist eine abschätzige Definition, keine heroische.** Ein Hack ist zunächst ein Projekt ohne
-    konstruktives Ziel, gegen den eigenen besseren Rat begonnen. Widerspricht der verbreiteten
-    Lesart „kunstvoller als nötig", die auch in der verworfenen Fassung von 01.06 stand.
-  - Samson **2005** rückblickend über das Wort: „an unconventional or unorthodox application of
-    technology, typically deprecated for engineering reasons. There was no specific suggestion of
-    malicious intent (or of benevolence, either)." **Weder böse noch gut gemeint** — der
-    Kronzeugensatz für die Kernthese.
-  - Quelle: [gricer.com/tmrc/dictionary1959.html](https://www.gricer.com/tmrc/dictionary1959.html)
-    (Samsons eigene Seite, Primärquelle) · en.Wikipedia „Tech Model Railroad Club".
+- **Samson, Kommentar vom September 2005**, auf derselben Seite, wörtlich: „I saw this as a term for
+  an unconventional or unorthodox application of technology, typically deprecated for engineering
+  reasons. There was no specific suggestion of malicious intent (or of benevolence, either). Indeed,
+  the era of this dictionary saw some ‚good hacks:' using a room-sized computer to play music, for
+  instance; or, some would say, writing the dictionary itself." (Wortlaut am 2026-09-30 nachgeprüft.)
+  - **Berichtigt:** Die anerkennende Bedeutung ist **nicht** die spätere. Abschätzig („deprecated for
+    engineering reasons") und anerkennend („good hacks") standen um 1959 nebeneinander; auch Levy
+    verortet den positiven Sinn im TMRC der späten Fünfziger. Die frühere Lesart dieses Dossiers („eine
+    abschätzige Definition, keine heroische"; „die heroische Bedeutung ist die spätere") ist falsch.
+  - **Was bleibt:** Beide Wertungen liegen auf der Achse des Handwerks, gelungen oder Murks. Eine
+    moralische Achse hat das Wort nicht: „no specific suggestion of malicious intent (or of
+    benevolence, either)". Das ist der Kronzeugensatz. Es gab gute und schlechte Hacks, von guten
+    und bösen Hackern ist keine Rede.
+- **Frühestes Verb:** 5. April 1955, TMRC-Protokoll, neutral: „hacking on the electrical system"
+  (nach ADS-L 2025, Faktencheck 2026-09-29). In 01.06 nicht verwendet.
+- Quelle: [gricer.com/tmrc/dictionary1959.html](https://www.gricer.com/tmrc/dictionary1959.html)
+  (Samsons eigene Seite, Primärquelle) · en.Wikipedia „Tech Model Railroad Club".
 - **Jargon File, Fassung 2.1.1 vom 12. Juni 1990**, Eintrag `HACKER`: sechs Bedeutungen, Nummer 1
   bis 5 positiv-fachlich („[originally, someone who makes furniture with an axe]"), Nummer 6 als
   **„(deprecated)"** markiert: „A malicious or inquisitive meddler who tries to discover information
   by poking around." → verweist auf `CRACKER`.
-- **Steven Levy, _Hackers_, 1984**, schrieb die Haltung als Grundsätze auf. Wichtig für den Punkt:
-  Das war die **Beschreibung eines Journalisten**, kein Manifest der Szene. Der CCC hat sie später
-  wörtlich übernommen und zur eigenen Ethik erklärt (siehe unten).
+- **Neu (2): Was das Jargon File ist.** Eine Sammlung der Wörter, Scherze und Anekdoten der
+  Rechnerleute, **begonnen 1975 von Raphael Finkel in Stanford** (Jargon File 3.0.0, Abschnitt zur
+  Geschichte: „begun by Raphael Finkel at Stanford in 1975"), 1976 ans MIT AI Lab, 1983 als Buch
+  _The Hacker's Dictionary_ (Guy L. Steele). Die Fassung **2.1.1 vom 12. Juni 1990** („DRAFT") nennt
+  als Betreuer Steele und **Eric S. Raymond**; „reorganization and massive additions were by Eric S.
+  Raymond" (Kopf von 2.1.1). Laut derselben Einleitung stammt mehr als die Hälfte der Einträge jetzt
+  aus dem Usenet und der C- und Unix-Welt. **Nicht Samsons Wörterbuch**, nur dieselbe
+  Abstammungslinie (TMRC → MIT AI Lab). Quelle: [catb.org, alte
+  Fassungen](http://www.catb.org/jargon/oldversions/) (`jarg211.txt`, `jarg300.txt`, abgerufen
+  2026-09-30; das Zertifikat von catb.org ist fehlerhaft, Abruf über http).
+  - **Entschieden (Oli, 2026-09-30):** 01.06 nennt das Jargon File beim Namen und führt es kurz ein
+    (Finkel 1975 Stanford, MIT, Raymond 1990). 01.07 greift darauf zurück und behält daraus nur das
+    Buch von 1983 und die Funktion (Zugehörigkeit, Spott).
+- **Steven Levy, _Hackers_, 1984**, schrieb die Haltung als sechs Grundsätze auf, als **Beschreibung
+  eines Journalisten**, nicht als Manifest der Szene. **Berichtigt:** Der CCC hat sie **nicht
+  wörtlich** übernommen, sondern übersetzt und verändert (siehe unten).
 
-### Die Hackerethik des CCC (`ccc.de/hackerethics`)
+### Die Hackerethik des CCC (`ccc.de/de/hackerethik`)
 
-Acht Punkte, davon **die ersten sechs wörtlich aus Levys _Hackers_** (dort auf den MIT-Eisenbahnclub
-zurückgeführt), **Punkt 7 und 8 vom CCC in den Achtzigern ergänzt**:
+Acht Punkte. **Berichtigt:** Nicht „die ersten sechs wörtlich aus Levy". Levy hat genau sechs Grundsätze, der CCC übernimmt alle sechs, aber **übersetzt und verändert**: Punkt 1 ohne Levys „Hands-On Imperative", Punkt 4 ohne Levys Abschlüsse („degrees"), dafür mit Aussehen, Spezies und Geschlecht (de.Wikipedia „Hackerethik": „leichte Veränderungen"). Punkt 7 und 8 sind Ergänzungen des Clubs:
 
 7. „Mülle nicht in den Daten anderer Leute."
 8. „Öffentliche Daten nützen, private Daten schützen."
 
-Anlass der Ergänzung laut CCC-Seite: die Erkenntnis, dass **einige Hacker ihr Wissen Geheimdiensten
-anboten**, dazu unberechtigte Systemzugriffe als kontraproduktiv. **Damit ist der Zusammenhang zum
-KGB-Hack von der Quelle selbst hergestellt** — die Ethik bekam ihre Grenze erst nach dem Schaden.
-Levys Punkt 4 („Beurteile einen Hacker nach dem, was er tut …") gehört inhaltlich zu 01.07 und wird
-dort schon behandelt.
+Nachgeprüft am 2026-09-29 auf [ccc.de/de/hackerethik](https://www.ccc.de/de/hackerethik): Punkt 1 lautet wörtlich „Der Zugang zu Computern und allem, was einem zeigen kann, wie diese Welt funktioniert, sollte unbegrenzt und vollständig sein." Die Seite führt die Urfassung auf Levy und den MIT-Eisenbahnerclub zurück, „aus einer Zeit, in der sich verhältnismäßig viele Leute wenige Computer teilen mußten", und nennt 7 und 8 „Ergänzungen des CCC aus den 1980er Jahren". **Ein genaueres Jahr ist nicht zu finden.**
+
+**Anlass laut CCC-Seite, berichtigt: zwei Gründe, nicht einer.** Erstens Leute, die ihr Know-how „dem KGB anzubieten" versuchten. Zweitens: „Eingriffe in die Systeme fremder Betreiber wurden zunehmend als kontraproduktiv erkannt". Der zweite passt zum Wortlaut der beiden Sätze sogar besser als der erste. Die frühere Zuspitzung dieses Dossiers („die Ethik bekam ihre Grenze erst nach dem Schaden") ist zu eng: Der Club nennt neben dem Verkauf die eigene Einsicht, dass Einbrüche schaden. Den Zusammenhang zum KGB-Hack stellt die Quelle selbst her.
+
+- **Am Wortlaut gelesen:** Keiner der sechs übernommenen Grundsätze verbietet dem Hacker etwas (Punkt 4
+  schließt nur Kriterien der Beurteilung aus). Punkt 7 und 8 sind die ersten der Liste, die ihm selbst
+  eine Grenze ziehen. Eigene Lesart, kein Zitat.
+- **Neu (2): Levys Wortlaut belegt** (Faktencheck 2026-09-30, Volltext bei Project Gutenberg): sechs
+  Grundsätze, keiner setzt dem Hacker eine Grenze; Punkt 4 richtet sich an die, die urteilen. Levy fand
+  sie bei den Hackern am TX-0 des MIT, „silently agreed upon", also nie aufgeschrieben, bevor er es tat.
+- **Vorgabe für 01.06 (2026-09-30):** Damit „keiner setzt eine Grenze" trägt, nennt der Text **Punkt 1**
+  in der Fassung des Clubs, der Zugang solle „unbegrenzt und vollständig" sein. **Nicht Punkt 2**
+  („Alle Informationen müssen frei sein"): 01.08 trägt mit Brands „Information wants to be free" und
+  „Wissen allen gehören" denselben Gedanken und braucht ihn dort frisch. Nicht Punkt 4 (gehört zu
+  01.07).
+- Levys Punkt 4 („Beurteile einen Hacker nach dem, was er tut …") gehört inhaltlich zu 01.07 und wird
+  dort schon behandelt.
 
 ### Phone Phreaking
 
 - **2600 Hertz** war der Steuerton, mit dem eine Fernleitung des amerikanischen Telefonnetzes
   freigeschaltet wurde. Die Steuerung lief in derselben Leitung wie das Gespräch.
+  - **Berichtigt (2): „schaltete frei" ist schief.** Der Ton meldete die Fernleitung als **unbelegt**;
+    die Gegenstelle wartete dann auf neue Wahl, und **danach** wählte man mit Mehrfrequenztönen aus
+    der Blue Box (Rosenbaum 1971: „whistling as if idle"; en.Wikipedia „Blue box": „playing a 2600 Hz
+    tone into the line whenever it was not being used"). Die Pfeife allein wählte nichts.
+  - **Neu (2): Wozu.** Ferngespräche, die der Anrufer nicht bezahlte: „placing long-distance calls
+    that would be billed to another number or dismissed entirely" (en.Wikipedia „Blue box"). Für den
+    Text: „Ferngespräche, die nichts kosteten" trägt; genauer „die der Anrufer nicht bezahlte".
+  - **Zeit:** Die Pfeife lag den Packungen „at one point in the 1960s" bei (en.Wikipedia „Blue box");
+    Cap'n Crunch gibt es seit 1963, die Pfeife um 1965 (Faktencheck 2026-09-30). Das zugehaltene Loch
+    steht nur in en.Wikipedia „Blue box" („when one of the whistle's two holes was covered", „by
+    coincidence"). **Für den Text: „in den Sechzigern"**, kein Jahr.
 - **Joe Engressia** (geboren 25. Mai 1949, blind, absolutes Gehör) entdeckte den Effekt als Kind um
   1957: Beim Pfeifen brach eine Bandansage ab. Er konnte den Ton mit dem Mund treffen. Später als
-  **Joybubbles** bekannt. → Der Hebel gegen das größte technische System des Landes war ein
-  gepfiffener Ton.
+  **Joybubbles** bekannt. In 01.06 ab der Outline vom 2026-09-30 nicht mehr verwendet.
 - **John Draper** bekam seinen Handle **Cap'n Crunch** von der Spielzeugpfeife aus der
-  gleichnamigen Frühstücksflockenpackung: mit **einem zugehaltenen Loch** traf sie 2.600 Hertz.
-- **Ron Rosenbaum, „Secrets of the Little Blue Box", _Esquire_, Oktober 1971.** Der Text machte aus
-  einer Handvoll Eingeweihter eine Szene; viele Phreaks nennen ihn als ihren Einstieg.
+  gleichnamigen Frühstücksflockenpackung: mit **einem zugehaltenen Loch** traf sie 2.600 Hertz. Die
+  Pfeife lag den Packungen 1963 bei (en.Wikipedia „John Draper").
+- **Ron Rosenbaum, „Secrets of the Little Blue Box", _Esquire_, Oktober 1971.** **Berichtigt:** Der
+  Text hat die Szene **bekannt gemacht, nicht gemacht**. Rosenbaum beschreibt ein bereits bestehendes
+  „nationwide underground". Viele Phreaks nennen ihn als ihren Einstieg.
   - **O-Ton Draper darin:** „I'm learning about a system. The phone company is a System." →
     Der Gegenstand ist das System, nicht das Opfer.
   - **Wozniak las den Artikel und suchte mit Jobs nach Draper**; die beiden bauten und verkauften
     Blue Boxes. Jobs später: ohne die Blue Boxes „there might never have been an Apple computer"
     (mehrfach zitiert, u. a. Slate 2011 zum Tod von Jobs). **Nur Selbstauskunft**, für einen
-    Nebensatz tragfähig, nicht als Beleg für Kausalität.
+    Nebensatz tragfähig, nicht als Beleg für Kausalität. In 01.06 ab der Outline vom 2026-09-30
+    nicht mehr verwendet.
   - Quellen: [Slate (2011)](https://slate.com/technology/2011/10/steve-jobs-and-the-little-blue-box-how-ron-rosenbaums-1971-article-about-phone-phreaks-helped-launch-apple.html) ·
     en.Wikipedia „Joybubbles" / „Ron Rosenbaum" ·
     [Telephone Museum zur Bosun-Pfeife](https://telephone-museum.org/telephone-collections/capn-crunch-bosun-whistle/).
+- **Draper wird festgenommen, Mai 1972**, gut ein halbes Jahr nach dem Artikel: vom FBI, „on seven
+  counts of fraud by wire" (Gespräche nach New York, Oklahoma und Sydney); Urteil: ein Jahr Haft zur
+  Bewährung ausgesetzt, 1.000 Dollar Geldstrafe, fünf Jahre Bewährung. 1976 nach zwei Anklagen wegen
+  Gebührenbetrugs vier Monate Bundesgefängnis in Lompoc, „the first phone phreak to spend time in
+  federal prison". Quelle: en.Wikipedia „John Draper" (abgerufen 2026-09-30). → Die Sicht der
+  Telefongesellschaft ist ein halbes Jahr nach dem Artikel die des FBI.
+  - **Belegt (2):** am 4. Mai 1972 vom FBI festgenommen, sieben Fälle von Wire Fraud (en.Wikipedia;
+    attrition.org nach Lapsley), Faktencheck 2026-09-30. Dass der Artikel die Festnahme auslöste,
+    sagt keine Quelle: nur zeitlich verbinden.
 - **Die Namen der Szenemagazine tragen diese Herkunft weiter:** _2600_ ist die Frequenz, _Phrack_
-  setzt Phreak und Hack zusammen. (Belege zu beiden Magazinen stehen in
-  [issues-01.md](../state/issues-01.md), Prüflauf-Eintrag zum alten H2.)
+  setzt Phreak und Hack zusammen. Belege, übernommen aus dem Prüflauf-Eintrag zur alten Fassung von
+  01.06: _Phrack_ ab 17. November 1985, Taran King und Knight Lightning, en.Wikipedia „Phrack"; _2600_
+  ab Januar 1984, Corley und Ruderman, benannt nach dem 2600-Hz-Ton, en.Wikipedia „2600: The
+  Hacker Quarterly". In 01.06 nicht verwendet; _Phrack_ fällt in 01.08.
 
 ### Homebrew und der erste Streit ums Bezahlen
+
+In 01.06 ab der Outline vom 2026-09-30 nicht mehr verwendet. Naheliegender Ort, falls gebraucht: der Strang Kopieren und Tauschen (01.05, 03.02).
 
 - **Homebrew Computer Club**, erstes Treffen **5. März 1975** in Menlo Park; Baupläne, Bänder und
   Programme wurden im Umlauf weitergegeben.
@@ -119,6 +177,7 @@ dort schon behandelt.
   Homebrew Computer Club. Kernsatz: „most of you steal your software". Angabe darin: weniger als
   zehn Prozent der Altair-Besitzer hätten BASIC gekauft; der Stundenlohn für die Arbeit liege unter
   zwei Dollar.
+  - Nachrecherche 2026-09-29, en.Wikipedia „An Open Letter to Hobbyists": Gates war Harvard-Student und „General Partner" von Micro-Soft, Altair BASIC hatten Gates, Paul Allen und Monte Davidoff geschrieben. Erschienen in Band 2, Heft 1 des Newsletters, datiert 31. Januar 1976, der Brief selbst trägt den 3. Februar. Gates war damals zwanzig (geboren Oktober 1955).
 - **Punkt:** Der erste ernste Konflikt der Szene war nicht gut gegen böse, sondern **frei gegen
   bezahlt**. Quelle: en.Wikipedia „An Open Letter to Hobbyists".
 
@@ -129,52 +188,151 @@ dort schon behandelt.
   der Club dann vor allem in Hamburg. Selbstbeschreibung: „galaktische Gemeinschaft von
   Lebewesen", Ziel weltweite unbehinderte Kommunikation als Menschenrecht. Quelle: de.Wikipedia
   „Chaos Computer Club".
-- **Btx-Hack, Nacht vom 16. auf den 17. November 1984**, in **Steffen Wernérys Wohnung in
-  Hamburg-Eppendorf**, **vor Pressevertretern und dem Hamburger Datenschutzbeauftragten**. Handelnde
-  laut de.Wikipedia: **Wau Holland und Steffen Wernéry** (nicht „der Club" abstrakt).
-  - Programm: **BASIC, je nach Quelle 20 oder 31 Zeilen**, rief die gebührenpflichtige CCC-Seite
-    immer wieder ab, 9,97 DM je Abruf, 13 Stunden lang.
-  - Endsumme **134.694,70 DM** — so festgelegt in `fakten.md`, gegen die abweichende heise-Zahl.
+- **Btx-Hack, November 1984**, gestartet von **Wau Holland und Steffen Wernéry** in **Wernérys
+  Wohnung in Hamburg-Eppendorf** (de.Wikipedia; _Computerwoche_ 14.11.2014: „bei Steffen in der
+  Hütte gestartet").
+  - **Datum entschieden (Oli, 2026-09-30): Wochenende 17./18. November**, nach _Die Zeit_ vom
+    30.11.1984 (Sonnabend 18 Uhr bis Sonntag 13 Uhr), siehe `fakten.md`. de.Wikipedia und heise 2024
+    nennen abweichend die Nacht vom 16. auf den 17. Die Dauer bleibt offen (Zeitfenster der _Zeit_ 19
+    Stunden, sonst 13).
+  - **Berichtigt: Wer beim Lauf dabei war, ist unsicher.** Nur de.Wikipedia setzt Presse und
+    Datenschutzbeauftragten in den nächtlichen Lauf. _Computerwoche_ 23.11.1984: Vorführung „am
+    19. 11. 1984 … unter den Augen des hamburgischen Datenschutzbeauftragten und bei laufenden
+    Fernsehkameras". _Die Zeit_ 30.11.1984: Das Programm lief, während die Mitglieder anderes taten.
+    dpa 2014: „Steffen hat dort geschlafen". _Computerwoche_ 14.11.2014 zitiert Holland: „Wir haben
+    das Ding also bei Steffen in der Hütte gestartet, ich bin dann nach Hause." → Die Zeugen gehören
+    zur Vorführung am Montag, nicht zum Lauf.
+  - **Mechanik der Gebühr.** Btx-Anbieter konnten für eine Seite zwischen einem Pfennig und 9,99 DM
+    verlangen; der Betrag ging auf die Telefonrechnung dessen, der die Seite abrief (teltarif,
+    Rückblick zum Btx-Start), und stand dem Anbieter zu („which theoretically went to the CCC",
+    heise 2024). Die CCC-Seite kostete 9,97 DM. Abgerufen wurde sie unter der Kennung der Hamburger
+    Sparkasse (Haspa), also auf deren Rechnung. Wernéry laut _Computerwoche_ 14.11.2014: „zweimal
+    Klack-Klack heißt 9 Mark 97".
+  - Programm: BASIC, **20 oder 31 Zeilen** (31 nach heise 2024 und dpa 2014). **Berichtigt:** keine
+    Spanne „20 bis 31". Rief die Seite immer wieder ab.
+  - **Dauer strittig:** 13 Stunden (_Financial Times_ 1984, de.Wikipedia), 14 Stunden (heise 2024),
+    Sonnabend 18 Uhr bis Sonntag 13 Uhr (_Die Zeit_).
+  - Endsumme **134.694,70 DM** (13.510 Abrufe × 9,97 DM), so festgelegt in `fakten.md`, gegen die
+    abweichende heise-Zahl.
+  - **Geld zurückgegeben oder auf die Forderung verzichtet? Offen.** Für den Verzicht: „Die
+    Rechnung musste von der Haspa nicht beglichen werden" (de.Wikipedia); „Der Club verzichtete dann
+    generös auf das Inkasso" (_Computerwoche_ 14.11.2014); die Abrechnung über die Telefonrechnung
+    spricht dagegen, dass zwei Tage nach dem Lauf schon Geld beim Club lag. **Berichtigt (2), dagegen
+    eine zeitgenössische Stimme:** _Die Zeit_ 30.11.1984: „Die freilich überwiesen sie der Haspa
+    zurück." Ebenso en.Wikipedia „Chaos Computer Club". **Entschieden (Oli, 2026-09-30): offen
+    formulieren.** Der Club behielt das Geld nicht; weder „verzichtete" noch „gab zurück", auch nicht
+    „die Sparkasse musste nie zahlen" (setzt den Verzicht voraus). So in `fakten.md`.
+  - Vorwarnung im Oktober 1984 schriftlich an Datenschutzbeauftragte und Bundespost (`fakten.md`).
+  - **Berichtigt (2): „Die Post reagierte nicht" ist nur eine von zwei Darstellungen.**
+    - **Worauf die Oktober-Warnung zielte: auf eine andere Lücke.** heise 2024: Nachrichten im
+      Btx-System ließen sich im Postfach des Empfängers nachträglich ändern. Keine Reaktion der Post,
+      auch nicht auf Hollands Vortrag auf der DAFTA, einer Tagung der Datenschützer, Anfang November
+      1984. **Nur heise**, deshalb im Text kein Inhalt der Warnung, aber auch keine Verknüpfung mit dem
+      Überlauf.
+    - **Frühere Meldungen, frühere Reaktion.** de.Wikipedia „BTX-Hack" (nach golem 2014): Der Club
+      fand früh Lücken (unter anderem waren die Zugangsdaten der Btx-Tester identisch mit ihren
+      Durchwahlnummern), die Post „leugnete … derartige Probleme", schloss die gemeldeten Lücken vor
+      einer geplanten Vorführung auf einer Pressekonferenz, die deshalb fehlschlug, und schloss
+      „weitere Probleme … kategorisch" aus. _Die Zeit_ 30.11.1984: das Flickwerk nach jedem
+      bekanntgewordenen Btx-Hack habe nicht gereicht.
+    - **Das Motiv, als Aussage der Beteiligten.** de.Wikipedia: „Dieses herablassende Verhalten gab
+      laut Bernd Fix und Wau Holland den Anstoß für den BTX-Hack, das öffentliche Vorführen einer
+      weiteren Sicherheitslücke im BTX-System." heise 2024: Der Club wollte die Gefahren öffentlich
+      machen und forderte, über Btx keine Geldgeschäfte abzuwickeln.
+    - **Vorgabe:** Auf Meldungen des Clubs antwortete die Post mit Dementis und stillen
+      Korrekturen. Den Hack beschreiben die Beteiligten als Antwort darauf, als öffentliche Vorführung
+      einer **weiteren** Lücke. Nicht: „die Post reagierte nicht"; nicht: „den sie nicht bestreiten
+      konnte" (Deutung).
   - Passwort der Hamburger Sparkasse: **`USD70000`** (Schreibweise schwankt, auch `usd7000`).
-  - **Der Widerspruch, den der Text offenlegen sollte:** Nach Darstellung der Hacker fiel das
-    Passwort durch einen **Überlauf** an — eine zu lange Btx-Seite (Grenze 1.626 Byte) zeigte
-    Speicherinhalt an, den sie in zwei bis vier Sekunden auf einen bereitgelegten Zettel notierten.
-    Die **Bundespost** hielt dagegen, das Passwort habe in einem anderen Speicherbereich gelegen und
-    „zu keiner Zeit" auslesbar gewesen sein können; sie unterstellte Ausspähen in der Bank. Weitere
-    Erzählungen: abgeschaut in einer Sparkassenfiliale, oder von einem Kontakt verkauft. **Nach über
-    dreißig Jahren hat keine Seite ihre Position aufgegeben.** Die Post entschuldigte sich zuerst und
-    ruderte zurück, als Zweifel an der Hintergrundgeschichte aufkamen.
+  - **Berichtigt: Die Lücke war echt und ruht nicht allein auf der Aussage der Täter.** Die Post
+    räumte den Überlauf-Fehler ein (Sprecher Wolfgang Heidrich: Er habe „lediglich Teile der
+    Seitendatei angezeigt") und ließ ihn von IBM beheben (de.Wikipedia). _Die Zeit_ 30.11.1984: Der
+    Fehler war vielen Anbietern aufgefallen. Grenze einer Btx-Seite: 1.626 Byte.
+    **Berichtigt (2):** nicht „gleich nach der Berichterstattung", sondern „Nach dem großen
+    Medienecho des Hacks ließ die Post den Fehler umgehend durch die Firma IBM beheben"
+    (de.Wikipedia); ein Datum nennt keine Quelle. Für den Text: „nach dem Medienecho".
+  - **Strittig ist nur, ob gerade das Haspa-Passwort über diese Lücke kam.** Allein darauf ruht die
+    Aussage der beiden. Ihre Darstellung: Eine überlange Seite zeigte Speicherinhalt. Im Detail
+    schwankt auch sie: heise 2024, dort erschien eine Kennung, das Passwort wurde „später ermittelt";
+    _Die Zeit_, es stand unter den „Geisterzeichen"; Zettel und zwei bis vier Sekunden nur
+    de.Wikipedia. **Die Post:** Heidrich, „Das Auslesen des Passwortes war zu keiner Zeit möglich, da
+    es in einem anderen Speicherbereich abgelegt wird"; Btx-Projektleiter **Eric Danke** unterstellte,
+    das Passwort sei bei einer Informationsveranstaltung der Haspa ausgespäht worden, und blieb
+    später dabei, die beiden hätten Btx nie gehackt (_Computerwoche_ 14.11.2014). **Berichtigt:**
+    „In einer Filiale abgeschaut" ist keine eigene Fassung, sondern dieser Vorwurf der Post. Die
+    Verkaufsfassung: vom Sohn des Haspa-Angestellten für Btx (de.Wikipedia, nach einem früheren
+    CCC-Mitglied) oder vom Sohn eines hochrangigen Postbeamten (dpa 2014).
+  - **Berichtigt (2): Die Post bestritt mehr als den Weg des Passworts.** Sie bestritt den Umfang der
+    Lücke (das Passwort liege „in einem anderen Speicherbereich", also nicht im Überlauf), nahm eine
+    Entschuldigung zurück (nur de.Wikipedia), und Danke sagte **mehrfach**, die beiden hätten nie
+    gehackt (_Computerwoche_ 14.11.2014). **Dankes Ausspäh-These ist undatiert**, nicht als
+    Reaktion von 1984 belegt: im Text „später", nicht „damals". Unberührt bleibt: Dass gerade dieses
+    Passwort aus der Lücke kam, dafür gibt es nur das Wort der beiden.
+  - Die Post entschuldigte sich zuerst und ruderte zurück, als Zweifel an der Hintergrundgeschichte
+    aufkamen (nur de.Wikipedia).
   - Wirkung: ZDF-_heute-journal_, danach breite Presse („Bildschirmtext-Schlappe", _Die Welt_;
-    „Reinfall mit Bildschirmtext", _Der Spiegel_). **Rechtliche Folgen gab es keine, weil es die
-    Straftatbestände noch nicht gab.**
-  - Quelle: [de.Wikipedia „BTX-Hack"](https://de.wikipedia.org/wiki/BTX-Hack). Vorwarnung an
-    Datenschutzbeauftragte und Post im Oktober 1984 sowie die Pressekonferenz am Montag,
-    19. November: siehe `fakten.md`.
-- **Erster Chaos Communication Congress** Ende Dezember 1984, Eidelstedter Bürgerhaus, Hamburg —
-  laut de.Wikipedia **als Folge der Aufmerksamkeit durch den Btx-Hack**.
+    „Reinfall mit Bildschirmtext", _Der Spiegel_).
+  - **Berichtigt: „Rechtliche Folgen gab es keine, weil es die Straftatbestände noch nicht gab"** ist
+    nur für das Fehlen eines eigenen Tatbestands belegt (§ 202a kam 1986). Ob ältere Tatbestände die
+    Beschaffung des Passworts trafen, prüft keine Quelle. Nicht als „strafbar war nichts" verwenden.
+  - Quellen: [de.Wikipedia „BTX-Hack"](https://de.wikipedia.org/wiki/BTX-Hack) ·
+    [Computerwoche, 14.11.2014](https://www.computerwoche.de/article/2785660/wie-die-illusion-sicherer-netze-zerstoert-wurde.html) ·
+    [heise, 2024](https://heise.de/-10040281) ·
+    [teltarif, Btx-Rückblick](https://www.teltarif.de/btx-start-1983-rueckblick/news/52318.html) ·
+    _Computerwoche_ 23.11.1984, _Die Zeit_ 30.11.1984, dpa 2014, _Financial Times_ 1984 nach dem
+    Faktencheck vom 2026-09-29 (Fundstellen dort nicht als URL festgehalten). Summe, Vorwarnung und
+    Pressekonferenz: `fakten.md`.
+- **Erster Chaos Communication Congress** Ende Dezember 1984, Eidelstedter Bürgerhaus, Hamburg,
+  laut de.Wikipedia **als Folge der Aufmerksamkeit durch den Btx-Hack**. In 01.06 ab der Outline vom
+  2026-09-30 nicht mehr verwendet.
 
-### KGB-Hack (Korrekturen zur verworfenen Fassung)
+### KGB-Hack
 
-- Beteiligte laut de.Wikipedia „KGB-Hack": **Karl Koch** (_Hagbard Celine_), **Markus Hess**
-  (_Urmel_), **Dirk-Otto Brezinski** (_DOB_), **Hans Heinrich Hübner** (_Pengo_), Mittelsmann
-  **Peter Carl** (_Pedro_), Croupier.
-  - **Schreibweise: Brezinski, nicht Brzezinski.** Die verworfene Fassung von 01.06 hatte es falsch.
-- Zahlung vom KGB: „insgesamt mehrere zehntausend DM".
+- **Beteiligte, berichtigt: nicht „eine Gruppe aus Hannover".** **Karl Koch** (_Hagbard_) und
+  **Markus Hess** (_Urmel_) kamen aus Hannover; **Hans Heinrich Hübner** (_Pengo_), **Dirk-Otto
+  Brezinski** (_DOB_) und der Mittelsmann **Peter Carl** (_Pedro_, Croupier) aus West-Berlin;
+  getroffen hat man sich in Hannover (_Der Spiegel_ 6.3.1989, nach RISKS Digest 8.36).
+  - **Schreibweise: Brezinski, nicht Brzezinski.**
+- **Was verkauft wurde, berichtigt:** „Ausdrucke" ist unbelegt. Verkauft wurden unter anderem „5
+  diskettes full of passwords" (ebd.), dazu Daten aus den Rechnern.
+- **Bezahlung, berichtigt:** Agentenlohn insgesamt **90.000 Mark** laut Gericht in Celle
+  (_Computerwoche_ 2.3.1990); de.Wikipedia sagt unbestimmt „mehrere zehntausend DM".
 - **Clifford Stoll**, Lawrence Berkeley Laboratory, stieß **1986** auf eine Abweichung von
   **75 Cent** in der Rechnerabrechnung und verfolgte die Spur monatelang. Buch: _The Cuckoo's Egg_.
   → Die Gegenrolle zum Eindringling entstand hier, Jahre bevor sie einen Namen hatte.
+  - Nachrecherche 2026-09-29: de.Wikipedia „KGB-Hack" nennt Stoll „Systemadministrator an der Universität von Kalifornien in Berkeley". Ziele laut demselben Artikel: „militärisch sensible Anlagen", ein Atomkraftwerk, die Kernforschungsanlage Jülich, ein Polizeirechner mit Terrorismus-Ermittlungsakten. **„Rüstungsrechner" ist nicht belegt**, „militärische Rechner" schon.
+- **Koch und der CCC**, nach de.Wikipedia „Karl Koch (Hacker)", Nachrecherche 2026-09-29: 1985 gründete Koch mit anderen den Computer-Stammtisch im Café Filmore in Hannover, aus dem unter dem Namen _Leitstelle511_ der örtliche Ableger des Chaos Computer Club wurde. Sein Pseudonym „hagbard" nach Hagbard Celine, der Hauptfigur der _Illuminatus!_-Trilogie von Robert Shea und Robert Anton Wilson. → Belegt die Nähe zum Club, auf die die Ergänzung der Ethik antwortet.
 - Daten: Durchsuchung bei Hess **23. Juni 1987** (ohne Beschluss); Koch geht am **5. Juli 1988** zum
-  Verfassungsschutz; **2. März 1989** bundesweite Aktion, Gruppe zerschlagen; **15. Februar 1990**
-  Bewährungsstrafen für Hess und Brezinski (14 Monate bis 2 Jahre).
-- **Datumskonflikt Kochs Tod:** de.Wikipedia „KGB-Hack" nennt den **30. Mai 1989** für den Fund der
-  verbrannten Leiche im Wald bei Ohof, en.Wikipedia den **1. Juni 1989**; als Todestag gilt der 23.
-  oder 24. Mai. **Für 01.06 vorgeschlagen: kein Tagesdatum**, nur „im Frühsommer 1989", solange der
-  Konflikt nicht entschieden ist. → in `issues-01.md`.
+  Verfassungsschutz; **2. März 1989** bundesweite Aktion, Gruppe zerschlagen.
+- **Berichtigt (2): Aufgeflogen ist die Gruppe durch die Selbstanzeigen, nicht durch Stolls Spur.**
+  Stolls Verfolgung führte nach Deutschland und zur Durchsuchung bei Hess im Juni 1987, ohne dass
+  daraus etwas folgte. Den Durchbruch brachten die Aussagen: „Koch stellte sich am 5. Juli 1988 dem
+  Verfassungsschutz" und legte in monatelangen Vernehmungen umfangreiche Geständnisse ab; „nach
+  monatelanger Beschattung durch die Polizei und den Bundesnachrichtendienst" wurde die Gruppe am
+  2. März 1989 „in einer bundesweiten Aktion … zerschlagen" (de.Wikipedia „KGB-Hack"). Auch Hübner
+  stellte sich: „Pengo and Koch subsequently came forward and confessed to the authorities under the
+  espionage amnesty" (en.Wikipedia „Karl Koch (hacker)", ohne Datum für Hübner). „Flog im März 1989
+  auf" trägt nur als öffentliche Zerschlagung (ARD-_Brennpunkt_ am 2. März 1989).
+  - **Vorgabe:** Stolls Spur und die Zerschlagung zeitlich trennen („erst, nachdem sich Koch 1988
+    gestellt hatte"). Nicht: Stoll brachte sie zu Fall. Hübner und die Amnestie nicht nötig.
+  - Ziele auch nichtmilitärisch (Kernforschungsanlage Jülich, ein Polizeirechner). „Rechner des
+    amerikanischen Militärs" bleibt richtig, ist aber nicht alles; nicht „nur".
+- **Urteil 15. Februar 1990, berichtigt:** Alle drei Angeklagten (Hess, Brezinski, Carl) bekamen
+  Bewährungsstrafen, nicht nur Hess und Brezinski; Hübner und Koch blieben unter der
+  Spionage-Amnestie straffrei (_Computerwoche_ 2.3.1990, en.Wikipedia).
+- **Kochs Tod**, de.Wikipedia „Karl Koch (Hacker)" (abgerufen 2026-09-30): „Am 1. Juni 1989 wurde
+  seine verkohlte Leiche in einem Wald bei Ohof im Landkreis Gifhorn gefunden, nachdem er bereits
+  eine Woche vermisst worden war." „Amtlich wurde als Todesursache Selbstverbrennung angegeben." „Die
+  Todesumstände sind nicht vollständig aufgeklärt." Mordgerüchte aus der Szene: nicht verwenden.
+  - **Datumskonflikt:** de.Wikipedia „KGB-Hack" nennt den **30. Mai 1989** für den Fund, de.Wikipedia
+    „Karl Koch (Hacker)" und en.Wikipedia den **1. Juni 1989**; als Todestag gilt der 23. oder 24. Mai.
+    **Für die Reihe gilt „im Frühsommer 1989"**, solange nicht entschieden. → `issues-01.md`.
+  - **Formulierung:** Keine, die eine Tat unterstellt („wurde verbrannt"). Tragfähig ist „tot
+    aufgefunden" und die amtliche Feststellung.
 - **Noch immer unbelegt:** Wau Hollands „Vertreibung aus dem Paradies" und „Wer sich bezahlen lasse,
-  sei kein Hacker mehr" (siehe `issues-01.md`). de.Wikipedia „KGB-Hack" enthält **keine**
-  CCC-Reaktion. Belegt ist stattdessen die Ergänzung der Ethik um Punkt 7 und 8 durch den Club
-  (`ccc.de/hackerethics`) — **das trägt denselben Punkt mit einem harten Beleg** und sollte die
-  Zitate ersetzen.
+  sei kein Hacker mehr", nur rückübersetzt aus einer englischen Sekundärquelle (`hackstory.net`);
+  nicht verwenden. de.Wikipedia „KGB-Hack" enthält **keine** CCC-Reaktion. Belegt ist stattdessen
+  die Ergänzung der Ethik um Punkt 7 und 8 durch den Club (`ccc.de/de/hackerethik`).
 
 ### Die Sortierung in Gut und Böse ist nachträglich
 
@@ -182,38 +340,122 @@ dort schon behandelt.
   **Coined c. 1985 by hackers in defense against journalistic misuse of HACKER**, see definition #6."
   → Die Trennlinie war eine **Abwehrmaßnahme gegen die Presse**, gezogen von der Szene selbst, mit
   Datum.
+  - **Cracker der Kopierszene:** Im Sinne von „Kopierschutz entfernen" ist das Wort ab 1980/81
+    sekundär belegt (Faktencheck 2026-09-29, Einzelquelle dort nicht festgehalten). **Kein
+    Widerspruch** zu „coined c. 1985": Das Jargon File beansprucht nur die Bedeutung
+    Sicherheitsbrecher, nicht das Wort. Ob die Hacker das Wort aus der Kopierszene nahmen, sagt
+    keine Quelle.
 - **RFC 1392, „Internet Users' Glossary", Januar 1993** (Malkin/LaQuey Parker) schreibt die Trennung
   in das Regelwerk des Netzes:
   - `hacker` = „A person who delights in having an intimate understanding of the internal workings of
     a system … The term is often misused in a pejorative context, where 'cracker' would be the
     correct term."
   - `cracker` = „An individual who attempts to access computer systems without authorization."
-  - → Sitzt genau am Ende von Kapitel 01. Guter Schlussbeleg.
-- **„White hat" / „black hat" sind jünger und kommen von außen.**
+  - In 01.06 ab der Outline vom 2026-09-30 nicht mehr verwendet.
+- **„White hat" / „black hat" sind jünger.**
   - Herkunft: **Westernfilme** (guter Held weißer Hut, Schurke schwarzer Hut); ab Mitte der
     Sechziger im amerikanischen Englisch allgemein für „einer von den Guten".
-  - **OED datiert die erste Verwendung im Computer-Slang auf 1990**; „white-hat hacker" ist erst in
-    den **späten Neunzigern** in Gebrauch, ab den Zweitausendern als Berufsbezeichnung für
-    Sicherheitstester. Quelle: en.Wikipedia „White hat (computer security)" (referiert OED).
-  - **Negativbefund, selbst geprüft:** Im **Jargon File 2.1.1 (1990) kommen „white hat" und „black
-    hat" nicht ein einziges Mal vor** — `cracker` schon. Das Vokabular gehört also nicht zur Szene
-    dieses Kapitels.
+  - **OED: „white hat" im Computer-Slang ab 1990.** Nur über en.Wikipedia, Monat und Herkunft des
+    Belegs offen. Steht neben dem Jargon File vom Juni 1990 wie ein Widerspruch, ohne einer zu sein.
+    In 01.06 deshalb nicht verwenden.
+  - „white-hat hacker" „was in use by the late 1990s"; **berichtigt:** als Bezeichnung für
+    beauftragte Sicherheitstester „by the early 2000s", nicht „erst nach 2000". Quelle: en.Wikipedia
+    „White hat (computer security)" (referiert OED).
+  - **Negativbefund, vollständig bestätigt** (2026-09-29, Jargon File 2.1.1 von A bis Z
+    durchgesehen): „white hat" und „black hat" kommen nicht vor, „hat" nur als Name für das Zeichen
+    `^`. `cracker` steht drin. Das Vokabular gehört also nicht zur Szene dieses Kapitels.
   - Flankierend, aber **hinter der Kapitelgrenze** und deshalb nur als Ausblick brauchbar:
     „ethical hacking" wird 1995 IBMs John Patrick zugeschrieben, die Konferenzreihe _Black Hat_
-    startet 1997. **Beides nur sekundär belegt**, vor Verwendung nachziehen.
+    startet 1997. **Beides nur sekundär belegt**, en.Wikipedia „White hat" nennt keins von beiden.
+  - **Berichtigt (2): „erst Ende der Neunziger" ist falsch herum.** en.Wikipedia sagt „in use by the
+    late 1990s", eine Obergrenze. Das OED verzeichnet „white hat" im Computersinn ab 1990 (nur über
+    en.Wikipedia), die _Black Hat Briefings_ ab Juli 1997 setzen das Etikett voraus. **Für den Text:
+    „spätestens Ende der Neunziger"**, nie „erst". Richtig bleibt: Im Jargon File von 1990 trägt noch
+    kein Hacker einen Hut.
+  - **Neu (2): Wann die Hüte ins Jargon File kamen, und als wessen Wort.** Fassungen 2.1.1 (1990),
+    3.0.0 (Juli 1993), 3.3.3 (März 1996), 4.0.0 (Juli 1996), 4.1.0 (März 1999), 4.1.5 (September 1999),
+    4.2.0 (Januar 2000) und 4.2.3 (November 2000) am Volltext durchsucht: kein „black hat". **Zuerst
+    in 4.3.0 vom 30. April 2001**, unverändert bis 4.4.7 (2003), wörtlich: „black hat: [common among
+    security specialists] A cracker, someone bent on breaking into the system you are protecting.
+    Oppose the less comon [sic] ‚white hat' for an ally or friendly security specialist; the term ‚gray
+    hat' is in occasional use for people with cracker skills operating within the law, e.g. in doing
+    security evaluations. All three terms derive from the dress code of formulaic Westerns, in which
+    bad guys wore black hats and good guys white ones." Quelle:
+    [catb.org/jargon/oldversions](http://www.catb.org/jargon/oldversions/) (`jarg430.txt`), heutige
+    Fassung [catb.org/jargon/html/B/black-hat.html](http://www.catb.org/jargon/html/B/black-hat.html),
+    abgerufen 2026-09-30.
+    - **Was das trägt:** Das Wörterbuch der Hacker nimmt die Hüte elf Jahre nach dem Cracker auf,
+      markiert sie als Wort der Sicherheitsleute und übersetzt den schwarzen Hut in sein eigenes Wort
+      zurück: ein Cracker. Der weiße Hut ist dort kein Hacker, sondern ein befreundeter
+      Sicherheitsmann. Primärquelle, Selbstauskunft des Wörterbuchs.
+    - **Was es nicht trägt:** wer das Paar geprägt hat. Unbekannt; der Vermerk zeigt nur, wo es 2001
+      geläufig war. Auch die Western-Herkunft ist damit primär belegt, nicht mehr nur über
+      en.Wikipedia.
 
 ### Als die Neugier strafbar wurde
 
 - **Deutschland: Zweites Gesetz zur Bekämpfung der Wirtschaftskriminalität vom 15. Mai 1986**
   (BGBl. I S. 721), darin **§ 202a StGB, Ausspähen von Daten**. Strafbar ist das **Sich-Verschaffen**
-  von Daten, die nicht für einen bestimmt und besonders gesichert sind — **nicht** der Schaden.
-  Belegstelle dejure.org, siehe `issues-01.md`.
+  von Daten, die nicht für einen bestimmt und besonders gesichert sind, **nicht** der Schaden.
+  Belegstelle dejure.org.
+  - **Berichtigt (2): Das bloße Eindringen sollte straflos bleiben.** Die Fassung von 1986 traf das
+    Sich-Verschaffen von Daten. Nach dem ausdrücklichen Willen des Gesetzgebers sollte sie „das bloße
+    Hacking, also den reinen Zugang zu Daten, nicht erfassen"; die herrschende Auslegung erfasste es
+    „faktisch … entgegen der Absicht des Gesetzgebers in weitem Umfang" (Begründung zum 41. StrÄndG,
+    BT-Drs. 16/3656, S. 10, [dserver.bundestag.de](https://dserver.bundestag.de/btd/16/036/1603656.pdf),
+    abgerufen 2026-09-30; zum Willen von 1986 BT-Drs. 10/5058, S. 28 f., nach Wissenschaftlicher
+    Dienst WD 7-104-23). **Seit dem 41. StrÄndG vom 7. August 2007** genügt der Zugang „unter
+    Überwindung der Zugangssicherung".
+  - **Vorgabe:** Präteritum, die Fassung von 1986 beschreiben. Kein „schon", kein Präsens. Die
+    Grenze des Gesetzes lag **an den Daten**, nicht am Eindringen und nicht am Umgang. Nicht
+    behaupten, Eindringen sei bis 2007 folgenlos geblieben (die Auslegung sah das anders).
 - **USA: Computer Fraud and Abuse Act 1986.** Erster Verurteilter war **Morris** (siehe `fakten.md`).
   → **Beide Länder schreiben das Gesetz im selben Jahr**, drei Jahre vor dem KGB-Urteil.
+  - **Berichtigt (2):** Der CFAA wurde 1986 „as an amendment to existing computer fraud law (18
+    U.S.C. § 1030), which had been included in the Comprehensive Crime Control Act of 1984" erlassen
+    (en.Wikipedia „Computer Fraud and Abuse Act"). Im Text „erweiterte", „im selben Jahr" darf
+    keinen Beginn nahelegen. Morris: Schuldspruch 1990, Berufung 1991 (_United States v. Morris_).
 - **Morris-Wurm 2. November 1988**: 6.000 von rund 60.000 Rechnern, CERT zwei Wochen später an der
   Carnegie Mellon University. Vollständig in `fakten.md`.
-- **Operation Sundevil, 8./9. Mai 1990**, Razzien in etwa fünfzehn Städten, beschlagnahmt wurden vor
-  allem Rechner, Disketten und **Mailbox-Inhalte**, drei Verhaftungen. Belege in `issues-01.md`.
+  - **Neu (2): Welches Netz.** Das Internet: „one of the oldest computer worms distributed via the
+    Internet"; während des Befalls trennten sich regionale Netze vom NSFNet-Backbone (en.Wikipedia
+    „Morris worm"). Der Leser kennt das Internet aus 01.03 als das, was aus dem ARPANET wurde. „Vor
+    allem Universitäten und Forschungseinrichtungen" ist Weltwissen, keine Belegstelle.
+- **Operation Sundevil, berichtigt:** Razzien am **7./8. Mai 1990**, Pressekonferenz am **9. Mai**
+  (en.Wikipedia; das Dossier hatte 8./9. Mai). Die offizielle Mitteilung nannte **zwölf Städte**,
+  Lokalberichte 13 bis 16 (Bruce Sterling, _The Hacker Crackdown_, 1992); „etwa fünfzehn Städte"
+  fällt. Durchgeführt vom **United States Secret Service** mit FBI und örtlicher Polizei;
+  beschlagnahmt rund **23.000 Disketten** und **42 Rechner**, darunter rund **25 laufende
+  Mailboxen**; drei Verhaftungen.
+- **Berichtigt (2): Sundevil richtete sich nicht gegen das Eindringen.** Bruce Sterling, _The Hacker
+  Crackdown_ (1992), Teil III, wörtlich (Volltext [Project Gutenberg
+  #101](https://www.gutenberg.org/ebooks/101), abgerufen 2026-09-30):
+  - „‚Operation Sundevil' was not intended to combat ‚hacking' in the sense of computer intrusion or
+    sophisticated raids on telco switching stations." „Instead, ‚Operation Sundevil' was a crackdown on
+    those traditional scourges of the digital underground: credit-card theft and telephone code
+    abuse." Organisiert vom Büro des Secret Service in Phoenix und dem Arizona Attorney General.
+  - **Warum die Mailboxen:** „it was common practice in the digital underground to post purloined
+    telephone codes on boards, for any phreak or hacker who cared to abuse them." „Bulletin boards are
+    cram-full of EVIDENCE." → Beschlagnahmt wurden sie als Tauschplatz und als Beweismittel.
+  - „Sundevil was the largest crackdown on boards in world history. On May 7, 8, and 9, 1990, about
+    forty-two computer systems were seized. Of those forty-two computers, about twenty-five actually
+    were running boards." Das war rund ein Tausendstel der Mailboxen in den USA; auf der Liste der
+    Fahnder standen mindestens 300.
+  - **Wie es ankam:** „the public, misled by police secrecy, hacker panic, and a puzzled national
+    press-corps, conflated all aspects of the nationwide crackdown in 1990 under the blanket term
+    ‚Operation Sundevil.' ‚Sundevil' is still the best-known synonym for the crackdown of 1990." Dazu
+    Sterlings Nachsatz: die Organisatoren hätten diesen Ruf so wenig verdient „as all hackers deserve
+    a reputation as ‚hackers.'"
+  - **Gegenstimme:** en.Wikipedia übernimmt die amtliche Formel („crackdown on ‚illegal computer
+    hacking activities'"), nennt als Ziel aber ebenfalls „credit card thieves and telephone abusers"
+    und eine 18-monatige Ermittlung wegen „credit card and calling card fraud over state lines".
+  - **Telefoncodes, für den Text:** gestohlene Zugangscodes, mit denen man Ferngespräche auf fremde
+    Rechnung führte. Derselbe Zweck wie bei der Blue Box. Steve Jackson Games (1. März 1990) gehört
+    nicht zu Sundevil, sondern zur Chicagoer Task Force.
+  - **Vorgabe:** In die Reihe der Gesetze und Razzien gehört Sundevil über die Mailboxen und über
+    den Ruf, nicht über das Ziel. Sterling als Quelle: Schriftsteller und Journalist, der die Razzien
+    aus der Nähe als Zeitgeschichte aufschrieb; mit Verständnis für die Szene, aber mit den
+    Ermittlern im Gespräch.
 
 ## AfroNet
 

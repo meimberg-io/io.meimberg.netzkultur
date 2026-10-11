@@ -29,10 +29,18 @@ Jeder Eintrag steht für sich: Stichwort, Sachverhalt, was das Modell stattdesse
   Schlagzeile. Beide Zahlen sind je für sich arithmetisch konsistent. **Für die Reihe gilt
   134.694,70 DM.** *(entschieden 2026-07-30)*
 
-- **Der Btx-Hack wurde am 19. November 1984 öffentlich, nicht „am Morgen darauf".** Abruf in der
-  Nacht vom 16. auf den 17. November (Samstag), Pressekonferenz mit Geldrückgabe am Montag, dem
-  19. Der CCC hatte Datenschutzbeauftragte und Bundespost bereits im Oktober 1984 schriftlich
-  vorgewarnt. *(bestätigt 2026-07-30)*
+- **Der Btx-Hack wurde am 19. November 1984 öffentlich, nicht „am Morgen darauf".** Abruf von
+  Sonnabend, dem 17. November, 18 Uhr bis Sonntag, dem 18., 13 Uhr, nach _Die Zeit_ vom 30.11.1984;
+  de.Wikipedia und heise 2024 nennen abweichend die Nacht vom 16. auf den 17. **Für die Reihe gilt
+  das Wochenende 17./18. November.** *(entschieden 2026-09-30)* Die Dauer ist damit nicht
+  entschieden: Das Zeitfenster der _Zeit_ umfasst 19 Stunden, FT 1984 und de.Wikipedia nennen 13.
+  Pressekonferenz am Montag, dem 19. Der CCC hatte Datenschutzbeauftragte und Bundespost bereits im
+  Oktober 1984 schriftlich vorgewarnt. *(bestätigt 2026-07-30)* **Ob Geld floss, ist strittig:** Die
+  Seitenpreise liefen über die Telefonrechnung der Sparkasse. Nach de.Wikipedia „BTX-Hack" und
+  _Computerwoche_ 14.11.2014 verzichtete der Club auf die Forderung, die Haspa musste nicht zahlen;
+  nach _Die Zeit_ 30.11.1984 („Die freilich überwiesen sie der Haspa zurück") und en.Wikipedia gab er
+  Geld zurück. **Für die Reihe gilt: offen formulieren**, der Club behielt das Geld nicht; weder
+  „verzichtete" noch „gab zurück" festlegen. *(entschieden 2026-09-30)*
 
 - **Die `de.*`-Hierarchie entstand im Januar 1992**, durch Zusammenlegung von `dnet.*` und
   `sub.*`. Sie hat nichts mit der Karlsruher CSNET-Mail von 1984 zu tun; deutschsprachiges Usenet
